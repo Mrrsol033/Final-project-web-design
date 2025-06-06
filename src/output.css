@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
@@ -174,13 +175,22 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-blue-500 {
     color: var(--color-blue-500);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
   }
   .text-red-500 {
     color: var(--color-red-500);
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .underline-offset-6 {
+    text-underline-offset: 6px;
   }
 }
