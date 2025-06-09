@@ -2,50 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel</title>
-    <link rel="stylesheet" href="../src/output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Camp Navigation</title>
+    <link rel="stylesheet" href="../src/output.css">
   </head>
-  <body>
-    <!-- ========== HEADER ========== -->
-    <nav class="bg-white shadow-md border-gray-200">
-      <div class="max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between ml-[90px] mr-[90px] ">
-        <!-- Brand -->
-        <span class="text-2xl  font-semibold text-blue-500">Lanka<span class="text-gray-700">Stay</span></span>
+  <body class="bg-white text-gray-900">
 
-        <!-- Navigation -->
-        <button class="md:hidden text-gray-700 p-2 rounded focus:outline-none" id="menu-toggle">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <img src="logo.svg" alt="Camp Logo" class="w-6 h-6" />
+          <span class="font-semibold text-xl text-gray-900">Camp</span>
+        </a>
+
+        <!-- Nav links (desktop) -->
+        <nav class="hidden md:flex items-center ml-26 space-x-10">
+          <a href="#" class="text-green-900 font-semibold">Home</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Explore</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+        </nav>
+
+        <!-- Buttons -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#" class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition">Log in</a>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Create Account</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="md:hidden flex items-center text-gray-700" id="menu-toggle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
-
-        <div class="hidden md:flex md:items-center md:w-auto w-full mt-3 md:mt-0 md:space-x-6" id="menu">
-          <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0">
-            <li><a href="#" class="px-4 py-2 rounded-md text-blue-500 hover:text-blue-700">Home</a></li>
-            <li><a href="#" class="px-4 py-2 rounded-md text-gray-700 hover:text-blue-700">Blog</a></li>
-            <li><a href="#" class="px-4 py-2 rounded-md text-gray-700 hover:text-blue-700">Rooms</a></li>
-            <li><a href="#" class="px-4 py-2 rounded-md text-gray-700 hover:text-blue-700">About</a></li>
-            <li><a href="#" class="px-4 py-2 rounded-md text-gray-700 hover:text-blue-700">Contact</a></li>
-          </ul>
-      
-
-        <!-- Login Button -->
-        <div class="mt-3 md:mt-0">
-          <a href="#" class="flex items-center text-gray-800 hover:text-gray-500">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-            Log in
-          </a>
-        </div>
-          </div>
       </div>
-    </nav>
 
-    <!-- JavaScript for Mobile Toggle -->
-     <script src="../node_modules/preline/preline.js"></script>
+      <!-- Mobile menu -->
+      <div class="md:hidden px-4 pb-4 hidden" id="mobile-menu">
+        <nav class="space-y-2">
+          <a href="#" class="block text-green-900 font-semibold">Home</a>
+          <a href="#" class="block text-gray-600 hover:text-gray-900">Explore</a>
+          <a href="#" class="block text-gray-600 hover:text-gray-900">Blog</a>
+          <a href="#" class="block text-gray-600 hover:text-gray-900">About</a>
+          <div class="mt-4 space-y-2">
+            <a href="#" class="block px-4 py-2 border border-gray-300 rounded-full text-green-900 text-center hover:bg-gray-100 transition">Log in</a>
+            <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition">Create Account</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
 
   </body>
 </html>
