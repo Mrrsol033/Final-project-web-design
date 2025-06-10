@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   </head>
   <body>
     <!-- header -->
-     <!-- add underline at ul -->
-    <header class="bg-white shadow-sm">
-      <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-        
+    <!-- add underline at ul -->
+    <header class="bg-sky-50 shadow-sm">
+      <div
+        class="max-w-screen-xl mx-auto flex items-center justify-between p-4"
+      >
         <!-- Logo -->
         <a href="#" class="flex items-center space-x-2">
-          <img src="logo.svg" alt="Camp Logo" class="w-6 h-6" />
+          <img src="../img/logo.png" alt="Camp Logo" class="w-10 h-10" />
           <span class="font-semibold text-xl text-gray-900">Camp</span>
         </a>
 
@@ -28,14 +30,35 @@
 
         <!-- Buttons -->
         <div class="hidden md:flex items-center space-x-4">
-          <a href="#" class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition">Log in</a>
-          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Create Account</a>
+          <a
+            href="#"
+            class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+            >Create Account</a
+          >
         </div>
 
         <!-- Mobile menu button -->
-        <button class="md:hidden flex items-center text-gray-700" id="menu-toggle">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        <button
+          class="md:hidden flex items-center text-gray-700"
+          id="menu-toggle"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </div>
@@ -44,12 +67,22 @@
       <div class="md:hidden px-4 pb-4 hidden" id="mobile-menu">
         <nav class="space-y-2">
           <a href="#" class="block text-green-900 font-semibold">Home</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900">Explore</a>
+          <a href="#" class="block text-gray-600 hover:text-gray-900"
+            >Explore</a
+          >
           <a href="#" class="block text-gray-600 hover:text-gray-900">Blog</a>
           <a href="#" class="block text-gray-600 hover:text-gray-900">About</a>
           <div class="mt-4 space-y-2">
-            <a href="#" class="block px-4 py-2 border border-gray-300 rounded-full text-green-900 text-center hover:bg-gray-100 transition">Log in</a>
-            <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition">Create Account</a>
+            <a
+              href="#"
+              class="block px-4 py-2 border border-gray-300 rounded-full text-green-900 text-center hover:bg-gray-100 transition"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition"
+              >Create Account</a
+            >
           </div>
         </nav>
       </div>
@@ -58,451 +91,113 @@
 
     <!-- blog page -->
     <!-- Card Blog -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <!-- Grid -->
-      <div class="grid sm:grid-cols-2 sm:items-center gap-8">
-        <div class="sm:order-2">
-          <div class="relative pt-[50%] sm:pt-[100%] rounded-lg">
-            <img
-              class="size-full absolute top-0 start-0 object-bottom-right rounded-lg"
-              src="../img/imageroom.png"
-              alt="Blog Image"
-            />
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="sm:order-1">
-          <p
-            class="mb-5 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-neutral-800 dark:text-neutral-200"
-          >
-            Hotel blog
+    <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        <!-- Left Column (Text and Features) -->
+        <div class="space-y-6">
+          <!-- Heading -->
+          <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">
+            Why Camp <br class="hidden sm:block" />
+            Stands Out Here
+          </h2>
+          <p class="text-gray-600 text-base">
+            In the bustling world of travel and accommodation, Camp stands out
+            as a beacon of excellence.
           </p>
 
-          <h2
-            class="text-2xl font-bold md:text-3xl lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight text-gray-800 dark:text-neutral-200"
-          >
-            <p
-              class="hover:text-blue-600 focus:outline-hidden focus:text-blue-600 dark:text-neutral-700 dark:hover:text-neutral-800 dark:focus:text-white"
-              href="#"
+          <!-- Feature Cards -->
+          <div class="space-y-4">
+            <!-- Feature 1 -->
+            <div
+              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
             >
-              Experience luxury, comfort, breathtaking views.
-            </p>
-          </h2>
-
-          <!-- Avatar -->
-          <div class="mt-6 sm:mt-10 flex items-center">
-            <div class="shrink-0">
-              <img
-                class="size-10 sm:h-14 sm:w-14 rounded-full"
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                alt="Blog Image"
-              />
+              <div class="text-blue-600 text-xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Search simply</h4>
+                <p class="text-sm text-gray-500">
+                  Search through 5 million hotels in just a few seconds.
+                </p>
+              </div>
             </div>
 
-            <div class="ms-3 sm:ms-4">
-              <p
-                class="sm:mb-1 font-semibold text-gray-800 dark:text-neutral-200"
-              >
-                Ipsum Dolor.
-              </p>
-              <p class="text-xs text-gray-500 dark:text-neutral-500">
-                Traveling around the world
-              </p>
-            </div>
-          </div>
-          <!-- End Avatar -->
-
-          <div class="mt-5">
-            <a
-              class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium dark:text-blue-500"
-              href="#"
+            <!-- Feature 2 -->
+            <div
+              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
             >
-              Read more
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </a>
+              <div class="text-blue-600 text-xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M18 20V10M6 20V4M12 20V16" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Compare Confidently</h4>
+                <p class="text-sm text-gray-500">
+                  Compare hotel prices from 100s of sites at once.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
+            >
+              <div class="text-blue-600 text-xl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M4 4h16v16H4z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Save Big</h4>
+                <p class="text-sm text-gray-500">
+                  Discover a great deal to book on our partner sites.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- End Col -->
+
+        <!-- Right Column (Image) -->
+        <div class="pt-18">
+          <img
+            src="../img/imagesea02.png"
+            alt="Traveler Image"
+            class="w-full h-auto rounded-2xl object-cover shadow-lg "
+          />
+        </div>
       </div>
-      <!-- End Grid -->
     </div>
+
     <!-- End Card Blog -->
 
     <!-- section 02 -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <!-- Title -->
-      <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-        <h2
-          class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-        >
-          Insights
-        </h2>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          Stay in the know with insights from industry experts.
-        </p>
-      </div>
-      <!-- End Title -->
-
-      <!-- Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card -->
-        <a class="group flex flex-col focus:outline-hidden" href="#">
-          <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-            <img
-              class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-              src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-            <span
-              class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900"
-            >
-              Sponsored
-            </span>
-          </div>
-
-          <div class="mt-7">
-            <h3
-              class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white"
-            >
-              Studio by Preline
-            </h3>
-            <p class="mt-3 text-gray-800 dark:text-neutral-200">
-              Produce professional, reliable streams easily leveraging Preline's
-              innovative broadcast studio
-            </p>
-            <p
-              class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500"
-            >
-              Read more
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </p>
-          </div>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group flex flex-col focus:outline-hidden" href="#">
-          <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-            <img
-              class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-              src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-
-          <div class="mt-7">
-            <h3
-              class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white"
-            >
-              Onsite
-            </h3>
-            <p class="mt-3 text-gray-800 dark:text-neutral-200">
-              Optimize your in-person experience with best-in-class capabilities
-              like badge printing and lead retrieval
-            </p>
-            <p
-              class="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500"
-            >
-              Read more
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </p>
-          </div>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a
-          class="group relative flex flex-col w-full min-h-60 bg-[url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80')] bg-center bg-cover rounded-xl hover:shadow-lg focus:outline-hidden focus:shadow-lg transition"
-          href="#"
-        >
-          <div class="flex-auto p-4 md:p-6">
-            <h3 class="text-xl text-white/90 group-hover:text-white">
-              <span class="font-bold">Preline</span> Press publishes books about
-              economic and technological advancement.
-            </h3>
-          </div>
-          <div class="pt-0 p-4 md:p-6">
-            <div
-              class="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/70 group-focus:text-white/70"
-            >
-              Visit the site
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-      </div>
-      <!-- End Grid -->
-    </div>
-    <!-- section 02 -->
-
-    <!-- section 03 -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <!-- Grid -->
-      <div class="grid lg:grid-cols-2 gap-6">
-        <!-- Card -->
-        <a
-          class="group relative block rounded-xl focus:outline-hidden"
-          href="#"
-        >
-          <div
-            class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70"
-          >
-            <img
-              class="size-full absolute top-0 start-0 object-cover"
-              src="https://images.unsplash.com/photo-1669828230990-9b8583a877ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-
-          <div class="absolute top-0 inset-x-0 z-10">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <!-- Avatar -->
-              <div class="flex items-center">
-                <div class="shrink-0">
-                  <img
-                    class="size-11 border-2 border-white rounded-full"
-                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Avatar"
-                  />
-                </div>
-                <div class="ms-2.5 sm:ms-4">
-                  <h4 class="font-semibold text-white">Gloria</h4>
-                  <p class="text-xs text-white/80">Jan 09, 2021</p>
-                </div>
-              </div>
-              <!-- End Avatar -->
-            </div>
-          </div>
-
-          <div class="absolute bottom-0 inset-x-0 z-10">
-            <div class="flex flex-col h-full p-4 sm:p-6">
-              <h3
-                class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80"
-              >
-                Facebook is creating a news section in Watch to feature breaking
-                news
-              </h3>
-              <p class="mt-2 text-white/80">
-                Facebook launched the Watch platform in August
-              </p>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a
-          class="group relative block rounded-xl focus:outline-hidden"
-          href="#"
-        >
-          <div
-            class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70"
-          >
-            <img
-              class="size-full absolute top-0 start-0 object-cover"
-              src="https://images.unsplash.com/photo-1611625618313-68b87aaa0626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-
-          <div class="absolute top-0 inset-x-0 z-10">
-            <div class="p-4 flex flex-col h-full sm:p-6">
-              <!-- Avatar -->
-              <div class="flex items-center">
-                <div class="shrink-0">
-                  <img
-                    class="size-11 border-2 border-white rounded-full"
-                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Avatar"
-                  />
-                </div>
-                <div class="ms-2.5 sm:ms-4">
-                  <h4 class="font-semibold text-white">Gloria</h4>
-                  <p class="text-xs text-white/80">May 30, 2021</p>
-                </div>
-              </div>
-              <!-- End Avatar -->
-            </div>
-          </div>
-
-          <div class="absolute bottom-0 inset-x-0 z-10">
-            <div class="flex flex-col h-full p-4 sm:p-6">
-              <h3
-                class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80"
-              >
-                What CFR (Conversations, Feedback, Recognition) really is about
-              </h3>
-              <p class="mt-2 text-white/80">
-                For a lot of people these days, Measure What Matters.
-              </p>
-            </div>
-          </div>
-        </a>
-        <!-- End Card -->
-      </div>
-      <!-- End Grid -->
-    </div>
-    <!-- end sec 03 -->
-
-    <!-- section 04 -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <!-- Title -->
-      <div class="max-w-2xl mb-10">
-        <h2
-          class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-        >
-          Customer stories
-        </h2>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">
-          See how game-changing companies are making the most of every
-          engagement with Preline.
-        </p>
-      </div>
-      <!-- End Title -->
-
-      <!-- Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card -->
-        <a class="group block rounded-xl focus:outline-hidden" href="#">
-          <div class="aspect-w-16 aspect-h-9">
-            <img
-              class="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-          <h3
-            class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white"
-          >
-            Unity’s inside sales team drives 80% of its revenue with Preline.
-          </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-            September 12, 2022
-          </p>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group block rounded-xl focus:outline-hidden" href="#">
-          <div class="aspect-w-16 aspect-h-9">
-            <img
-              class="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-          <h3
-            class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white"
-          >
-            Living Spaces creates a unified experience across the customer
-            journey.
-          </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-            September 12, 2022
-          </p>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group block rounded-xl focus:outline-hidden" href="#">
-          <div class="aspect-w-16 aspect-h-9">
-            <img
-              class="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-          <h3
-            class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white"
-          >
-            Atlassian powers sales and support at scale with Preline.
-          </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-            September 12, 2022
-          </p>
-        </a>
-        <!-- End Card -->
-
-        <!-- Card -->
-        <a class="group block rounded-xl focus:outline-hidden" href="#">
-          <div class="aspect-w-16 aspect-h-9">
-            <img
-              class="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-              alt="Blog Image"
-            />
-          </div>
-          <h3
-            class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white"
-          >
-            Everything you need to know about Preline Pro.
-          </h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
-            September 12, 2022
-          </p>
-        </a>
-        <!-- End Card -->
-      </div>
-      <!-- End Grid -->
-    </div>
-    <!-- end section 04 -->
-    <!-- section 05 -->
-    <!-- about the most place in cambodia -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Grid -->
       <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
         <!-- Card -->
@@ -705,85 +400,230 @@
       </div>
       <!-- End Grid -->
     </div>
+    <!-- section 02 -->
+
+    <!-- section 03 -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-2 gap-6">
+        <!-- Card -->
+        <a
+          class="group relative block rounded-xl focus:outline-hidden"
+          href="#"
+        >
+          <div
+            class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70"
+          >
+            <img
+              class="size-full absolute top-0 start-0 object-cover"
+              src="https://images.unsplash.com/photo-1669828230990-9b8583a877ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Blog Image"
+            />
+          </div>
+
+          <div class="absolute top-0 inset-x-0 z-10">
+            <div class="p-4 flex flex-col h-full sm:p-6">
+              <!-- Avatar -->
+              <div class="flex items-center">
+                <div class="shrink-0">
+                  <img
+                    class="size-11 border-2 border-white rounded-full"
+                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                    alt="Avatar"
+                  />
+                </div>
+                <div class="ms-2.5 sm:ms-4">
+                  <h4 class="font-semibold text-white">Gloria</h4>
+                  <p class="text-xs text-white/80">Jan 09, 2021</p>
+                </div>
+              </div>
+              <!-- End Avatar -->
+            </div>
+          </div>
+
+          <div class="absolute bottom-0 inset-x-0 z-10">
+            <div class="flex flex-col h-full p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80"
+              >
+                Facebook is creating a news section in Watch to feature breaking
+                news
+              </h3>
+              <p class="mt-2 text-white/80">
+                Facebook launched the Watch platform in August
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a
+          class="group relative block rounded-xl focus:outline-hidden"
+          href="#"
+        >
+          <div
+            class="shrink-0 relative rounded-xl overflow-hidden w-full h-87.5 before:absolute before:inset-x-0 before:z-1 before:size-full before:bg-linear-to-t before:from-gray-900/70"
+          >
+            <img
+              class="size-full absolute top-0 start-0 object-cover"
+              src="https://images.unsplash.com/photo-1611625618313-68b87aaa0626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Blog Image"
+            />
+          </div>
+
+          <div class="absolute top-0 inset-x-0 z-10">
+            <div class="p-4 flex flex-col h-full sm:p-6">
+              <!-- Avatar -->
+              <div class="flex items-center">
+                <div class="shrink-0">
+                  <img
+                    class="size-11 border-2 border-white rounded-full"
+                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                    alt="Avatar"
+                  />
+                </div>
+                <div class="ms-2.5 sm:ms-4">
+                  <h4 class="font-semibold text-white">Gloria</h4>
+                  <p class="text-xs text-white/80">May 30, 2021</p>
+                </div>
+              </div>
+              <!-- End Avatar -->
+            </div>
+          </div>
+
+          <div class="absolute bottom-0 inset-x-0 z-10">
+            <div class="flex flex-col h-full p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/80 group-focus:text-white/80"
+              >
+                What CFR (Conversations, Feedback, Recognition) really is about
+              </h3>
+              <p class="mt-2 text-white/80">
+                For a lot of people these days, Measure What Matters.
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- End Card -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- end sec 03 -->
+
+    <!-- section 05 -->
+    <!-- about the most place in cambodia -->
+
     <!-- end section 05 -->
 
     <!-- footer -->
-      <footer class="bg-gray-900 text-white">
-    <div class="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- Left Section -->
-        <div>
-          <div class="flex items-center space-x-2">
-            <img src="logo.svg" alt="Camp Logo" class="h-8 w-8">
-            <span class="text-xl font-semibold">Camp</span>
-          </div>
-          <p class="mt-4 text-gray-400 max-w-sm">
-            Camp, the world's largest travel guidance platform*, helps hundreds of millions of people each month** become better travelers, from planning to booking to taking a trip.
-          </p>
-          <div class="flex mt-4 space-x-4">
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-
-        <!-- Middle Section -->
-        <div class="grid grid-cols-2 gap-4 text-sm">
+    <footer class="bg-gray-900 text-white">
+      <div class="max-w-screen-xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Left Section -->
           <div>
-            <h3 class="text-white font-semibold mb-4">Enterprise</h3>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">About us</a></li>
-              <li><a href="#" class="hover:text-white">Jobs</a></li>
-              <li><a href="#" class="hover:text-white">Press</a></li>
-              <li><a href="#" class="hover:text-white">Privacy</a></li>
-              <li><a href="#" class="hover:text-white">Terms</a></li>
-              <li><a href="#" class="hover:text-white">Imprint</a></li>
-            </ul>
+            <div class="flex items-center space-x-2">
+              <img src="logo.svg" alt="Camp Logo" class="h-8 w-8" />
+              <span class="text-xl font-semibold">Camp</span>
+            </div>
+            <p class="mt-4 text-gray-400 max-w-sm">
+              Camp, the world's largest travel guidance platform*, helps
+              hundreds of millions of people each month** become better
+              travelers, from planning to booking to taking a trip.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-gray-300"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
           </div>
-          <div>
-            <h3 class="text-white font-semibold mb-4">Other Services</h3>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Investor Relations</a></li>
-              <li><a href="#" class="hover:text-white">List My Hotel</a></li>
-              <li><a href="#" class="hover:text-white">All Hotels</a></li>
-              <li><a href="#" class="hover:text-white">FAQ</a></li>
-              <li><a href="#" class="hover:text-white">Info and Guides</a></li>
-              <li><a href="#" class="hover:text-white">Blog</a></li>
-            </ul>
+
+          <!-- Middle Section -->
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <h3 class="text-white font-semibold mb-4">Enterprise</h3>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">About us</a></li>
+                <li><a href="#" class="hover:text-white">Jobs</a></li>
+                <li><a href="#" class="hover:text-white">Press</a></li>
+                <li><a href="#" class="hover:text-white">Privacy</a></li>
+                <li><a href="#" class="hover:text-white">Terms</a></li>
+                <li><a href="#" class="hover:text-white">Imprint</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold mb-4">Other Services</h3>
+              <ul class="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" class="hover:text-white">Investor Relations</a>
+                </li>
+                <li><a href="#" class="hover:text-white">List My Hotel</a></li>
+                <li><a href="#" class="hover:text-white">All Hotels</a></li>
+                <li><a href="#" class="hover:text-white">FAQ</a></li>
+                <li>
+                  <a href="#" class="hover:text-white">Info and Guides</a>
+                </li>
+                <li><a href="#" class="hover:text-white">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-white font-semibold mb-4">Newsletter</h3>
+            <form
+              class="flex items-center border border-gray-600 rounded-full overflow-hidden"
+            >
+              <input
+                type="email"
+                placeholder="Email address"
+                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
+              />
+              <button type="submit" class="bg-blue-500 px-4 py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              This website is operated by Camp.com Travel Singapore Pte. Ltd.
+              ("Camp.com Singapore"), a Singapore entity (registration number
+              012345987).
+            </p>
           </div>
         </div>
 
-        <!-- Newsletter Section -->
-        <div class="bg-gray-800 p-6 rounded-lg">
-          <h3 class="text-white font-semibold mb-4">Newsletter</h3>
-          <form class="flex items-center border border-gray-600 rounded-full overflow-hidden">
-            <input type="email" placeholder="Email address" class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none">
-            <button type="submit" class="bg-blue-500 px-4 py-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </button>
-          </form>
-          <p class="mt-4 text-xs text-gray-400">
-            This website is operated by Camp.com Travel Singapore Pte. Ltd. ("Camp.com Singapore"), a Singapore entity (registration number 012345987).
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="mt-12 border-t border-gray-700 pt-6 text-sm text-gray-500 flex flex-col sm:flex-row justify-between">
-        <span>&copy; Camp 2023</span>
-        <div class="flex space-x-4 mt-2 sm:mt-0">
-          <a href="#" class="hover:text-white">Terms</a>
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="#" class="hover:text-white">Cookies</a>
-          <a href="#" class="hover:text-white">Site map</a>
+        <!-- Footer Bottom -->
+        <div
+          class="mt-12 border-t border-gray-700 pt-6 text-sm text-gray-500 flex flex-col sm:flex-row justify-between"
+        >
+          <span>&copy; Camp 2023</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Site map</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <!-- footer -->
 
     <script src="../node_modules/preline/preline.js"></script>
