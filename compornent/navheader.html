@@ -2,59 +2,132 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp Navigation</title>
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/output.css" />
   </head>
-  <body class="bg-white text-gray-900">
-
-    <!-- Navbar -->
-    <header class="bg-sky-50 shadow-sm">
-      <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-        
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800">
+      <div
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-2.5"
+      >
         <!-- Logo -->
         <a href="#" class="flex items-center space-x-2">
           <img src="../img/logo.png" alt="Camp Logo" class="w-10 h-10" />
-          <span class="font-semibold text-xl text-gray-900">Camp</span>
+          <span class="text-xl font-semibold dark:text-white">Camp</span>
         </a>
 
-        <!-- Nav links (desktop) -->
-        <nav class="hidden md:flex items-center ml-26 space-x-10">
-          <a href="#" class="text-green-900 font-semibold">Home</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Explore</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-10 ml-10 items-center">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Explore</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >About</a
+          >
         </nav>
 
-        <!-- Buttons -->
+        <!-- Desktop Actions -->
         <div class="hidden md:flex items-center space-x-4">
-          <a href="#" class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition">Log in</a>
-          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Create Account</a>
-        </div>
 
-        <!-- Mobile menu button -->
-        <button class="md:hidden flex items-center text-gray-700" id="menu-toggle">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          <!-- Dark Mode Toggle -->
+
+
+          <!-- Auth Buttons -->
+          <a
+            href="#"
+            class="px-4 py-2 border-0 border-gray-300 border-l-2 text-green-900 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Create Account</a
+          >
+        </div>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-toggle"
+          class="md:hidden text-gray-700 dark:text-gray-300"
+          aria-label="Toggle mobile menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </div>
-
-      <!-- Mobile menu -->
-      <div class="md:hidden px-4 pb-4 hidden" id="mobile-menu">
-        <nav class="space-y-2">
-          <a href="#" class="block text-green-900 font-semibold">Home</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900">Explore</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900">About</a>
-          <div class="mt-4 space-y-2">
-            <a href="#" class="block px-4 py-2 border border-gray-300 rounded-full text-green-900 text-center hover:bg-gray-100 transition">Log in</a>
-            <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition">Create Account</a>
-          </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 justify-between space-y-3 transition-all duration-300"
+      >
+        <nav class="flex flex-col space-y-2">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Explore</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >About</a
+          >
         </nav>
+        <div class="mt-4 space-y-2">
+          <a
+            href="#"
+            class="block px-4 py-2 border border-gray-300 rounded-[5px] text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-[5px] text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Create Account</a
+          >
+        </div>
       </div>
     </header>
 
+    <!-- Preline JavaScript -->
 
+    <!-- Mobile Menu Script -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

@@ -30,6 +30,7 @@
 
         <!-- Buttons -->
         <div class="hidden md:flex items-center space-x-4">
+          
           <a
             href="#"
             class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition"
@@ -90,108 +91,65 @@
     <!-- end header -->
 
     <!-- blog page -->
-    <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <!-- Left Column (Text and Features) -->
-        <div class="space-y-6">
-          <!-- Heading -->
-          <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">
-            Why Camp <br class="hidden sm:block" />
-            Stands Out Here
-          </h2>
-          <p class="text-gray-600 text-base">
-            In the bustling world of travel and accommodation, Camp stands out
-            as a beacon of excellence.
-          </p>
+ <div class="relative overflow-hidden">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="max-w-2xl text-center mx-auto">
+      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
+        Designed for you to get more <span class="text-blue-600">simple</span>
+      </h1>
+      <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">
+        Build your business here. Take it anywhere.
+      </p>
+    </div>
 
-          <!-- Feature Cards -->
-          <div class="space-y-4">
-            <!-- Feature 1 -->
-            <div
-              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
-            >
-              <div class="text-blue-600 text-xl">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Search simply</h4>
-                <p class="text-sm text-gray-500">
-                  Search through 5 million hotels in just a few seconds.
-                </p>
-              </div>
-            </div>
+    <div class="mt-10 relative max-w-5xl mx-auto">
+      <video
+        id="overviewVideo"  controls poster="../img/angkor-wat.png"
+        class="w-full object-cover h-96 sm:h-120 bg-no-repeat  bg-center bg-cover rounded-xl"
+        controls
+        muted
+        playsinline
+        preload="auto"
+      >
+        <source src="../video/angkor-wat-vdo.mp4" type="video/mp4">
+        <source src="../video/angkor-wat-vdo.webm" type="video/webm">
+        <source src="../video/angkor-wat-vdo.ogv" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
 
-            <!-- Feature 2 -->
-            <div
-              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
-            >
-              <div class="text-blue-600 text-xl">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M18 20V10M6 20V4M12 20V16" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Compare Confidently</h4>
-                <p class="text-sm text-gray-500">
-                  Compare hotel prices from 100s of sites at once.
-                </p>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div
-              class="flex items-start gap-4 p-4 border border-gray-200 rounded-xl bg-white shadow-sm"
-            >
-              <div class="text-blue-600 text-xl">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M4 4h16v16H4z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Save Big</h4>
-                <p class="text-sm text-gray-500">
-                  Discover a great deal to book on our partner sites.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column (Image) -->
-        <div class="pt-18">
-          <img
-            src="../img/imagesea02.png"
-            alt="Traveler Image"
-            class="w-full h-auto rounded-2xl object-cover shadow-lg"
-          />
+      <!-- Play Button Overlay -->
+      <div id="playButtonContainer" class="absolute inset-0 size-full">
+        <div class="flex flex-col justify-center items-center size-full">
+          <button
+            id="playButton"
+            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+          >
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            Play the overview
+          </button>
         </div>
       </div>
+
+      <!-- Decorative Backgrounds -->
+      <div
+        class="absolute bottom-12 -start-20 -z-1 size-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-neutral-900">
+        <div class="bg-white size-48 rounded-lg dark:bg-neutral-900"></div>
+      </div>
+
+      <div
+        class="absolute -top-12 -end-20 -z-1 size-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
+        <div class="bg-white size-48 rounded-full dark:bg-neutral-900"></div>
+      </div>
     </div>
+  </div>
+</div>
+
+
+
     <!-- End Card Blog -->
 
     <!-- section 02 -->
@@ -607,6 +565,17 @@
 
     <!-- footer -->
 
-    <script src="../node_modules/preline/preline.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    
+<!-- JavaScript -->
+<script>
+  document.getElementById("playButton").addEventListener("click", function () {
+    const video = document.getElementById("overviewVideo");
+    const playContainer = document.getElementById("playButtonContainer");
+
+    video.play();
+    playContainer.style.display = "none"; // hide play button
+  });
+</script>
   </body>
 </html>
