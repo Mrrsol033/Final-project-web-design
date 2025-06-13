@@ -7,46 +7,64 @@
     <link rel="stylesheet" href="../src/output.css" />
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
   </head>
-  <body>
+  <bodyv >
     <!-- header -->
     <!-- add underline at ul -->
-    <header class="bg-sky-50 shadow-sm">
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800">
       <div
-        class="max-w-screen-xl mx-auto flex items-center justify-between p-4"
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-2.5"
       >
         <!-- Logo -->
         <a href="#" class="flex items-center space-x-2">
           <img src="../img/logo.png" alt="Camp Logo" class="w-10 h-10" />
-          <span class="font-semibold text-xl text-gray-900">Camp</span>
+          <span class="text-xl font-semibold dark:text-white">Camp</span>
         </a>
 
-        <!-- Nav links (desktop) -->
-        <nav class="hidden md:flex items-center ml-26 space-x-10">
-          <a href="#" class="text-green-900 font-semibold">Home</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Explore</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
-        </nav>
-
-        <!-- Buttons -->
-        <div class="hidden md:flex items-center space-x-4">
-          
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-10 ml-10 items-center">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300"
+            >Home</a
+          >
           <a
             href="#"
-            class="px-4 py-2 border border-gray-300 rounded-full text-green-900 hover:bg-gray-100 transition"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Explore</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >About</a
+          >
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-4">
+
+          <!-- Dark Mode Toggle -->
+
+
+          <!-- Auth Buttons -->
+          <a
+            href="#"
+            class="px-4 py-2 border-0 border-gray-300 border-l-2 text-green-900 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
             >Log in</a
           >
           <a
             href="#"
-            class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+            class="px-4 py-2 bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
             >Create Account</a
           >
         </div>
-
-        <!-- Mobile menu button -->
+        <!-- Mobile Menu Button -->
         <button
-          class="md:hidden flex items-center text-gray-700"
           id="menu-toggle"
+          class="md:hidden text-gray-700 dark:text-gray-300"
+          aria-label="Toggle mobile menu"
         >
           <svg
             class="w-6 h-6"
@@ -63,29 +81,43 @@
           </svg>
         </button>
       </div>
-
-      <!-- Mobile menu -->
-      <div class="md:hidden px-4 pb-4 hidden" id="mobile-menu">
-        <nav class="space-y-2">
-          <a href="#" class="block text-green-900 font-semibold">Home</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900"
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 justify-between space-y-3 transition-all duration-300"
+      >
+        <nav class="flex flex-col space-y-2">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
             >Explore</a
           >
-          <a href="#" class="block text-gray-600 hover:text-gray-900">Blog</a>
-          <a href="#" class="block text-gray-600 hover:text-gray-900">About</a>
-          <div class="mt-4 space-y-2">
-            <a
-              href="#"
-              class="block px-4 py-2 border border-gray-300 rounded-full text-green-900 text-center hover:bg-gray-100 transition"
-              >Log in</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition"
-              >Create Account</a
-            >
-          </div>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >About</a
+          >
         </nav>
+        <div class="mt-4 space-y-2">
+          <a
+            href="#"
+            class="block px-4 py-2 border border-gray-300 rounded-[5px] text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-[5px] text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Create Account</a
+          >
+        </div>
       </div>
     </header>
     <!-- end header -->
@@ -577,5 +609,5 @@
     playContainer.style.display = "none"; // hide play button
   });
 </script>
-  </body>
+  </bodyv>
 </html>
