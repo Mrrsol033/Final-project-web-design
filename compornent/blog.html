@@ -9,25 +9,27 @@
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
     <!-- Header -->
-    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 ">
-      <div class="container max-w-screen-xl mx-auto flex items-center justify-between  sm:justify-around p-4 md:p-2.5">
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3" aria-label="Camp Homepage">
-          <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
-          <span class="text-2xl font-bold dark:text-white">Camp</span>
-        </a>
+        <div class="flex items-center">
+          <a href="#" class="flex items-center space-x-3" aria-label="Camp Homepage">
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8 items-center" aria-label="Main Navigation">
           <a href="#" class="text-green-900 font-semibold dark:text-green-300 hover:underline">Home</a>
-          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Explorers</a>
-          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Blogs</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Explorer</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Blog</a>
           <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">About</a>
         </nav>
 
         <!-- Desktop Actions -->
         <div class="hidden md:flex items-center space-x-6">
-          <!-- Dark Mode Toggle -->
+          <!-- Dark Mode Toggle for Desktop -->
           <button id="dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -39,13 +41,23 @@
           <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">Book Now</a>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden text-gray-700 dark:text-gray-300" aria-label="Toggle mobile menu" aria-expanded="false">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button id="mobile-dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="mobile-sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              <path id="mobile-moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle mobile menu" aria-expanded="false">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Menu -->
@@ -102,7 +114,7 @@
               </p>
               <p class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-600 hover:underline font-medium dark:text-blue-400">
                 Explore Now
-                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 00" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </p>
@@ -233,13 +245,13 @@
 
     <!-- Footer -->
     <footer class="bg-gray-700 text-white">
-      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <!-- Brand -->
           <div>
             <div class="flex items-center space-x-3">
               <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
-              <span class="text-xl font-bold">Camp Experiences</span>
+              <span class="text-xl font-bold">Camp </span>
             </div>
             <p class="mt-4 text-sm text-gray-300">
               Camp Experiences, the world’s leading travel platform, helps millions discover unforgettable destinations, hotels, and adventures.
@@ -301,7 +313,6 @@
     </footer>
 
     <!-- JavaScript -->
-     <script src="../node_modules/preline/dist/scrollspy.js"></script>
     <script>
       // Mobile Menu Toggle
       const menuToggle = document.getElementById('menu-toggle');
@@ -320,21 +331,31 @@
 
       // Dark Mode Toggle
       const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const mobileDarkModeToggle = document.getElementById('mobile-dark-mode-toggle');
       const sunIcon = document.getElementById('sun-icon');
       const moonIcon = document.getElementById('moon-icon');
+      const mobileSunIcon = document.getElementById('mobile-sun-icon');
+      const mobileMoonIcon = document.getElementById('mobile-moon-icon');
 
-      darkModeToggle.addEventListener('click', () => {
+      const toggleDarkMode = () => {
         document.documentElement.classList.toggle('dark');
         sunIcon.classList.toggle('hidden');
         moonIcon.classList.toggle('hidden');
+        mobileSunIcon.classList.toggle('hidden');
+        mobileMoonIcon.classList.toggle('hidden');
         localStorage.setItem('darkMode', document.documentElement.classList.contains('dark') ? 'enabled' : 'disabled');
-      });
+      };
+
+      darkModeToggle.addEventListener('click', toggleDarkMode);
+      mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
 
       // Load Dark Mode Preference
       if (localStorage.getItem('darkMode') === 'enabled') {
         document.documentElement.classList.add('dark');
         sunIcon.classList.add('hidden');
         moonIcon.classList.remove('hidden');
+        mobileSunIcon.classList.add('hidden');
+        mobileMoonIcon.classList.remove('hidden');
       }
     </script>
   </body>
