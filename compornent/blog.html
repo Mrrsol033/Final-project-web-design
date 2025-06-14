@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Unforgettable Travel Experiences</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center space-x-3" aria-label="Camp Homepage">
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 items-center" aria-label="Main Navigation">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300 hover:underline">Home</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Explorer</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Blog</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">About</a>
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Dark Mode Toggle for Desktop -->
+          <button id="dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <!-- Auth Buttons -->
+          <a href="#" class="px-4 py-2 text-green-900 border-l-2 border-gray-300  hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700">Log in</a>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">Book Now</a>
+        </div>
+
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button id="mobile-dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="mobile-sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              <path id="mobile-moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle mobile menu" aria-expanded="false">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300" aria-hidden="true">
+        <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300 hover:underline">Home</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Destinations</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Hotels</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Experiences</a>
+        </nav>
+        <div class="space-y-3">
+          <a href="#" class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700">Log in</a>
+          <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">Book Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-3xl text-center mx-auto">
+          <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl text-gray-800 dark:text-white">
+            Discover Unforgettable <span class="text-blue-600">Travel Experiences</span>
+          </h1>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            Book your dream hotels and explore unique destinations with ease.
+          </p>
+        </div>
+        <div class="mt-12 relative max-w-5xl mx-auto">
+          <div class="w-full h-96 sm:h-[30rem] bg-[url('../img/unnamed.png')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
+          <div class="absolute bottom-12 -left-20 -z-10 w-48 h-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-gray-900">
+            <div class="bg-white w-48 h-48 rounded-lg dark:bg-gray-900"></div>
+          </div>
+          <div class="absolute -top-12 -right-20 -z-10 w-48 h-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
+            <div class="bg-white w-48 h-48 rounded-full dark:bg-gray-900"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 mx-auto">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-y-16">
+        <!-- Card 1 -->
+        <a class="group block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Pub Street">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+              <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full object-cover rounded-xl" src="../img/pubstreet.jpg" alt="Pub Street nightlife" />
+            </div>
+            <div class="grow">
+              <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200 dark:group-hover:text-gray-400">Pub Street Experience</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Immerse yourself in vibrant nightlife, savor diverse cuisine, and enjoy live music in the heart of Siem Reap’s bustling Pub Street.
+              </p>
+              <p class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-600 hover:underline font-medium dark:text-blue-400">
+                Explore Now
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 00" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- Card 2 -->
+        <a class="group block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Comfortable Rooms">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+              <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full object-cover rounded-xl" src="../img/House-River-Park.png" alt="Comfortable hotel room" />
+            </div>
+            <div class="grow">
+              <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200 dark:group-hover:text-gray-400">Luxury Hotel Rooms</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Relax in spacious, modern rooms with plush bedding, elegant decor, and serene ambiance for the ultimate hotel experience.
+              </p>
+              <p class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-600 hover:underline font-medium dark:text-blue-400">
+                Book Now
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- Card 3 -->
+        <a class="group block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Koh Rong">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+              <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full object-cover rounded-xl" src="../img/imagesea.png" alt="Koh Rong beach" />
+            </div>
+            <div class="grow">
+              <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200 dark:group-hover:text-gray-400">Koh Rong Paradise</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Discover crystal-clear waters, white sandy beaches, and vibrant marine life on Koh Rong, a tropical island escape.
+              </p>
+              <p class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-600 hover:underline font-medium dark:text-blue-400">
+                Explore Now
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </p>
+            </div>
+          </div>
+        </a>
+        <!-- Card 4 -->
+        <a class="group block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Sihanoukville">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+            <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+              <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full object-cover rounded-xl" src="../img/sihaknuek.jpg" alt="Sihanoukville beach" />
+            </div>
+            <div class="grow">
+              <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200 dark:group-hover:text-gray-400">Sihanoukville Adventure</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                Experience Sihanoukville’s stunning beaches, vibrant nightlife, and unique coastal charm for an unforgettable getaway.
+              </p>
+              <p class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-600 hover:underline font-medium dark:text-blue-400">
+                Explore Now
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Destinations and Hotels Section -->
+    <section class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white">Discover Top Destinations & Hotels</h2>
+      <p class="mt-4 text-center text-gray-600 dark:text-gray-300">
+        From iconic landmarks to luxurious hotel rooms, explore the best places and accommodations for your next adventure.
+      </p>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 mx-auto">
+      <div class="grid lg:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <a class="group relative block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Angkor Wat">
+          <div class="relative rounded-xl overflow-hidden w-full h-96 before:absolute before:inset-0 before:z-10 before:bg-gradient-to-t before:from-gray-900/70">
+            <img class="w-full h-full absolute top-0 left-0 object-cover" src="../img/angkor-wat.png" alt="Angkor Wat temple" />
+          </div>
+          <div class="absolute bottom-0 inset-x-0 z-20 p-4 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-semibold text-white group-hover:text-white/80">Angkor Wat Experience</h3>
+            <p class="mt-2 text-white/80">
+              Explore the majestic ancient temple complex of Angkor Wat, a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </a>
+        <!-- Card 2 -->
+        <a class="group relative block rounded-xl overflow-hidden focus:outline-none" href="#" aria-label="Read more about Phnom Penh">
+          <div class="relative rounded-xl overflow-hidden w-full h-96 before:absolute before:inset-0 before:z-10 before:bg-gradient-to-t before:from-gray-900/70">
+            <img class="w-full h-full absolute top-0 left-0 object-cover" src="../img/phnom-penh.jpg" alt="Phnom Penh cityscape" />
+          </div>
+          <div class="absolute bottom-0 inset-x-0 z-20 p-4 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-semibold text-white group-hover:text-white/80">Phnom Penh Adventure</h3>
+            <p class="mt-2 text-white/80">
+              Discover history, culture, and vibrant riverside experiences in Cambodia’s capital, Phnom Penh.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 mx-auto">
+      <div class="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 justify-around items-center text-center">
+        <div class="flex flex-col items-center">
+          <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Booking Accuracy</h4>
+          <p class="mt-3 text-5xl font-bold text-blue-600">99.95%</p>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">in seamless hotel reservations</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Partner Hotels</h4>
+          <p class="mt-3 text-5xl font-bold text-blue-600">2,000+</p>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">offering unique stays</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Happy Travelers</h4>
+          <p class="mt-3 text-5xl font-bold text-blue-600">85%</p>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">loved their experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center space-x-3">
+              <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
+              <span class="text-xl font-bold">Camp </span>
+            </div>
+            <p class="mt-4 text-sm text-gray-300">
+              Camp Experiences, the world’s leading travel platform, helps millions discover unforgettable destinations, hotels, and adventures.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <!-- Links 1 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Our Story</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Press</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+            </ul>
+          </div>
+          <!-- Links 2 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Explore Destinations</a></li>
+              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
+              <li><a href="#" class="hover:text-white">Unique Experiences</a></li>
+              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
+              <li><a href="#" class="hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <form class="flex items-center border border-gray-500 rounded-full overflow-hidden" aria-label="Newsletter Signup">
+              <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none" required />
+              <button type="submit" class="bg-gray-700 px-4 py-2" aria-label="Submit newsletter signup">
+                <svg class="h-5 w-5 text-blue-400 hover:text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              Operated by Camp Experiences Travel Pte. Ltd. (reg. no. 012345987).
+            </p>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center">
+          <span>© Camp Experiences 2025</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpen = document.getElementById('menu-open');
+      const menuClose = document.getElementById('menu-close');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuOpen.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+        const isExpanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
+        menuToggle.setAttribute('aria-expanded', isExpanded);
+        mobileMenu.setAttribute('aria-hidden', isExpanded === 'true' ? 'true' : 'false');
+      });
+
+      // Dark Mode Toggle
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const mobileDarkModeToggle = document.getElementById('mobile-dark-mode-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+      const mobileSunIcon = document.getElementById('mobile-sun-icon');
+      const mobileMoonIcon = document.getElementById('mobile-moon-icon');
+
+      const toggleDarkMode = () => {
+        document.documentElement.classList.toggle('dark');
+        sunIcon.classList.toggle('hidden');
+        moonIcon.classList.toggle('hidden');
+        mobileSunIcon.classList.toggle('hidden');
+        mobileMoonIcon.classList.toggle('hidden');
+        localStorage.setItem('darkMode', document.documentElement.classList.contains('dark') ? 'enabled' : 'disabled');
+      };
+
+      darkModeToggle.addEventListener('click', toggleDarkMode);
+      mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
+
+      // Load Dark Mode Preference
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        mobileSunIcon.classList.add('hidden');
+        mobileMoonIcon.classList.remove('hidden');
+      }
+    </script>
+  </body>
+</html>

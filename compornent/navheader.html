@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camp Navigation</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="flex items-center space-x-3"
+            aria-label="Camp Homepage"
+          >
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden md:flex space-x-8 items-center"
+          aria-label="Main Navigation"
+        >
+          <a
+            href="./index.html"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href="../"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Explorer</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >About</a
+          >
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Dark Mode Toggle for Desktop -->
+          <button
+            id="dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Auth Buttons -->
+          <a
+            href="#"
+            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button
+            id="mobile-dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobile-sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="mobile-moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="menu-open"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                id="menu-close"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
+          <a
+            href="#"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Destinations</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Hotels</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Experiences</a
+          >
+        </nav>
+        <div class="space-y-3">
+          <a
+            href="#"
+            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Preline JavaScript -->
+     <script src="../javascript/script.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <!-- Mobile Menu Script -->
+    <!-- <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*  Preline UI */
+ /* @source "./node_modules/preline/dist.js"; */
