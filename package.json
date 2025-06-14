@@ -1,25 +1,17 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.10",
+    "@tailwindcss/cli": "^4.1.8",
     "preline": "^3.1.0",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.8"
   },
   "name": "web-final-project",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mrrsol033/Final-project-web-design.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mrrsol033/Final-project-web-design/issues"
-  },
-  "homepage": "https://github.com/Mrrsol033/Final-project-web-design#readme",
   "description": ""
 }
