@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-gray-200">
+    <!-- header -->
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="flex items-center space-x-3"
+            aria-label="Camp Homepage"
+          >
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden md:flex space-x-8 items-center"
+          aria-label="Main Navigation"
+        >
+          <a
+            href="./index.html"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href="../"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Explorer</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >About</a
+          >
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Dark Mode Toggle for Desktop -->
+          <button
+            id="dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Auth Buttons -->
+          <a
+            href="#"
+            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button
+            id="mobile-dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobile-sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="mobile-moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="menu-open"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                id="menu-close"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
+          <a
+            href="#"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Destinations</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Hotels</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Experiences</a
+          >
+        </nav>
+        <div class="space-y-3">
+          <a
+            href="#"
+            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <!-- <main class="relative h-screen flex items-center justify-center">
+      <div
+        class="absolute w-[95%] m-auto mt-[1rem] rounded-[1rem] inset-0 bg-cover bg-center"
+        style="
+          background-image: url('https://th.bing.com/th/id/R.35125805b4f191f01d25e0ba394bf896?rik=3u5IhWQMPwvpag&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2f3%2ff%2f102882.jpg&ehk=gVaR7uxvexaOLyIWDS%2fWd4cCHSinKzscaxaFry9mF0w%3d&risl=&pid=ImgRaw&r=0');
+        "
+      ></div>
+      <div class="relative text-center text-white p-6 rounded-lg">
+        <h1 class="text-[3rem] font-bold">Your Perfect Stay at</h1>
+        <h1 class="text-[3rem] font-bold">The Best Price</h1>
+        <p class="mt-2 text-[1.2rem]">
+          Discover the world's most exclusive accommodations, curated for the
+          discerning traveler.
+        </p>
+        <div class="mt-4 space-x-2">
+          <button class="bg-white text-black px-4 py-2 rounded-md">
+            Explore Properties
+          </button>
+           <button class="bg-white text-black px-4 py-2 rounded-md">
+            Explore Properties
+          </button>
+        </div>
+      </div>
+    </main> -->
+    <!-- main -->
+
+    <!-- section-2 -->
+
+    <div
+      class="relative bg-white flex flex-col justify-center py-[1.5rem] shadow-lg mt-[5rem] m-auto max-sm:w-[95%] sm:w-[80%] lg:w-[60%]"
+    >
+      <h3 class="m-auto max-sm:text-3xl text-4xl font-bold">
+        Find Your Perfect Stay
+      </h3>
+      <p class="m-auto mt-2 max-sm:text-1xl text-lg mb-[-1.5rem]">
+        Search through our curated collection.
+      </p>
+
+      <div
+        class="relative h-[30rem] m-auto flex items-center justify-center mt-[3rem] max-sm:h-[40rem] max-sm:w-[95%] sm:w-[98%] sm:h-[35rem] lg:w-[100%] lg:h-[45vh]"
+      >
+        <!-- img-bg -->
+        <div
+          class="absolute m-auto inset-0 bg-cover bg-center max-sm:w-[95%] sm:w-[95%] lg:w-[95%]"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2020/03/27/03/57/sunset-4972420_1280.jpg');
+          "
+        ></div>
+        <!-- img-bg -->
+
+        <!-- text in img -->
+        <div
+          class="absolute text-center top-[2.5rem] text-white p-6 rounded-lg sm:top-[6rem] lg:top-[2rem]"
+        >
+          <h1 class="text-4xl font-bold">Find The Perfect Hotel</h1>
+          <p class="mt-2 text-lg">
+            Discover the world's most exclusive accommodations
+          </p>
+        </div>
+        <!-- text in img -->
+
+        <!-- white board -->
+        <div
+          class="absolute bg-white p-6 rounded-lg max-sm:w-[85%] max-sm:bottom-[-30%] sm:w-[80%] sm:bottom-[-35%] lg:w-[80%] lg:h-[20rem] lg:bottom-[-40%]"
+        >
+          <div class="flex flex-wrap justify-between mb-4 space-x-2">
+            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1">
+              All Stays
+            </button>
+            <button class="py-2 px-4 flex-1">Flight</button>
+            <button class="py-2 px-4 flex-1">Car</button>
+            <button class="py-2 px-4 flex-1">Cruises</button>
+            <button class="py-2 px-4 flex-1">Packages</button>
+          </div>
+          <div class="mb-4">
+            <label for="location" class="block text-gray-700">Location</label>
+            <input
+              type="text"
+              id="location"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              value="Phnom Penh, Cambodia"
+            />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="checkin" class="block text-gray-700">Check in</label>
+              <input
+                type="date"
+                id="checkin"
+                class="w-full p-2 border border-gray-300 rounded-lg"
+                value="2025-09-05"
+              />
+            </div>
+            <div>
+              <label for="checkout" class="block text-gray-700"
+                >Check out</label
+              >
+              <input
+                type="date"
+                id="checkout"
+                class="w-full p-2 border border-gray-300 rounded-lg"
+                value="2025-09-07"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 items-center">
+            <div class="mb-4">
+              <label for="guests" class="block text-gray-700">Guest</label>
+              <input
+                type="number"
+                id="guests"
+                class="w-full p-2 border border-gray-300 rounded-lg"
+                value="2"
+              />
+            </div>
+            <button
+              class="h-fit py-[0.5rem] bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            >
+              Search now
+            </button>
+          </div>
+        </div>
+        <!-- end board -->
+      </div>
+    </div>
+
+    <!-- section-2 -->
+
+    <!-- section-3 -->
+    <div
+      class="flex flex-col items-center mt-[15rem] text-gray-800 p-6 max-w-[90%] mx-auto max-sm:max-w-[98%] sm:max-w-[90%]"
+    >
+      <h2 class="text-[2.25rem] font-bold mb-2">Curated Collection</h2>
+      <p class="mb-6">
+        Exceptional Destinations — each destination in our portfolio is
+        carefully selected for its unique character, exceptional service, and
+        unforgettable experiences.
+      </p>
+
+      <div
+        class="grid grid-cols-1 h-[20rem] max-sm:w-[100%] max-sm:h-fit sm:gap-y-[21rem] sm:grid-cols-4 md:grid-rows-2 md:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
+        <div
+          class="h-full max-sm:h-[20rem] sm:h-[20rem] md:h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+        >
+          <img
+            class="h-full transition-transform duration-300 group-hover:scale-110"
+            src="https://luxcity.com/storage/photos/7/blogs/hotel-in-kompong-som-5.jpg"
+            alt="Phi Phi Island"
+            class="w-full h-52 object-cover transition-transform group-hover:scale-110"
+            alt="Phi Phi Island"
+            class="w-full h-72 object-cover transition-transform group-hover:scale-110"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Kompong som province</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-full max-sm:h-[20rem] sm:h-[20rem] md:h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+        >
+          <img
+            class="h-full transition-transform duration-300 group-hover:scale-110"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/96/a0/9c/glorious-hotel-spa.jpg?w=700&h=-1&s=1"
+            alt="Phi Phi Island"
+            class="w-full h-52 object-cover transition-transform group-hover:scale-110"
+            alt="Phi Phi Island"
+            class="w-full h-72 object-cover transition-transform group-hover:scale-110"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Seimreap province</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-full max-sm:h-[20rem] sm:h-[20rem] md:h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+        >
+          <img
+            class="h-full transition-transform duration-300 group-hover:scale-110"
+            src="https://luxcity.com/img/post/202/resort-in-kompong-som-1.jpg"
+            alt="Phi Phi Island"
+            class="w-full h-52 object-cover transition-transform group-hover:scale-110"
+            alt="Phi Phi Island"
+            class="w-full h-72 object-cover transition-transform group-hover:scale-110"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Koh Rong island</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-full max-sm:h-[20rem] sm:h-[20rem] md:h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+        >
+          <img
+            class="h-full transition-transform duration-300 group-hover:scale-110"
+            src="https://images.squarespace-cdn.com/content/v1/6413d08a0c00736d22e7b109/2fa97307-c62d-43f1-af62-c28bf2401d2c/DSC08888-Edit.jpg?format=2500w"
+            alt="Phi Phi Island"
+            class="w-full h-52 object-cover transition-transform group-hover:scale-110"
+            alt="Phi Phi Island"
+            class="w-full h-72 object-cover transition-transform group-hover:scale-110"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Kompot</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <!-- <button
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition md:mt-[21rem] lg:mt-0"
+        >
+          Discover All Destinations
+        </button> -->
+         <button
+          class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900 transition md:mt-[21rem] lg:mt-0"
+        >
+          Discover All Destinations
+        </button>
+      </div>
+    </div>
+    <!-- section-3 -->
+
+    <!-- section-4 -->
+    <div class="bg-white py-10 px-4 w-[100%] mx-auto">
+      <h2 class="text-[2.25rem] font-bold text-center mb-4">
+        Award-Winning Properties
+      </h2>
+      <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        Handpicked luxury accommodations recognized for their exceptional
+        service, distinctive design, and guest experiences.
+      </p>
+
+      <div
+        class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-[80%]"
+      >
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden w-full lg:h-fit"
+        >
+          <img
+            class=" w-[35rem] h-[20rem] object-cover "
+            src="https://images.luxuryhotel.guru/hotelimage.php?p_id=3346788&code=6279689ef1a28a806afcd61c6ed7aa7b&webpage=luxuryhotel.guru&link=https:%2F%2Fsubdomain.cloudimg.io%2Fcrop%2F1024x768%2Fq70.fcontrast10.fbright0.fsharp5%2Fhttps:%2F%2Fq-xx.bstatic.com%2Fxdata%2Fimages%2Fhotel%2Fmax1536%2F164420449.jpg%3Fk%3Dad00170daff5e8920d99c8b124c8e5ae4454925ed6c4bc9df95dfa286be81cd0%26o%3D"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Phnom Penh Hotel</h3>
+            <p class="text-sm text-gray-500">Phnom Penh City</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $59.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem]  h-[20rem] object-cover "
+            src="https://pix10.agoda.net/hotelImages/445/44559/44559_15081316300034221715.jpg?s=1024x768"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Sokha Beach Hotel</h3>
+            <p class="text-sm text-gray-500">Sihanoukville, Preah Sihanouk</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $79.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://th.bing.com/th/id/OIP.MjPPQTxc12D8kkaJlw_-VAHaE_?rs=1&pid=ImgDetMain"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold"> Angkor Village Hotel </h3>
+            <p class="text-sm text-gray-500">Siem Reap</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $49.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://th.bing.com/th/id/R.0ee9e71bdc60a79f4a7019f2bfc95e99?rik=MYmvEbLDiUci0w&pid=ImgRaw&r=0"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">- Battambang Resort </h3>
+            <p class="text-sm text-gray-500"> Battambang </p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $39.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://amber-kampot.com/wp-content/uploads/2020/06/lagoon-scaled.jpg"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold"> Kampot Riverside Hotel  Hotel</h3>
+            <p class="text-sm text-gray-500">Kampot</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $59.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://th.bing.com/th/id/OIP.wWgwBTUNVd5xhOVQx6XIogHaE8?rs=1&pid=ImgDetMain"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Terres Rouges Lodge</h3>
+            <p class="text-sm text-gray-500">Banlung, Ratanakiri</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $39.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://th.bing.com/th/id/R.6b701fbfcfcf4b7fd89f2e71d7a8e8ba?rik=oTWkNcynzkH6OA&riu=http%3a%2f%2fcdn.designrulz.com%2fwp-content%2fuploads%2f2015%2f01%2fangkor-village-resort-designrulz-5.jpg&ehk=Tt0cl1IALrOyOHT6D0Ww85Q8wqK1WK3f0G3xGjP99V0%3d&risl=&pid=ImgRaw&r=0"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold"> Rajabori Villas Resort </h3>
+            <p class="text-sm text-gray-500">Koh Trong, Kratie</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $49.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://th.bing.com/th/id/R.7950527020f650b9627a671329f9e25f?rik=sVLbISF5PAgAEQ&pid=ImgRaw&r=0"
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Samanea Beach Resort</h3>
+            <p class="text-sm text-gray-500">Kep</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $69.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- Start Card -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden lg:h-fit"
+        >
+          <img
+            class="w-[35rem] h-[20rem] object-cover "
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/82378251.jpg?k=dee60ffea0b900019cf0d3bac82146e5f17024bab4b2705a65e483b471c2a521&o="
+            alt="Fuvahmalah Hotel"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Kampot resort</h3>
+            <p class="text-sm text-gray-500">amber-kampot</p>
+            <p class="text-sm text-gray-400 mt-1">1234 reviews</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium">From $79.99/night</span>
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above card 8 more times with different content -->
+        <!-- ... -->
+      </div>
+      <div class="w-full mt-10 flex justify-center">
+        <button
+          class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900 transition"
+        >
+          View Complete Collection
+        </button>
+      </div>
+    </div>
+    <!-- section-4 -->
+
+    <!-- section-5 -->
+    <div class="py-[8rem] px-4 w-full mx-auto">
+      <!-- Wrapper for responsive layout -->
+      <div
+        class="flex flex-col w-[70%] mx-auto max-sm:w-full lg:flex-row lg:justify-center lg:items-center gap-[5rem] items-start"
+      >
+        <!-- Left side: Black media block -->
+        <div
+          class="w-[20rem] mx-auto bg-black h-auto sm:h-full sm:w-[25rem] lg:h-full lg:w-[35rem] rounded-[2rem]"
+        >
+          <!-- Replace this div with an image/video as needed -->
+          <img
+            class="w-full rounded-[2rem]"
+            src="https://th.bing.com/th/id/OIP.WLC5HNUL574LIuQ9ASviCgHaE8?rs=1&pid=ImgDetMain"
+            alt=""
+          />
+        </div>
+
+        <!-- Right side: Service content -->
+        <div class="w-full lg:w-1/2">
+          <!-- <h2 class="text-xl font-bold text-gray-900 mb-2">Signature Services</h2> -->
+          <h3 class="text-[2.25rem]  font-bold text-gray-800 mb-4">
+            Elevated Travel Experience
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Our commitment to excellence ensures that your travel journey is
+            tailored, seamless, and unforgettable through every step.
+          </p>
+
+          <!-- Service 1 -->
+          <div class="flex items-start gap-4 mb-6">
+            <div class="bg-black text-white p-3 rounded-full">
+              <!-- Heroicon: Check Circle -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4m5 2a9 9 0 11-18 0a9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Curated Excellence
+              </h4>
+              <p class="text-sm text-gray-600">
+                Every property in our collection is personally vetted for
+                exceptional quality, unique character, and outstanding service.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="flex items-start gap-4 mb-6">
+            <div class="bg-black text-white p-3 rounded-full">
+              <!-- Heroicon: User -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A10 10 0 1117.804 5.121a10 10 0 01-12.683 12.683z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Personal Concierge
+              </h4>
+              <p class="text-sm text-gray-600">
+                24/7 dedicated concierge service to arrange exclusive
+                experiences, reservations, and personalized recommendations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="flex items-start gap-4">
+            <div class="bg-black text-white p-3 rounded-full">
+              <!-- Heroicon: Key (substitute with your preferred icon) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 10l4.553-4.553a2 2 0 112.828 2.828L17.828 13H16v2h-2v2h-2v2h-2v2h-2v2H8v2H6v2H4v2"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900">
+                Exclusive Access
+              </h4>
+              <p class="text-sm text-gray-600">
+                Enjoy members-only amenities, private events, and insider
+                experiences not available to the general public.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section-5 -->
+
+    <!-- section-6 -->
+    <div class="bg-[#1b1b1b] w-full py-[5rem] mx-auto px-6">
+      <h2 class="text-3xl text-white font-bold text-center mb-6">
+        Extraordinary Experiences
+      </h2>
+      <p class="text-center text-white mb-8">
+        Discover why discerning travelers choose us for their most memorable
+        journeys.
+      </p>
+
+      <div
+        class="flex flex-col lg:w-[70%] mx-auto sm:flex-row sm:space-x-4 sm:space-y-0 space-y-6"
+      >
+        <div class="bg-[#080808] border-[1px] border-gray-600 text-white p-6 rounded-lg shadow-md flex-1">
+          <div
+            class="flex sm:gap-[0.2rem] md:gap-[1rem] gap-[2rem] items-center"
+          >
+            <img
+              class="m-0 sm:w-[4rem] sm:h-[4rem] w-[6rem] h-[6rem] rounded-[10rem]"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Alex Jon"
+              class="w-20 h-20 rounded-full mx-auto mb-4"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-center">Alex Jon</h3>
+              <p class="text-sm text-center">Dec 01, 2023</p>
+            </div>
+          </div>
+
+          <div class="flex mt-[1.5rem] text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4">
+            Great hotel, great location, great service and I enjoyed my stay...
+          </p>
+        </div>
+
+        <div class="bg-[#080808]  border-[1px] border-gray-600 text-white p-6 rounded-lg shadow-md flex-1">
+          <div
+            class="flex sm:gap-[0.2rem] md:gap-[1rem] gap-[2rem] items-center"
+          >
+            <img
+              class="m-0 sm:w-[4rem] sm:h-[4rem] w-[6rem] h-[6rem] rounded-[10rem]"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Alex Jon"
+              class="w-20 h-20 rounded-full mx-auto mb-4"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-center">Alex Jon</h3>
+              <p class="text-sm text-center">Dec 01, 2023</p>
+            </div>
+          </div>
+
+          <div class="flex mt-[1.5rem] text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4">
+            Great hotel, great location, great service and I enjoyed my stay...
+          </p>
+        </div>
+
+        <div class="bg-[#080808]  border-[1px] border-gray-600  text-white p-6 rounded-lg shadow-md flex-1">
+          <div
+            class="flex sm:gap-[0.2rem] md:gap-[1rem] gap-[2rem] items-center"
+          >
+            <img
+              class="m-0 sm:w-[4rem] sm:h-[4rem] w-[6rem] h-[6rem] rounded-[10rem]"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Alex Jon"
+              class="w-20 h-20 rounded-full mx-auto mb-4"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-center">Alex Jon</h3>
+              <p class="text-sm text-center">Dec 01, 2023</p>
+            </div>
+          </div>
+
+          <div class="flex mt-[1.5rem] text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4">
+            Great hotel, great location, great service and I enjoyed my stay...
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section-6 -->
+
+    <!-- section-7 -->
+    <div class="w-[100%] h-[30rem] mt-[1rem] mb-[-2rem]  mx-auto px-6 max-sm:h-fit max-sm:mb-[3rem]  ">
+      <div
+        class="relative bg-cover bg-center rounded-lg overflow-hidden "
+        style="
+          background-image: url('https://th.bing.com/th/id/R.70432f95d1b978c8249857caac67b4e8?rik=qdOwA8q88dgkzQ&pid=ImgRaw&r=0');
+          height: 90%;
+        "
+      >
+        <div class="absolute inset-0 bg-opacity-40"></div>
+
+        <div
+          class="relative w-full h-full flex flex-col md:flex-row justify-evenly items-center p-8 space-y-6 md:space-y-0 md:space-x-6"
+        >
+          <!-- Left Section -->
+          <div class="bg-white  p-6 rounded-lg shadow-md max-w-md">
+            <h2 class="text-2xl font-bold text-gray-800">
+              New Year, New Adventures
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Save 15% or more when you book and stay before 1 April 2024.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+              >Find Early 2024 Deals</a
+            >
+          </div>
+
+          <!-- Right Section -->
+          <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Take Your Longest Holiday Yet
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Browse properties offering long-term stays, many at reduced
+              monthly rates.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
+              >Find a Stay</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section-7 -->
+
+    <!-- footer -->
+    <footer class="bg-gray-700 text-white">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center space-x-3">
+              <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
+              <span class="text-xl font-bold">Camp </span>
+            </div>
+            <p class="mt-4 text-sm text-gray-300">
+              Camp Experiences, the world’s leading travel platform, helps
+              millions discover unforgettable destinations, hotels, and
+              adventures.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Links 1 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Our Story</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Press</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+            </ul>
+          </div>
+          <!-- Links 2 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#" class="hover:text-white">Explore Destinations</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
+              <li>
+                <a href="#" class="hover:text-white">Unique Experiences</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
+              <li><a href="#" class="hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <form
+              class="flex items-center border border-gray-500 rounded-full overflow-hidden"
+              aria-label="Newsletter Signup"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-gray-700 px-4 py-2"
+                aria-label="Submit newsletter signup"
+              >
+                <svg
+                  class="h-5 w-5 text-blue-400 hover:text-blue-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              Operated by Camp Experiences Travel Pte. Ltd. (reg. no.
+              012345987).
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
+        >
+          <span>© Camp Experiences 2025</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
