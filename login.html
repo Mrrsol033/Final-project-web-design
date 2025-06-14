@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+  <div class="bg-white shadow-xl rounded-2xl w-full max-w-md p-8 space-y-6">
+    <h2 class="text-2xl font-bold text-yellow-500 text-center">Welcome Back</h2>
+    <p class="text-center text-gray-500 text-sm">Login to your hotel account</p>
+
+    <form class="space-y-4">
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" placeholder="you@example.com"
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" placeholder="••••••••"
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+      </div>
+
+      <!-- Remember me & Forgot -->
+      <div class="flex items-center justify-between text-sm text-gray-600">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2 rounded border-gray-300 text-yellow-500 focus:ring-yellow-400">
+          Remember me
+        </label>
+        <a href="#" class="text-yellow-500 hover:underline">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <div>
+        <button type="submit"
+          class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition duration-200">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <!-- Signup Link -->
+    <p class="text-center text-sm text-gray-500">
+      Don't have an account?
+      <a href="#" class="text-yellow-500 hover:underline">Sign up</a>
+    </p>
+  </div>
+</div>
+
+  </body>
+</html>
