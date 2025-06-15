@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp</title>
     <link rel="stylesheet" href="./src/output.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
     <!-- header  -->
@@ -19,8 +20,8 @@
             class="flex items-center space-x-3"
             aria-label="Camp Homepage"
           >
-            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
-            <span class="text-2xl font-bold dark:text-white">Camp</span>
+            <img src="./img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp Booking</span>
           </a>
         </div>
 
@@ -163,7 +164,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        class="hidden md:hidden sticky top-0 z-50 px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
         aria-hidden="true"
       >
         <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
@@ -209,7 +210,12 @@
      <!-- footer -->
 
      <!-- end footer -->
-    <script src="./node_modules/preline/dist/preline.js"></script>
-    <script src="./javascript/script.js"></script>
+        <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="../javascript/script02.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

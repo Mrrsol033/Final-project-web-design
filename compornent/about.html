@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="../src/output.css" />
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
   </head>
   <body
-    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300"
+    class="bg-white text-gray-900 dark:bg-gray-900 overflow-x-hidden dark:text-white transition-colors duration-300"
   >
     <!-- header  -->
     <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
@@ -23,7 +24,7 @@
             aria-label="Camp Homepage"
           >
             <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
-            <span class="text-2xl font-bold dark:text-white">Camp</span>
+            <span class="text-2xl font-bold dark:text-white">Camp Booking</span>
           </a>
         </div>
 
@@ -33,22 +34,22 @@
           aria-label="Main Navigation"
         >
           <a
-            href=""
+            href="../index.html"
             class="text-green-900 font-semibold dark:text-green-300 hover:underline"
             >Home</a
           >
           <a
-            href=""
+            href="./explorer.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
             >Explorer</a
           >
           <a
-            href="#"
+            href="./blog.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
             >Blog</a
           >
           <a
-            href="#"
+            href="./about.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
             >About</a
           >
@@ -88,12 +89,12 @@
           </button>
           <!-- Auth Buttons -->
           <a
-            href="#"
+            href="./login.html"
             class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
             >Log in</a
           >
           <a
-            href="#"
+            href="./booking.html"
             class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
             >Book Now</a
           >
@@ -171,34 +172,34 @@
       >
         <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
           <a
-            href="#"
+            href="../index.html"
             class="text-green-900 font-semibold dark:text-green-300 hover:underline"
             >Home</a
           >
           <a
-            href="#"
+            href="./explorer.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
-            >Destinations</a
+            >Explorer</a
           >
           <a
-            href="#"
+            href="./blog.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
-            >Hotels</a
+            >Blog</a
           >
           <a
-            href="#"
+            href="./about.html"
             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
-            >Experiences</a
+            >About</a
           >
         </nav>
         <div class="space-y-3">
           <a
-            href="#"
+            href="./login.html"
             class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
             >Log in</a
           >
           <a
-            href="#"
+            href="./booking.html"
             class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
             >Book Now</a
           >
@@ -207,12 +208,12 @@
     </header>
     <!-- end header -->
 
- <!-- About Section -->
-    <section class="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+    <!-- About Section -->
+    <section data-aos="zoom-in" class="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
       <!-- Container -->
       <div class="max-w-6xl mx-auto">
         <!-- Section Header -->
-        <div class="text-center mb-16">
+        <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
           <h2 class="text-3xl font-bold text-gray-800 dark:text-white">
             About Camp Booking
           </h2>
@@ -224,7 +225,7 @@
         <!-- Content Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <!-- Left: Text Content -->
-          <div>
+          <div data-aos="fade-right" data-aos-delay="200">
             <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">
               Our Mission
             </h3>
@@ -237,7 +238,7 @@
           </div>
 
           <!-- Right: Image -->
-          <div>
+          <div data-aos="fade-left" data-aos-delay="300">
             <img
               class="w-full rounded-xl shadow-md"
               src="../img/siem-reap-city.png"
@@ -249,7 +250,7 @@
     </section>
     <!-- Vision Section -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pt-3 lg:py-10 mx-auto">
-      <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
         <h2 class="text-3xl font-bold text-gray-900 dark:text-white lg:text-4xl">
           Our Vision
         </h2>
@@ -261,7 +262,7 @@
       <!-- Icon Grid -->
       <div class="space-y-10">
         <!-- Block 1 -->
-        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8" data-aos="fade-right" data-aos-delay="100">
           <svg
             class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +286,7 @@
         </div>
 
         <!-- Block 2 -->
-        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8" data-aos="fade-right" data-aos-delay="200">
           <svg
             class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +310,7 @@
         </div>
 
         <!-- Block 3 -->
-        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8" data-aos="fade-right" data-aos-delay="300">
           <svg
             class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -337,8 +338,8 @@
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Grid -->
       <div class="grid md:grid-cols-2 gap-12">
-        <div class="lg:w-3/4">
-          <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
+        <div class="lg:w-3/4" data-aos="fade-right">
+          <h2 class="text-3xl text-gray-she font-bold lg:text-4xl dark:text-white">
             Tools for Seamless Travel Planning
           </h2>
           <p class="mt-3 text-gray-800 dark:text-neutral-400">
@@ -371,7 +372,7 @@
 
         <div class="space-y-6 lg:space-y-10">
           <!-- Icon Block -->
-          <div class="flex gap-x-5 sm:gap-x-8">
+          <div class="flex gap-x-5 sm:gap-x-8" data-aos="fade-left" data-aos-delay="100">
             <!-- Icon -->
             <span
               class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
@@ -404,7 +405,7 @@
           <!-- End Icon Block -->
 
           <!-- Icon Block -->
-          <div class="flex gap-x-5 sm:gap-x-8">
+          <div class="flex gap-x-5 sm:gap-x-8" data-aos="fade-left" data-aos-delay="200">
             <!-- Icon -->
             <span
               class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
@@ -439,7 +440,7 @@
           <!-- End Icon Block -->
 
           <!-- Icon Block -->
-          <div class="flex gap-x-5 sm:gap-x-8">
+          <div class="flex gap-x-5 sm:gap-x-8" data-aos="fade-left" data-aos-delay="300">
             <!-- Icon -->
             <span
               class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
@@ -481,13 +482,14 @@
     <!-- Team and Lecturer -->
     <div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- LECTURER -->
-      <div class="text-center mb-16">
+      <div class="text-center mb-16" data-aos="zoom-in">
         <h2 class="text-2xl font-bold md:text-4xl mb-5 dark:text-white">
           Our Leader
         </h2>
         <div class="flex justify-center">
           <div
             class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-xl p-6 max-w-sm"
+            data-aos="flip-up" data-aos-delay="100"
           >
             <div class="flex flex-col items-center text-center">
               <div
@@ -514,14 +516,14 @@
       </div>
 
       <!-- TEAM -->
-      <div class="text-center mb-12">
+      <div class="text-center mb-12" data-aos="fade-up">
         <h2 class="text-2xl font-bold md:text-4xl dark:text-white">Our Team</h2>
         <p class="text-gray-600 dark:text-neutral-400">The people behind your travel adventures</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <!-- Team Member -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -552,7 +554,7 @@
         </div>
 
         <!-- Member 2 -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -583,7 +585,7 @@
         </div>
 
         <!-- Member 3 -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -614,7 +616,7 @@
         </div>
         
         <!-- Member 4 -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -645,7 +647,7 @@
         </div>
 
         <!-- Member 5 -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -676,7 +678,7 @@
         </div>
 
         <!-- Member 6 -->
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
           <div
             class="w-28 h-28 mx-auto border-4 border-blue-500 rounded-full overflow-hidden"
           >
@@ -718,6 +720,7 @@
         <a
           class="group flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
           href="#"
+          data-aos="fade-up" data-aos-delay="100"
         >
           <div class="p-4 md:p-5">
             <div class="flex gap-x-5">
@@ -756,6 +759,7 @@
         <a
           class="group flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
           href="#"
+          data-aos="fade-up" data-aos-delay="200"
         >
           <div class="p-4 md:p-5">
             <div class="flex gap-x-5">
@@ -793,6 +797,7 @@
         <a
           class="group flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
           href="#"
+          data-aos="fade-up" data-aos-delay="300"
         >
           <div class="p-4 md:p-5">
             <div class="flex gap-x-5">
@@ -835,11 +840,11 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-gray-700 text-white">
+    <footer class="bg-gray-700 text-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <!-- Brand -->
-          <div>
+          <div data-aos="fade-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
             <div class="flex items-center space-x-3">
               <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
               <span class="text-xl font-bold">Camp </span>
@@ -849,7 +854,7 @@
               millions discover unforgettable destinations, hotels, and
               adventures.
             </p>
-            <div class="flex mt-4 space-x-4">
+            <div class="flex mt-4 space-x-4" data-aos="zoom-in" data-aos-delay="200">
               <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
                 ><i class="fab fa-linkedin"></i
               ></a>
@@ -862,7 +867,7 @@
             </div>
           </div>
           <!-- Links 1 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
             <h3 class="text-lg font-semibold mb-4">About Us</h3>
             <ul class="space-y-2 text-sm text-gray-300">
               <li><a href="#" class="hover:text-white">Our Story</a></li>
@@ -873,7 +878,7 @@
             </ul>
           </div>
           <!-- Links 2 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom">
             <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
             <ul class="space-y-2 text-sm text-gray-300">
               <li>
@@ -888,11 +893,12 @@
             </ul>
           </div>
           <!-- Newsletter -->
-          <div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
             <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
             <form
               class="flex items-center border border-gray-500 rounded-full overflow-hidden"
               aria-label="Newsletter Signup"
+              data-aos="zoom-in" data-aos-delay="600"
             >
               <input
                 type="email"
@@ -929,6 +935,7 @@
         </div>
         <div
           class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
+          data-aos="fade-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom"
         >
           <span>© Camp Experiences 2025</span>
           <div class="flex space-x-4 mt-2 sm:mt-0">
@@ -942,7 +949,13 @@
     </footer>
     <!-- end footer -->
 
+    <!-- script  -->
     <script src="../node_modules/preline/dist/scrollspy.js"></script>
     <script src="../javascript/script02.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
