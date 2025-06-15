@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp</title>
-    <link rel="stylesheet" href="./src/output.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
- <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
-    <!-- header  -->
-    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body
+    class="bg-gray-100 text-gray-900 dark:bg-gray-900 overflow-x-hidden dark:text-white transition-colors duration-300"
+  >
+    <!-- header -->
+    <header
+      class="bg-white shadow-sm dark:bg-gray-800 sticky top-0 z-50"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
       <div
         class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
       >
         <!-- Logo -->
-        <div class="flex items-center">
+        <div
+          class="flex items-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <a
             href="#"
             class="flex items-center space-x-3"
@@ -29,35 +39,41 @@
         <nav
           class="hidden md:flex space-x-8 items-center"
           aria-label="Main Navigation"
+          data-aos="fade-left"
+          data-aos-duration="1000"
         >
           <a
             href="./index.html"
-            class="text-green-900 font-semibold  dark:text-green-300 hover:underline"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200 transition"
             >Home</a
           >
           <a
             href="./compornent/explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >Explorer</a
           >
           <a
             href="./compornent/blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >Blog</a
           >
           <a
             href="./compornent/about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >About</a
           >
         </nav>
 
         <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center space-x-6">
+        <div
+          class="hidden md:flex items-center space-x-6"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <!-- Dark Mode Toggle for Desktop -->
           <button
             id="dark-mode-toggle"
-            class="text-gray-700 dark:text-gray-300"
+            class="text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
             aria-label="Toggle dark mode"
           >
             <svg
@@ -87,22 +103,21 @@
           <!-- Auth Buttons -->
           <a
             href="./compornent/login.html"
-            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700 focus:ring-2 focus:ring-green-500"
             >Log in</a
           >
           <a
             href="./compornent/booking.html"
-            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800 focus:ring-2 focus:ring-blue-500"
             >Book Now</a
           >
         </div>
 
-        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <!-- Mobile Actions -->
         <div class="flex items-center space-x-3 md:hidden">
-          <!-- Dark Mode Toggle for Mobile -->
           <button
             id="mobile-dark-mode-toggle"
-            class="text-gray-700 dark:text-gray-300"
+            class="text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
             aria-label="Toggle dark mode"
           >
             <svg
@@ -129,7 +144,6 @@
               />
             </svg>
           </button>
-          <!-- Mobile Menu Button -->
           <button
             id="menu-toggle"
             class="text-gray-700 dark:text-gray-300"
@@ -164,58 +178,1105 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden sticky top-0 z-50 px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        class="hidden md:hidden sticky top-0 z-50 px-4 pb-4 space-y-4 bg-white dark:bg-gray-800 transition-all duration-300"
         aria-hidden="true"
+        data-aos="fade-up"
+        data-aos-duration="800"
       >
         <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
           <a
             href="./index.html"
-            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200"
             >Home</a
           >
           <a
             href="./compornent/explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >Explorer</a
           >
           <a
             href="./compornent/blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >Blog</a
           >
           <a
             href="./compornent/about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >About</a
           >
         </nav>
         <div class="space-y-3">
           <a
             href="./compornent/login.html"
-            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700 focus:ring-2 focus:ring-green-500"
             >Log in</a
           >
           <a
             href="./compornent/booking.html"
-            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800 focus:ring-2 focus:ring-blue-500"
             >Book Now</a
           >
         </div>
       </div>
     </header>
     <!-- end header -->
-    <!-- body -->
 
-    <!-- end body -->
-     <!-- footer -->
+    <!-- section-1 -->
+    <div
+      class="relative bg-white flex flex-col  justify-center py-[1.5rem] shadow-lg mt-[5rem] m-auto max-sm:w-[95%] sm:w-[85%] lg:w-[85%] dark:text-white dark:bg-gray-700 dark:shadow-lg dark:drop-shadow-gray-95000"
+      data-aos="fade-up" data-aos-duration="1000"
+    >
+      <h3 class="m-auto max-sm:text-3xl text-4xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        Find Your Perfect Stay
+      </h3>
+      <p class="m-auto mt-2 max-sm:text-1xl text-lg mb-[-1.5rem]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        Search through our curated collection.
+      </p>
 
-     <!-- end footer -->
-        <script src="../node_modules/preline/dist/preline.js"></script>
+      <div
+        class="relative h-[30rem] m-auto flex items-center justify-center mt-[3rem] max-sm:h-[40rem] max-sm:w-[95%] sm:w-[98%] sm:h-[35rem] lg:w-[100%] lg:h-[45vh]"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+      >
+        <!-- img-bg -->
+        <div
+          class="absolute m-auto inset-0 bg-cover bg-center max-sm:w-[95%] sm:w-[95%] lg:w-[95%]"
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2020/03/27/03/57/sunset-4972420_1280.jpg');
+          "
+          data-aos="zoom-in" data-aos-duration="900"
+        ></div>
+        <!-- img-bg -->
+
+        <!-- text in img -->
+        <div
+          class="absolute text-center top-[2.5rem] text-white p-6 rounded-lg sm:top-[6rem] lg:top-[2rem]"
+          data-aos="fade-down" data-aos-duration="900" data-aos-delay="400"
+        >
+          <h1 class="text-4xl font-bold">Find The Perfect Hotel</h1>
+          <p class="mt-2 text-lg">
+            Discover the world's most exclusive accommodations
+          </p>
+        </div>
+        <!-- text in img -->
+
+        <!-- white board -->
+        <div
+          class="absolute bg-white p-6 rounded-lg max-sm:w-[85%] max-sm:bottom-[-30%] sm:w-[80%] sm:bottom-[-35%] lg:w-[80%] lg:h-[20rem] lg:bottom-[-40%] dark:bg-[#1b1b1b]"
+          data-aos="fade-up" data-aos-duration="400" data-aos-delay="500"
+        >
+          <div class="flex flex-wrap justify-between mb-4 space-x-2 gap-2">
+            <button
+              class="py-2 px-4 bg-blue-600 text-white rounded-lg flex-1 hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >
+              All Stays
+            </button>
+            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+              Flight
+            </button>
+            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+              Car
+            </button>
+            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+              Cruises
+            </button>
+            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+              Packages
+            </button>
+          </div>
+          <div class="mb-4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+            <label for="location" class="block text-gray-700 dark:text-white">Location</label>
+            <input
+              type="text"
+              id="location"
+              class="w-full p-2 border border-gray-300 outline-sky-200  rounded-lg"
+              value="Phnom Penh, Cambodia"
+            />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="800">
+            <div>
+              <label for="checkin" class="block text-gray-700 dark:text-white">Check in</label>
+              <input
+                type="date"
+                id="checkin"
+                class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg"
+                value="2025-09-05"
+              />
+            </div>
+            <div>
+              <label for="checkout" class="block text-gray-700 dark:text-white">Check out</label>
+              <input
+                type="date"
+                id="checkout"
+                class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg"
+                value="2025-09-07"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 items-center dark:text-white">
+            <div class="mb-4">
+              <label for="guests" class="block text-gray-700 dark:text-white">Guest</label>
+              <input
+                type="number"
+                id="guests"
+                class="w-full p-2  border border-gray-300 outline-blue-300 rounded-lg"
+                value="2"
+              />
+            </div>
+            <button onclick="document.getElementById('location').focus()"
+              class="h-fit py-[0.6rem] mt-2  bg-blue-700 text-white rounded-lg hover:bg-blue-800 dark:bg-[#123458]"
+            >
+              Search now
+            </button>
+          </div>
+        </div>
+        <!-- end board -->
+      </div>
+    </div>
+    <!-- end section-1 -->
+    <!-- end section-1 -->
+
+    <!-- section-2 -->
+    <div
+      class="flex flex-col items-center mt-32 text-gray-800 p-6 max-w-[95%] mx-auto sm:max-w-[90%]"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold mb-2 dark:text-white">
+        Top Tourist Places
+      </h2>
+      <p
+        class="mb-6 text-gray-600 dark:text-gray-300 text-center max-w-2xl"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        Exceptional Destinations — each destination in our portfolio is
+        carefully selected for its unique character, exceptional service, and
+        unforgettable experiences.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://th.bing.com/th/id/OIP.9cqsWVTrZoVkRRxPVoP3CgHaEO?rs=1&pid=ImgDetMain"
+            alt="Ochheuteal Beach"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Ochheuteal Beach</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://th.bing.com/th/id/R.bd3bcc8f947f11a4336f88c3587e4b58?rik=IGFn2T6WizLR4Q&pid=ImgRaw&r=0&sres=1&sresct=1"
+            alt="Ream National Park"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Ream National Park</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://luxcity.com/img/post/202/resort-in-kompong-som-1.jpg"
+            alt="Koh Rong Island"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Koh Rong Island</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://images.squarespace-cdn.com/content/v1/6413d08a0c00736d22e7b109/2fa97307-c62d-43f1-af62-c28bf2401d2c/DSC08888-Edit.jpg?format=2500w"
+            alt="Kampot"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Kampot</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="600">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition focus:ring-2 focus:ring-blue-500"
+        >
+          Discover All Destinations
+        </button>
+      </div>
+    </div>
+    <!-- end section-2 -->
+
+    <!-- section-3 -->
+    <div
+      class="flex flex-col items-center mt-20 text-gray-800 p-6 max-w-[95%] mx-auto sm:max-w-[90%]"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold mb-2 dark:text-white">
+        Curated Collection
+      </h2>
+      <p
+        class="mb-6 text-gray-600 dark:text-gray-300 text-center max-w-2xl"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Exceptional Destinations — each destination in our portfolio is
+        carefully selected for its unique character, exceptional service, and
+        unforgettable experiences.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://luxcity.com/storage/photos/7/blogs/hotel-in-kompong-som-5.jpg"
+            alt="Kompong Som Province"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Kompong Som Province</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/96/a0/9c/glorious-hotel-spa.jpg?w=700&h=-1&s=1"
+            alt="Siem Reap Province"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Siem Reap Province</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://luxcity.com/img/post/202/resort-in-kompong-som-1.jpg"
+            alt="Koh Rong Island"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Koh Rong Island</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="h-[20rem] group relative overflow-hidden rounded-lg shadow-md"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src="https://images.squarespace-cdn.com/content/v1/6413d08a0c00736d22e7b109/2fa97307-c62d-43f1-af62-c28bf2401d2c/DSC08888-Edit.jpg?format=2500w"
+            alt="Kampot"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4 w-full"
+          >
+            <h3 class="text-lg font-semibold">Kampot</h3>
+            <p class="text-sm">
+              A tropical paradise known for its crystal-clear waters and
+              dramatic cliffs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="600">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition focus:ring-2 focus:ring-blue-500"
+        >
+          Discover All Destinations
+        </button>
+      </div>
+    </div>
+    <!-- end section-3 -->
+
+    <!-- section-4 -->
+    <div
+      class="bg-gray-100 py-12 px-4 w-full mx-auto dark:bg-gray-900"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2
+        class="text-3xl sm:text-4xl font-bold text-center mb-4 dark:text-white"
+      >
+        Award-Winning Properties
+      </h2>
+      <p
+        class="text-center text-gray-600 mb-10 max-w-2xl mx-auto dark:text-gray-300"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Handpicked luxury accommodations recognized for their exceptional
+        service, distinctive design, and guest experiences.
+      </p>
+
+      <div
+        class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[95%] sm:max-w-[90%] lg:max-w-[80%]"
+      >
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="./img/phmonpenh.png"
+            alt="Phnom Penh Hotel"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Phnom Penh Hotel
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Phnom Penh City
+            </p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $59.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://pix10.agoda.net/hotelImages/445/44559/44559_15081316300034221715.jpg?s=1024x768"
+            alt="Sokha Beach Hotel"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Sokha Beach Hotel
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Sihanoukville, Preah Sihanouk
+            </p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $79.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://th.bing.com/th/id/OIP.MjPPQTxc12D8kkaJlw_-VAHaE_?rs=1&pid=ImgDetMain"
+            alt="Angkor Village Hotel"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Angkor Village Hotel
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Siem Reap</p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $49.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://th.bing.com/th/id/R.0ee9e71bdc60a79f4a7019f2bfc95e99?rik=MYmvEbLDiUci0w&pid=ImgRaw&r=0"
+            alt="Battambang Resort"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Battambang Resort
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Battambang</p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $39.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://amber-kampot.com/wp-content/uploads/2020/06/lagoon-scaled.jpg"
+            alt="Kampot Riverside Hotel"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Kampot Riverside Hotel
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Kampot</p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $59.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://th.bing.com/th/id/OIP.wWgwBTUNVd5xhOVQx6XIogHaE8?rs=1&pid=ImgDetMain"
+            alt="Terres Rouges Lodge"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Terres Rouges Lodge
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Banlung, Ratanakiri
+            </p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $39.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://th.bing.com/th/id/R.6b701fbfcfcf4b7fd89f2e71d7a8e8ba?rik=oTWkNcynzkH6OA&riu=http%3a%2f%2fcdn.designrulz.com%2fwp-content%2fuploads%2f2015%2f01%2fangkor-village-resort-designrulz-5.jpg&ehk=Tt0cl1IALrOyOHT6D0Ww85Q8wqK1WK3f0G3xGjP99V0%3d&risl=&pid=ImgRaw&r=0"
+            alt="Rajabori Villas Resort"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Rajabori Villas Resort
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Koh Trong, Kratie
+            </p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $49.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="900"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://th.bing.com/th/id/R.7950527020f650b9627a671329f9e25f?rik=sVLbISF5PAgAEQ&pid=ImgRaw&r=0"
+            alt="Samanea Beach Resort"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">
+              Samanea Beach Resort
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Kep</p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $69.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden dark:bg-gray-800"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          <img
+            class="w-full h-[20rem] object-cover"
+            src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/82378251.jpg?k=dee60ffea0b900019cf0d3bac82146e5f17024bab4b2705a65e483b471c2a521&o="
+            alt="Kampot Resort"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold dark:text-white">Kampot Resort</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Amber Kampot</p>
+            <p class="text-sm text-gray-400 mt-1 dark:text-gray-500">
+              1234 reviews
+            </p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-blue-600 font-medium dark:text-blue-400"
+                >From $79.99/night</span
+              >
+              <span class="bg-yellow-400 text-white px-2 py-1 text-xs rounded"
+                >4.7 ★</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full mt-10 flex justify-center"
+        data-aos="fade-up"
+        data-aos-delay="1100"
+      >
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition focus:ring-2 focus:ring-blue-500"
+        >
+          View Complete Collection
+        </button>
+      </div>
+    </div>
+    <!-- end section-4 -->
+
+    <!-- section-5 -->
+    <div
+      class="py-20 px-4 w-full mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="flex flex-col w-[95%] mx-auto max-sm:w-full lg:flex-row lg:justify-center lg:items-center gap-8 lg:gap-16"
+      >
+        <div
+          class="w-full max-w-[25rem] mx-auto h-auto rounded-2xl overflow-hidden"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <img
+            class="w-full h-full object-cover rounded-2xl"
+            src="https://th.bing.com/th/id/OIP.WLC5HNUL574LIuQ9ASviCgHaE8?rs=1&pid=ImgDetMain"
+            alt="Travel Experience"
+          />
+        </div>
+        <div class="w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
+          <h3
+            class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 dark:text-white"
+          >
+            Elevated Travel Experience
+          </h3>
+          <p class="text-gray-600 mb-8 dark:text-gray-300">
+            Our commitment to excellence ensures that your travel journey is
+            tailored, seamless, and unforgettable through every step.
+          </p>
+          <div
+            class="flex items-start gap-4 mb-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="bg-blue-600 text-white p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4m5 2a9 9 0 11-18 0a9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Curated Excellence
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Every property in our collection is personally vetted for
+                exceptional quality, unique character, and outstanding service.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4 mb-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="bg-blue-600 text-white p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A10 10 0 1117.804 5.121a10 10 0 01-12.683 12.683z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Personal Concierge
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                24/7 dedicated concierge service to arrange exclusive
+                experiences, reservations, and personalized recommendations.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-start gap-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="bg-blue-600 text-white p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 10l4.553-4.553a2 2 0 112.828 2.828L17.828 13H16v2h-2v2h-2v2h-2v2H8v2H6v2H4v2"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Exclusive Access
+              </h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Enjoy members-only amenities, private events, and insider
+                experiences not available to the general public.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section-5 -->
+
+    <!-- section-6 -->
+    <div
+      class="bg-gray-900 w-full py-20 px-6"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-3xl sm:text-4xl text-white font-bold text-center mb-6">
+        Extraordinary Experiences
+      </h2>
+      <p class="text-center text-gray-300 mb-8 max-w-2xl mx-auto">
+        Discover why discerning travelers choose us for their most memorable
+        journeys.
+      </p>
+
+      <div
+        class="flex flex-col lg:w-[80%] mx-auto sm:flex-row sm:space-x-4 sm:space-y-0 space-y-6"
+      >
+        <div
+          class="bg-gray-800 border border-gray-600 text-white p-6 rounded-lg shadow-md flex-1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              class="w-16 h-16 rounded-full"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Vengroth"
+            />
+            <div>
+              <h3 class="text-xl font-semibold">Vengroth</h3>
+              <p class="text-sm text-gray-400">Dec 01, 2023</p>
+            </div>
+          </div>
+          <div class="flex mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4 text-gray-300">
+            Great hotel, great location, great service and I enjoyed my stay.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 border border-gray-600 text-white p-6 rounded-lg shadow-md flex-1"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              class="w-16 h-16 rounded-full"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Sok Chea"
+            />
+            <div>
+              <h3 class="text-xl font-semibold">Sok Chea</h3>
+              <p class="text-sm text-gray-400">Dec 01, 2023</p>
+            </div>
+          </div>
+          <div class="flex mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4 text-gray-300">
+            Great hotel, great location, great service and I enjoyed my stay.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="bg-gray-800 border border-gray-600 text-white p-6 rounded-lg shadow-md flex-1"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              class="w-16 h-16 rounded-full"
+              src="https://th.bing.com/th/id/OIP.kfM6gE5n_IxPxrdgZg7SigHaLH?rs=1&pid=ImgDetMain"
+              alt="Sim Sol"
+            />
+            <div>
+              <h3 class="text-xl font-semibold">Sim Sol</h3>
+              <p class="text-sm text-gray-400">Dec 01, 2023</p>
+            </div>
+          </div>
+          <div class="flex mt-4 text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="mt-4 text-gray-300">
+            Great hotel, great location, great service and I enjoyed my stay.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end section-6 -->
+
+    <!-- section-7 -->
+    <div
+      class="w-full mt-8 mb-8 px-6"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="relative bg-cover bg-center rounded-lg overflow-hidden h-[30rem] sm:h-[35rem]"
+        style="
+          background-image: url('https://th.bing.com/th/id/R.70432f95d1b978c8249857caac67b4e8?rik=qdOwA8q88dgkzQ&pid=ImgRaw&r=0');
+        "
+      >
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div
+          class="relative w-full h-full flex flex-col md:flex-row justify-evenly items-center p-8 space-y-6 md:space-y-0 md:space-x-6"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-md max-w-md dark:bg-gray-800"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white">
+              New Year, New Adventures
+            </h2>
+            <p class="text-gray-600 mt-2 dark:text-gray-300">
+              Save 15% or more when you book and stay before 1 April 2024.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500"
+              >Find Early 2024 Deals</a
+            >
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md max-w-md dark:bg-gray-800"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white">
+              Take Your Longest Holiday Yet
+            </h2>
+            <p class="text-gray-600 mt-2 dark:text-gray-300">
+              Browse properties offering long-term stays, many at reduced
+              monthly rates.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 focus:ring-2 focus:ring-green-500"
+              >Find a Stay</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section-7 -->
+
+    <!-- footer -->
+    <footer
+      class="bg-gray-700 text-white"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div class="flex items-center space-x-3">
+              <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
+              <span class="text-xl font-bold">Camp </span>
+            </div>
+            <p class="mt-4 text-sm text-gray-300">
+              Camp Experiences, the world’s leading travel platform, helps
+              millions discover unforgettable destinations, hotels, and
+              adventures.
+            </p>
+            <div
+              class="flex mt-4 space-x-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Links 1 -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Our Story</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Press</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+            </ul>
+          </div>
+          <!-- Links 2 -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#" class="hover:text-white">Explore Destinations</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
+              <li>
+                <a href="#" class="hover:text-white">Unique Experiences</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
+              <li><a href="#" class="hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <form
+              class="flex items-center border border-gray-500 rounded-full overflow-hidden"
+              aria-label="Newsletter Signup"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-gray-700 px-4 py-2"
+                aria-label="Submit newsletter signup"
+              >
+                <svg
+                  class="h-5 w-5 text-blue-400 hover:text-blue-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              Operated by Camp Experiences Travel Pte. Ltd. (reg. no.
+              012345987).
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <span>© Camp Experiences 2025</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="../node_modules/preline/dist/preline.js"></script>
     <script src="./javascript/script02.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
     </script>
-</body>
+  </body>
 </html>
