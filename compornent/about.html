@@ -4,85 +4,602 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/output.css" />
   </head>
-
   <body>
-    <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <!-- Title -->
-  <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
-    <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-neutral-200">
-      Explore tools
-    </h2>
-    <p class="mt-3 text-gray-800 dark:text-neutral-200">
-      The powerful and flexible theme for all kinds of businesses.
-    </p>
-  </div>
-  <!-- End Title -->
+    <!-- header  -->
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="flex items-center space-x-3"
+            aria-label="Camp Homepage"
+          >
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
 
-  <!-- Grid -->
-  <div class="mx-auto max-w-3xl grid grid-cols-3 gap-6 lg:gap-8">
-    <!-- Icon Block -->
-    <div class="text-center">
-      <svg class="shrink-0 size-7 md:size-9 mx-auto text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="10" height="14" x="3" y="8" rx="2"/><path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"/><path d="M8 18h.01"/></svg>
-      <div class="mt-2 sm:mt-6">
-        <h3 class="sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
-          Responsive
-        </h3>
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden md:flex space-x-8 items-center"
+          aria-label="Main Navigation"
+        >
+          <a
+            href=""
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href=""
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Explorer</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >About</a
+          >
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Dark Mode Toggle for Desktop -->
+          <button
+            id="dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Auth Buttons -->
+          <a
+            href="#"
+            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button
+            id="mobile-dark-mode-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobile-sun-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+              <path
+                id="mobile-moon-icon"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="text-gray-700 dark:text-gray-300"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="menu-open"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                id="menu-close"
+                class="hidden"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        aria-hidden="true"
+      >
+        <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
+          <a
+            href="#"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Destinations</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Hotels</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            >Experiences</a
+          >
+        </nav>
+        <div class="space-y-3">
+          <a
+            href="#"
+            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- About Section -->
+    <section class="bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+      <!-- Container -->
+      <div class="max-w-6xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 dark:text-white">
+            About Camp
+          </h2>
+          <p class="mt-4 max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
+            We’re on a mission to make travel accessible, affordable, and
+            unforgettable for everyone. Camp connects millions of travelers with
+            their perfect stay, bringing together the people, brands, and
+            technology that enable the success of others.
+          </p>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Left: Text Content -->
+          <div>
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-white mb-4"
+            >
+              Our Mission
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              To democratize travel by making it easier for anyone to discover,
+              compare, and book their perfect accommodation anywhere in the
+              world. We believe that travel has the power to connect cultures,
+              create understanding, and enrich lives.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Through our platform, we’re building bridges between travelers and
+              local communities, ensuring that tourism benefits everyone
+              involved while preserving the unique character of destinations
+              worldwide.
+            </p>
+          </div>
+
+          <!-- Right: Image -->
+          <div>
+            <img
+              class="w-full rounded-xl shadow-md"
+              src="../img/siem-reap-city.png"
+              alt="Map with travel gear"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 02 -->
+    <!-- Icon Blocks - About Page Section -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pt-3 lg:py-20 mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2
+          class="text-3xl font-bold text-gray-900 dark:text-white lg:text-4xl"
+        >
+          Our Vision
+        </h2>
+        <p class="mt-4 text-lg text-gray-700 dark:text-neutral-400">
+          Since ancient times, public squares have united people. Space aims to
+          recreate this spirit — building welcoming environments where
+          communities thrive.
+        </p>
+      </div>
+
+      <!-- Icon Grid -->
+      <div class="space-y-10">
+        <!-- Block 1 -->
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+          <svg
+            class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+            <path d="M10 6h4M10 10h4M10 14h4M10 18h4" />
+          </svg>
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-neutral-200"
+            >
+              High Quality Co-Living Spaces
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-neutral-400">
+              Our fully furnished spaces are crafted with purpose — featuring
+              premium finishes and shared amenities beyond typical apartments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+          <svg
+            class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-neutral-200"
+            >
+              Fostering Vibrant Communities
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-neutral-400">
+              More than spaces — we cultivate real connections by offering
+              shared experiences and events to spark lasting bonds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="flex items-start gap-x-5 sm:gap-x-6 md:gap-x-8">
+          <svg
+            class="shrink-0 mt-1.5 size-6 text-gray-800 dark:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M7 10v12" />
+            <path
+              d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z"
+            />
+          </svg>
+          <div>
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-neutral-200"
+            >
+              Simple & All-Inclusive
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-neutral-400">
+              From easy applications to all-inclusive bills, we take care of the
+              details so residents can focus on living.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- End Icon Block -->
+    <!-- End Icon Blocks -->
 
-    <!-- Icon Block -->
-    <div class="text-center">
-      <svg class="shrink-0 size-7 md:size-9 mx-auto text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
-      <div class="mt-2 sm:mt-6">
-        <h3 class="sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
-          Customizable
-        </h3>
+    <!-- Feature Tools Section -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pt-3 lg:py-14 mx-auto">
+      <!-- Title -->
+      <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
+        <h2
+          class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-neutral-200"
+        >
+          Explore tools
+        </h2>
+        <p class="mt-3 text-gray-800 dark:text-neutral-200">
+          The powerful and flexible theme for all kinds of businesses.
+        </p>
       </div>
-    </div>
-    <!-- End Icon Block -->
+      <!-- End Title -->
 
-    <!-- Icon Block -->
-    <div class="text-center">
-      <svg class="shrink-0 size-7 md:size-9 mx-auto text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
-      <div class="mt-2 sm:mt-6">
-        <h3 class="sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
-          24/7 Support
-        </h3>
+      <!-- Icons Grid -->
+      <div
+        class="mx-auto max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8"
+      >
+        <!-- Icon Block -->
+        <div class="text-center">
+          <svg
+            class="size-9 mx-auto text-gray-800 dark:text-neutral-200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect width="10" height="14" x="3" y="8" rx="2" />
+            <path
+              d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"
+            />
+            <path d="M8 18h.01" />
+          </svg>
+          <div class="mt-4">
+            <h3
+              class="text-lg font-semibold text-gray-800 dark:text-neutral-200"
+            >
+              Responsive
+            </h3>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <svg
+            class="size-9 mx-auto text-gray-800 dark:text-neutral-200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M20 7h-9" />
+            <path d="M14 17H5" />
+            <circle cx="17" cy="17" r="3" />
+            <circle cx="7" cy="7" r="3" />
+          </svg>
+          <div class="mt-4">
+            <h3
+              class="text-lg font-semibold text-gray-800 dark:text-neutral-200"
+            >
+              Customizable
+            </h3>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <svg
+            class="size-9 mx-auto text-gray-800 dark:text-neutral-200"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"
+            />
+            <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+          </svg>
+          <div class="mt-4">
+            <h3
+              class="text-lg font-semibold text-gray-800 dark:text-neutral-200"
+            >
+              24/7 Support
+            </h3>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- End Icon Block -->
-  </div>
-  <!-- End Grid -->
+      <!-- End Icons Grid -->
 
-  <!-- Grid -->
-  <div class="mt-10 sm:mt-20 grid grid-cols-2 md:grid-cols-4 items-center gap-2 sm:gap-6 lg:gap-8">
-    <div class="w-full h-32">
-      <img class="size-full object-cover object-center rounded-xl" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80" alt="Features Image">
-    </div>
-    <!-- End Col -->
+      <!-- Tools Logo Grid -->
+      <div
+        class="mt-10 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 lg:pb-34 gap-4 sm:gap-6 lg:gap-8"
+      >
+        <!-- Card -->
+        <div class="w-full aspect-[4/3]">
+          <img
+            class="w-full h-full object-contain rounded-xl"
+            src="../img/html-logo.png"
+            alt="HTML Logo"
+          />
+        </div>
 
-    <div class="w-full h-32">
-      <img class="size-full object-cover object-center rounded-xl" src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80" alt="Features Image">
-    </div>
-    <!-- End Col -->
+        <div class="w-full aspect-[4/3]">
+          <img
+            class="w-full h-full object-contain rounded-xl"
+            src="../img/css-logo.png"
+            alt="CSS Logo"
+          />
+        </div>
 
-    <div class="w-full h-32">
-      <img class="size-full object-cover object-center rounded-xl" src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80" alt="Features Image">
-    </div>
-    <!-- End Col -->
+        <div class="w-full aspect-[4/3]">
+          <img
+            class="w-full h-full object-contain rounded-xl"
+            src="../img/Tailwind-CSS-Logo-1.png"
+            alt="Tailwind CSS"
+          />
+        </div>
 
-    <div class="w-full h-32">
-      <img class="size-full object-cover object-center rounded-xl" src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80" alt="Features Image">
+        <div class="w-full aspect-[4/3]">
+          <img
+            class="w-full h-full object-contain rounded-xl"
+            src="../img/prelin-logo.png"
+            alt="Preline Logo"
+          />
+        </div>
+        <!-- End Cards -->
+      </div>
+      <!-- End Tools Logo Grid -->
     </div>
-    <!-- End Col -->
-  </div>
-  <!-- End Grid -->
-</div>
-<!-- End Features -->
- <script src="../node_modules/preline/preline.js"></script>
+
+    <!-- End section -->
+         <!-- footer -->
+    <footer class="bg-gray-700 text-white">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center space-x-3">
+              <img src="../img/logo.png" alt="Camp Logo" class="h-12 w-12" />
+              <span class="text-xl font-bold">Camp </span>
+            </div>
+            <p class="mt-4 text-sm text-gray-300">
+              Camp Experiences, the world’s leading travel platform, helps
+              millions discover unforgettable destinations, hotels, and
+              adventures.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Links 1 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Our Story</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Press</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+            </ul>
+          </div>
+          <!-- Links 2 -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#" class="hover:text-white">Explore Destinations</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
+              <li>
+                <a href="#" class="hover:text-white">Unique Experiences</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
+              <li><a href="#" class="hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <form
+              class="flex items-center border border-gray-500 rounded-full overflow-hidden"
+              aria-label="Newsletter Signup"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-gray-700 px-4 py-2"
+                aria-label="Submit newsletter signup"
+              >
+                <svg
+                  class="h-5 w-5 text-blue-400 hover:text-blue-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              Operated by Camp Experiences Travel Pte. Ltd. (reg. no.
+              012345987).
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
+        >
+          <span>© Camp Experiences 2025</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="../node_modules/preline/dist/scrollspy.js"></script>
+    <script src="../javascript/script.js"></script>
   </body>
 </html>

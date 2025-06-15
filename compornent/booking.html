@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css">
+  </head>
+  <body>
+   <div class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+  <div class="bg-white shadow-xl rounded-2xl w-full max-w-2xl p-8 space-y-6">
+    <h2 class="text-2xl font-bold text-yellow-500 text-center">Hotel Booking Form</h2>
+
+    <form class="space-y-4">
+      <!-- Full Name -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" placeholder="John Doe"
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" placeholder="you@example.com"
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="tel" placeholder="+855 12345678"
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+      </div>
+
+      <!-- Date Selection -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Check-in Date</label>
+          <input type="date"
+            class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Check-out Date</label>
+          <input type="date"
+            class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+        </div>
+      </div>
+
+      <!-- Room Type -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Room Type</label>
+        <select
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500">
+          <option>Standard</option>
+          <option>Deluxe</option>
+          <option>Suite</option>
+        </select>
+      </div>
+
+      <!-- Special Request -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Special Requests</label>
+        <textarea rows="3" placeholder="E.g. High floor, airport pickup..."
+          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="pt-4">
+        <button type="submit"
+          class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition duration-200">
+          Book Now
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </body>
+</html>
