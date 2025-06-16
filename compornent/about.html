@@ -9,21 +9,27 @@
    
   </head>
   <body
-    class="bg-white text-gray-900 container dark:bg-gray-900  dark:text-white transition-colors duration-300"
+    class="bg-white text-gray-900 container overflow-x-hidden overscroll-none dark:bg-gray-900  dark:text-white transition-colors duration-300"
   >
     <!-- header  -->
-    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+     <header
+      class="bg-white shadow-sm dark:bg-gray-800 sticky top-0 z-50"
+    >
       <div
         class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
       >
         <!-- Logo -->
-        <div class="flex items-center">
+        <div
+          class="flex items-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <a
             href="#"
             class="flex items-center space-x-3"
             aria-label="Camp Homepage"
           >
-            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <img src="../img/logo2.svg" alt="Camp Logo" class="w-12 h-12" />
             <span class="text-[18px] font-bold dark:text-white">Camp Booking</span>
           </a>
         </div>
@@ -32,35 +38,41 @@
         <nav
           class="hidden md:flex space-x-8 items-center"
           aria-label="Main Navigation"
+          data-aos="fade-left"
+          data-aos-duration="1000"
         >
           <a
             href="../index.html"
-            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200 transition"
             >Home</a
           >
           <a
             href="./explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >Explorer</a
           >
           <a
             href="./blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >Blog</a
           >
           <a
             href="./about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
             >About</a
           >
         </nav>
 
         <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center space-x-6">
+        <div
+          class="hidden md:flex items-center space-x-6"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <!-- Dark Mode Toggle for Desktop -->
           <button
             id="dark-mode-toggle"
-            class="text-gray-700 dark:text-gray-300"
+            class="text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
             aria-label="Toggle dark mode"
           >
             <svg
@@ -90,22 +102,21 @@
           <!-- Auth Buttons -->
           <a
             href="./login.html"
-            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            class="px-4 py-2 text-green-900 border-l-2 border-gray-300 hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700 focus:ring-2 focus:ring-green-500"
             >Log in</a
           >
           <a
             href="./booking.html"
-            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800 focus:ring-2 focus:ring-blue-500"
             >Book Now</a
           >
         </div>
 
-        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <!-- Mobile Actions -->
         <div class="flex items-center space-x-3 md:hidden">
-          <!-- Dark Mode Toggle for Mobile -->
           <button
             id="mobile-dark-mode-toggle"
-            class="text-gray-700 dark:text-gray-300"
+            class="text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform"
             aria-label="Toggle dark mode"
           >
             <svg
@@ -132,7 +143,6 @@
               />
             </svg>
           </button>
-          <!-- Mobile Menu Button -->
           <button
             id="menu-toggle"
             class="text-gray-700 dark:text-gray-300"
@@ -167,40 +177,42 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300"
+        class="hidden md:hidden sticky top-0 z-50 px-4 pb-4 space-y-4 bg-white dark:bg-gray-800 transition-all duration-300"
         aria-hidden="true"
+        data-aos="fade-up"
+        data-aos-duration="800"
       >
         <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
           <a
             href="../index.html"
-            class="text-green-900 font-semibold dark:text-green-300 hover:underline"
+            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200"
             >Home</a
           >
           <a
             href="./explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >Explorer</a
           >
           <a
             href="./blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >Blog</a
           >
           <a
             href="./about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
             >About</a
           >
         </nav>
         <div class="space-y-3">
           <a
             href="./login.html"
-            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700"
+            class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700 focus:ring-2 focus:ring-green-500"
             >Log in</a
           >
           <a
             href="./booking.html"
-            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
+            class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800 focus:ring-2 focus:ring-blue-500"
             >Book Now</a
           >
         </div>
@@ -484,7 +496,7 @@
       <!-- LECTURER -->
       <div class="text-center mb-16" data-aos="zoom-in">
         <h2 class="text-2xl font-bold md:text-4xl mb-5 dark:text-white">
-          Our Leader
+          Our Lucturer
         </h2>
         <div class="flex justify-center">
           <div
