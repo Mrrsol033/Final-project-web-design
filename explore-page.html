@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to your local Tailwind CSS output file -->
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head> 
+  <body>
+    <!-- Header -->
+    <header class="bg-sky-50 shadow-sm dark:bg-gray-800 sticky top-0 z-50">
+      <div class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center space-x-3" aria-label="Camp Homepage">
+            <img src="../img/logo.png" alt="Camp Logo" class="w-12 h-12" />
+            <span class="text-2xl font-bold dark:text-white">Camp</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 items-center" aria-label="Main Navigation">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300 hover:underline">Home</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Explorer</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Blog</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">About</a>
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Dark Mode Toggle for Desktop -->
+          <button id="dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <!-- Auth Buttons -->
+          <a href="#" class="px-4 py-2 text-green-900 border-l-2 border-gray-300  hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700">Log in</a>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">Book Now</a>
+        </div>
+
+        <!-- Mobile Actions (Dark Mode Toggle and Menu Button) -->
+        <div class="flex items-center space-x-3 md:hidden">
+          <!-- Dark Mode Toggle for Mobile -->
+          <button id="mobile-dark-mode-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle dark mode">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="mobile-sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              <path id="mobile-moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="text-gray-700 dark:text-gray-300" aria-label="Toggle mobile menu" aria-expanded="false">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-4 bg-sky-50 dark:bg-gray-800 transition-all duration-300" aria-hidden="true">
+        <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
+          <a href="#" class="text-green-900 font-semibold dark:text-green-300 hover:underline">Home</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Destinations</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Hotels</a>
+          <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:underline">Experiences</a>
+        </nav>
+        <div class="space-y-3">
+          <a href="#" class="block px-4 py-2 border border-gray-300 rounded-md text-green-900 text-center hover:bg-gray-100 transition dark:border-gray-600 dark:text-green-300 dark:hover:bg-gray-700">Log in</a>
+          <a href="#" class="block px-4 py-2 bg-blue-600 text-white rounded-md text-center hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">Book Now</a>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div class="bg-indigo-600">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
+          Find the Perfect Hotel on Camp
+        </h1>
+        <p class="mt-4 text-lg text-indigo-200">
+          From cheap hotels to luxury rooms and everything in between
+        </p>
+      </div>
+  
+      <!-- Search Form Card -->
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24">
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
+          <form>
+            <div
+              class="grid gap-4 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_auto] items-end"
+            >
+              <!-- Location Input -->
+              <div>
+                <label
+                  for="destination-input"
+                  class="flex items-center text-sm font-medium text-gray-700 mb-1"
+                >
+                  <svg
+                    class="inline-block w-4 h-4 mr-1.5 text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Location
+                </label>
+                <input
+                  type="text"
+                  id="destination-input"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="Zurich, Switzerland"
+                />
+              </div>
+  
+            <!-- Check-in Input -->
+            <div>
+              <label
+                for="checkin-date"
+                class="flex items-center text-sm font-medium text-gray-700 mb-1"
+              >
+                <svg
+                  class="inline-block w-4 h-4 mr-1.5 text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                Check in
+              </label>
+
+
+              <div class="relative max-w-sm">
+                <div class=" absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                   <svg class=" w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                    </svg>
+                </div>
+                <input id="datepicker-autohide" datepicker datepicker-autohide type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+              </div>
+              
+              
+            </div>
+
+            <!-- Check-out Input -->
+            <div>
+              <label
+                for="checkout-date"
+                class="flex items-center text-sm font-medium text-gray-700 mb-1"
+              >
+                <svg
+                  class="inline-block w-4 h-4 mr-1.5 text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                  <line x1="16" x2="16" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="2" y2="6" />
+                  <line x1="3" x2="21" y1="10" y2="10" />
+                </svg>
+                Check out
+              </label>
+              <div class="relative max-w-sm">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                  </svg>
+                </div>
+                <input datepicker id="default-datepicker" type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+              </div>
+              
+            </div>
+        
+              <!-- Guests Input -->
+              <div>
+                <label
+                  for="guests-select"
+                  class="flex items-center text-sm font-medium text-gray-700 mb-1"
+                >
+                  <svg
+                    class="inline-block w-4 h-4 mr-1.5 text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Guests
+                </label>
+                <select
+                  id="guests-select"
+                  class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
+                >
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4+ Guests</option>
+                </select>
+              </div>
+  
+              <!-- Search Button -->
+              <div class="w-full">
+                <button
+                  id="search-btn"
+                  type="submit"
+                  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                >
+                  <svg
+                    class="flex-shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--remove-->
+
+    <!--end -->
+
+    <div>
+      <div
+        class="max-w-screen-xl mx-auto px-4 py-3 sm:px-6 sm:py-4 lg:px-8 lg:py-5"
+      >
+        <div
+          class="flex flex-wrap justify-end items-center gap-2 mb-1 text-base"
+        >
+          <!-- Dropdown Button -->
+          <div class="relative">
+            <button
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button"
+            >
+              Dropdown
+              <svg
+                class="w-2.5 h-2.5 ms-3 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdown"
+              class="z-10 hidden absolute mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Earnings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Grid View Button -->
+          <button
+            class="p-2 rounded-md text-gray-600 hover:bg-gray-100 border border-gray-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6"
+            >
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+          </button>
+
+          <!-- List View Button -->
+          <button
+            class="p-2 rounded-md text-white bg-black border border-gray-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6"
+            >
+              <line x1="8" x2="21" y1="6" y2="6" />
+              <line x1="8" x2="21" y1="12" y2="12" />
+              <line x1="8" x2="21" y1="18" y2="18" />
+              <line x1="3" x2="3.01" y1="6" y2="6" />
+              <line x1="3" x2="3.01" y1="12" y2="12" />
+              <line x1="3" x2="3.01" y1="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Grid Section -->
+        <div class="lg:grid lg:grid-cols-12 lg:gap-6">
+          <div class="lg:col-span-9 mt-4 lg:mt-0">
+            <div
+              id="hotel-grid"
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch"
+            >
+              <!-- Cards go here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+    <!--remove-->
+  
+    <!-- The inline style tag has been removed and replaced with Tailwind utility classes -->
+    <div class="font-sans bg-none">
+      <!-- Main container to center the layout and hold both sidebar and content -->
+      <div class="max-w-screen-xl mx-auto lg:flex lg:gap-8 p-4 sm:p-6 lg:p-8">
+        <!-- Sidebar -->
+        <div
+          id="hs-sidebar-empty-content"
+          class="rounded-[5px] hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:relative lg:h-auto lg:z-auto w-80 lg:shrink-0 hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform h-full hidden fixed top-0 start-0 bottom-0 z-[60] bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
+          role="dialog"
+          tabindex="-1"
+          aria-label="Sidebar"
+        >
+          <div class="relative flex flex-col h-full max-h-full">
+            <!-- Header -->
+            <header
+              class="p-4 flex justify-between items-center gap-x-2 border-b"
+            >
+              <a
+                class="flex-none text-xl font-semibold dark:text-white"
+                href="#"
+                aria-label="Brand"
+                >Filters</a
+              >
+              <div class="lg:hidden -me-2">
+                <!-- Close Button -->
+                <button
+                  type="button"
+                  class="flex justify-center items-center gap-x-3 size-6 bg-white border border-gray-200 text-sm text-gray-600 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:pointer-events-none"
+                  data-hs-overlay="#hs-sidebar-empty-content"
+                >
+                  <svg
+                    class="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                  </svg>
+                  <span class="sr-only">Close</span>
+                </button>
+              </div>
+            </header>
+            <!-- End Header -->
+  
+            <!-- Body -->
+            <nav class="h-full overflow-y-auto p-4">
+              <!-- All filter sections wrapped in a container with vertical spacing -->
+              <div class="space-y-6">
+                <img
+                  class="rounded-[5px]"
+                  src="/img/c7d94c7f608693de3bcc21be78b70f21.jpg"
+                  alt=""
+                />
+                <!-- Popular Filters Section -->
+                <div class="rounded-[5px] bg-white shadow p-4 rounded">
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Popular filters
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m18 15-6-6-6 6" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 space-y-3">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-private-bathroom-pop"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-private-bathroom-pop"
+                          class="ms-3 text-sm text-gray-600"
+                          >Private bathroom</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">195</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-hairdryer"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-hairdryer"
+                          class="ms-3 text-sm text-gray-600"
+                          >Hairdryer</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">101</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-3stars-pop"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-3stars-pop"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >3 stars</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >78</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-lt5km"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-lt5km"
+                          class="ms-3 text-sm text-gray-600"
+                          >Less than 5 km</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">61</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-superb"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-superb"
+                          class="ms-3 text-sm text-gray-600"
+                          >Superb: 9+</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">16</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-parking-pop"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-parking-pop"
+                          class="ms-3 text-sm text-gray-600"
+                          >Parking</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">203</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-tv"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-tv"
+                          class="ms-3 text-sm text-gray-600"
+                          >TV</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">151</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-washing-machine"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-washing-machine"
+                          class="ms-3 text-sm text-gray-600"
+                          >Washing machine</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">34</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Property Type Section -->
+                <div
+                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
+                >
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Property type
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m18 15-6-6-6 6" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 space-y-3">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-hotels"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-hotels"
+                          class="ms-3 text-sm text-gray-600"
+                          >Hotels</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">153</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-apartments"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-apartments"
+                          class="ms-3 text-sm text-gray-600"
+                          >Apartments</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">67</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-guesthouses"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-guesthouses"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >Guest houses</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >98</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-homestays"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-homestays"
+                          class="ms-3 text-sm text-gray-600"
+                          >Homestays</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">54</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-bed-breakfast"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-bed-breakfast"
+                          class="ms-3 text-sm text-gray-600"
+                          >Bed and breakfasts</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">54</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-hostels"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-hostels"
+                          class="ms-3 text-sm text-gray-600"
+                          >Hostels</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">23</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-villas"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-villas"
+                          class="ms-3 text-sm text-gray-600"
+                          >Villas</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">567</span>
+                    </div>
+                  </div>
+                </div>
+                <!--Facilites-->
+                <div
+                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
+                >
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Facilities
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m18 15-6-6-6 6" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 space-y-3">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-parking-fac"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-parking-fac"
+                          class="ms-3 text-sm text-gray-600"
+                          >Parking</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">34</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-wifi"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-wifi"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >Free Wifi</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >345</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-restaurant"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-restaurant"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >Restaurant</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >56</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-pets"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-pets"
+                          class="ms-3 text-sm text-gray-600"
+                          >Pets allowed</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">343</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-room-service"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-room-service"
+                          class="ms-3 text-sm text-gray-600"
+                          >Room service</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">45</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-24-hour-desk"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-24-hour-desk"
+                          class="ms-3 text-sm text-gray-600"
+                          >24-hour front desk</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">23</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-fitness-centre"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-fitness-centre"
+                          class="ms-3 text-sm text-gray-600"
+                          >Fitness centre</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">331</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-swimming-pool"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-swimming-pool"
+                          class="ms-3 text-sm text-gray-600"
+                          >Swimming Pool</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">33</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-airport-shuttle"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-airport-shuttle"
+                          class="ms-3 text-sm text-gray-600"
+                          >Airport shuttle</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">14</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-disabled-guests"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-disabled-guests"
+                          class="ms-3 text-sm text-gray-600"
+                          >Facilities for disabled guests</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">24</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-family-rooms"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-family-rooms"
+                          class="ms-3 text-sm text-gray-600"
+                          >Family rooms</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">65</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-spa-wellness"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-spa-wellness"
+                          class="ms-3 text-sm text-gray-600"
+                          >Spa and wellness centre</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">78</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-ev-charging"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-ev-charging"
+                          class="ms-3 text-sm text-gray-600"
+                          >Electric vehicle charging station</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">45</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Property Rating Section -->
+                <div
+                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
+                >
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Property rating
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m18 15-6-6-6 6" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 space-y-3">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-1star"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-1star"
+                          class="ms-3 text-sm text-gray-600"
+                          >1 star</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">195</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-2star"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-2star"
+                          class="ms-3 text-sm text-gray-600"
+                          >2 star</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">101</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-3star-rate"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-3star-rate"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >3 star</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >78</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-4star"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-4star"
+                          class="ms-3 text-sm text-gray-600"
+                          >4 star</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">61</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-5star"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-5star"
+                          class="ms-3 text-sm text-gray-600"
+                          >5 star</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">16</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-unrated"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-unrated"
+                          class="ms-3 text-sm text-gray-600"
+                          >Unrated</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">203</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Room Facilities Section -->
+                <div
+                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
+                >
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Room facilities
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m18 15-6-6-6 6" />
+                    </svg>
+                  </div>
+                  <div class="mt-3 space-y-3">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-private-pool"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-private-pool"
+                          class="ms-3 text-sm text-gray-600"
+                          >Private pool</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">195</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-ac"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        /><label
+                          for="filter-ac"
+                          class="ms-3 text-sm text-gray-600"
+                          >Air conditioning</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs text-gray-500">101</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="filter-private-bathroom"
+                          type="checkbox"
+                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                          checked
+                        /><label
+                          for="filter-private-bathroom"
+                          class="ms-3 text-sm text-gray-800 font-semibold"
+                          >Private bathroom</label
+                        >
+                      </div>
+                      <span class="ms-3 text-xs font-semibold text-gray-800"
+                        >78</span
+                      >
+                    </div>
+                  </div>
+                </div>
+  
+                <!--dropdown-->
+                <!-- Property Accessibility Section -->
+                <div class="border-t border-gray-200 pt-6">
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Property accessibility
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+  
+                <!-- Room Accessibility Section -->
+                <div class="border-t border-gray-200 pt-6">
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Room accessibility
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+  
+                <!-- Travel Sustainable Section -->
+                <div class="border-t border-gray-200 pt-6">
+                  <div class="flex justify-between items-center cursor-pointer">
+                    <h3 class="font-semibold text-gray-800 dark:text-white">
+                      Travel Sustainable
+                    </h3>
+                    <svg
+                      class="w-4 h-4 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <!--end dropdown-->
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+  
+        <!-- Main Content -->
+        <div class="flex-1">
+          <!-- Navigation Toggle Button -->
+          <div class="lg:hidden text-start mb-6">
+            <button
+              type="button"
+              class="py-2 px-3 inline-flex justify-center items-center gap-x-2 text-start bg-gray-800 border border-transparent text-white text-sm font-medium rounded-lg shadow-sm align-middle hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-white dark:focus:ring-offset-gray-800"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="hs-sidebar-empty-content"
+              aria-label="Toggle navigation"
+              data-hs-overlay="#hs-sidebar-empty-content"
+            >
+              <svg
+                class="w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+              Open Menu
+            </button>
+          </div>
+          <!-- End Navigation Toggle Button -->
+  
+          <!-- Grid container now uses a custom breakpoint approach -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:block lg:space-y-6 gap-6"
+          >
+            <!-- Card Component 1 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-quark-studio-1159039-2507007.jpg"
+                  alt="Fuvahmulah Hotel"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    5
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Fuvahmulah Hotel
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.9/10
+                    </p>
+                    <p class="text-xs text-gray-500">1250 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Fuvahmulah City, Maldives • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Luxury resort with crystal clear waters and tropical setting.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $39.99
+                    </p>
+                    <p class="text-sm text-gray-500">$34 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card Component 2 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-asadphoto-1450360.jpg"
+                  alt="Beachside Resort"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.8
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Beachside Resort
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.8/10
+                    </p>
+                    <p class="text-xs text-gray-500">980 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Sunny Beach, California • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    A perfect getaway with stunning ocean views.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $45.99
+                    </p>
+                    <p class="text-sm text-gray-500">$38 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card Component 3 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-kelly-1179532-2869215.jpg"
+                  alt="City Center Hotel"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.5
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    City Center Hotel
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.5/10
+                    </p>
+                    <p class="text-xs text-gray-500">2100 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Downtown, Metropolis • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Modern hotel in the heart of the city.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $55.00
+                    </p>
+                    <p class="text-sm text-gray-500">$42 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Component 4 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-gabriela-lopez-2153097080-32553624-2.jpg"
+                  alt="Mountain Retreat"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.7
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Mountain Retreat
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.7/10
+                    </p>
+                    <p class="text-xs text-gray-500">750 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Rocky Mountains, Colorado • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Cozy cabins amidst stunning mountain scenery.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $65.50
+                    </p>
+                    <p class="text-sm text-gray-500">$50 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Component 5 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-jaime-reimer-1376930-2662116.jpg"
+                  alt="Lakeview Inn"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.2
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Lakeview Inn
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.2/10
+                    </p>
+                    <p class="text-xs text-gray-500">300 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Lake Serenity, Canada • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Peaceful retreat with beautiful lake views.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $30.00
+                    </p>
+                    <p class="text-sm text-gray-500">$25 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Component 6 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-amr-saleh-467591-3958516.jpg"
+                  alt="Desert Oasis"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.9
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Desert Oasis
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.9/10
+                    </p>
+                    <p class="text-xs text-gray-500">1800 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Sahara Desert, Egypt • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Luxurious tents under the desert stars.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $70.00
+                    </p>
+                    <p class="text-sm text-gray-500">$55 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Component 7 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-eberhardgross-1417647.jpg"
+                  alt="Forest Lodge"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.6
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Forest Lodge
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.6/10
+                    </p>
+                    <p class="text-xs text-gray-500">900 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Black Forest, Germany • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Secluded lodge deep within the forest.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $60.00
+                    </p>
+                    <p class="text-sm text-gray-500">$48 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Component 8 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-musicfactory-lehmannsound-12746-64109.jpg"
+                  alt="Riverside Bungalow"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.3
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Riverside Bungalow
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.3/10
+                    </p>
+                    <p class="text-xs text-gray-500">550 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Peaceful River, Asia • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Charming bungalows by the tranquil river.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $35.00
+                    </p>
+                    <p class="text-sm text-gray-500">$28 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card Component 9 -->
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              <!-- Image container -->
+              <div
+                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/pexels-wendywei-20337840.jpg"
+                  alt="Urban Lofts"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
+                />
+                <div class="absolute top-0 left-0 p-3">
+                  <div
+                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
+                  >
+                    <svg
+                      class="size-4 text-yellow-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      />
+                    </svg>
+                    4.0
+                  </div>
+                </div>
+                <div class="absolute top-0 right-0 p-3">
+                  <button
+                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
+                  >
+                    <svg
+                      class="size-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start">
+                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
+                    Urban Lofts
+                  </h3>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-lg lg:text-xl font-bold text-orange-500">
+                      4.0/10
+                    </p>
+                    <p class="text-xs text-gray-500">800 Reviews</p>
+                  </div>
+                </div>
+                <div class="mt-2 flex-grow">
+                  <p class="text-sm text-gray-600 flex items-center">
+                    <svg
+                      class="size-4 mr-1.5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Metropolitan City, USA • Show on map
+                  </p>
+                  <p class="mt-3 text-gray-700">
+                    Chic lofts in the vibrant city center.
+                  </p>
+                </div>
+                <div class="mt-4 flex justify-between items-end">
+                  <div>
+                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
+                      $50.00
+                    </p>
+                    <p class="text-sm text-gray-500">$40 taxes and fees</p>
+                  </div>
+                  <button
+                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+                  >
+                    See availability
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <nav
+            class="flex items-center justify-center mt-8"
+            aria-label="Pagination"
+          >
+            <a
+              class="p-2 inline-flex items-center gap-x-2 rounded-md text-gray-500 hover:bg-gray-100"
+              href="#"
+            >
+              <svg
+                class="flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </a>
+            <div class="flex items-center gap-x-2">
+              <a
+                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg bg-blue-600 text-white"
+                href="#"
+                aria-current="page"
+                >1</a
+              >
+              <a
+                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
+                href="#"
+                >2</a
+              >
+              <a
+                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
+                href="#"
+                >3</a
+              >
+              <span class="text-sm text-gray-500">...</span>
+              <a
+                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
+                href="#"
+                >25</a
+              >
+            </div>
+            <a
+              class="p-2 inline-flex items-center gap-x-2 rounded-md text-gray-500 hover:bg-gray-100"
+              href="#"
+            >
+              <svg
+                class="flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+  </main>
+  <!-- ========== FOOTER ========== -->
+<footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
+  <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div class="col-span-full lg:col-span-1">
+        <a class="flex-none text-xl font-semibold text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Brand</a>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">Product</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Pricing</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Changelog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Docs</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-1">
+        <h4 class="font-semibold text-gray-100">Company</h4>
+
+        <div class="mt-3 grid space-y-3">
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Blog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Careers</a> <span class="inline-block ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="#">Customers</a></p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-span-2">
+        <h4 class="font-semibold text-gray-100">Stay up to date</h4>
+
+        <form>
+          <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
+            <div class="w-full">
+              <label for="hero-input" class="sr-only">Subscribe</label>
+              <input type="text" id="hero-input" name="hero-input" class="py-2.5 sm:py-3 px-4 block w-full border-transparent rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Enter your email">
+            </div>
+            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+              Subscribe
+            </a>
+          </div>
+          <p class="mt-3 text-sm text-gray-400">
+            New UI kits or big discounts. Never spam.
+          </p>
+        </form>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+
+    <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+      <div class="flex flex-wrap justify-between items-center gap-2">
+        <p class="text-sm text-gray-400 dark:text-neutral-400">
+          © 2025 Preline Labs.
+        </p>
+      </div>
+      <!-- End Col -->
+
+      <!-- Social Brands -->
+      <div>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+          </svg>
+        </a>
+      </div>
+      <!-- End Social Brands -->
+    </div>
+  </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
