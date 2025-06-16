@@ -1,56 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="../src/output.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../src/output.css">
   </head>
   <body>
-    <div class="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-  <div class="bg-white shadow-xl rounded-2xl w-full max-w-md p-8 space-y-6">
-    <h2 class="text-2xl font-bold text-yellow-500 text-center">Welcome Back</h2>
-    <p class="text-center text-gray-500 text-sm">Login to your hotel account</p>
+    <div class="w-full h-screen overflow-hidden dark:bg-black">
+      <div class="md:flex md:h-full">
+        <div
+          class="w-full md:w-1/2 h-full bg-white flex items-center justify-center p-6 sm:p-12"
+        >
+          <div class="max-w-md w-full">
+            <div class="mb-12">
+              <h1 class="text-3xl font-bold tracking-wider"><a href="../index.html">Welcame Back</a></h1>
+              <p class="text-gray-500 mt-1">Explore More. Experience Life.</p>
+              <div class="mt-6 flex gap-x-3">
+                <a
+                  class="py-2 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-800 text-gray-800 hover:border-gray-900 hover:text-gray-900"
+                  href="./signup.html"
+                >
+                  Sign Up
+                </a>
+                <a
+                  class="py-2 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-gray-800"
+                  href="./login.html"
+                >
+                  Log In
+                </a>
+              </div>
+            </div>
 
-    <form class="space-y-4">
-      <!-- Email -->
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Email Address</label>
-        <input type="email" placeholder="you@example.com"
-          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
+            <div>
+              <h1 class="block text-2xl font-bold text-gray-800">
+                Journey Begins
+              </h1>
+              <p class="mt-2 text-sm text-gray-600">Log in with Open account</p>
+
+              <div class="mt-5">
+                <div class="grid grid-cols-3 gap-3">
+                  <button
+                    type="button"
+                    class="py-2.5 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0a2 2 0 0 0-1.6.81C4.79 2.39 3.62 4.42 3.62 6.5c0 1.83.93 3.33 2.16 4.22-.5.21-.95.58-1.28.95-.8.9-.91 1.83-.91 2.33 0 .1.09.19.19.19h.01c.45 0 1.09-.37 1.74-.94.46-.41.85-.8 1.28-1.15.55.33 1.2.5 1.95.5.78 0 1.48-.21 2.08-.55.36.31.75.68 1.21 1.1.6.5 1.29.89 1.79.89h.01c.1 0 .19-.1.19-.19 0-.55-.12-1.48-.96-2.42a2.3 2.3 0 0 0-1.33-.96c1.23-.93 2.2-2.44 2.2-4.27 0-2.12-1.2-4.16-3-5.68A2.2 2.2 0 0 0 8 0m-.01 1.51c.5 0 .93.18 1.28.48.3.26.54.62.74.92-.28.15-.58.28-.9.39-.55-.68-1.29-1.05-2.05-1.05-.02 0-.04 0-.06.01.4-.41.84-.75 1.29-.75M6.41 11.4c.5-.45.92-.95 1.25-1.49.43.3.9.52 1.41.65-.1.1-.2.2-.31.29-.42.36-.88.75-1.34 1.15a3.1 3.1 0 0 1-1.01.4z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="py-2.5 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                  >
+                    <svg
+                      class="w-5 h-auto"
+                      width="46"
+                      height="47"
+                      viewBox="0 0 46 47"
+                      fill="none"
+                    >
+                      <path
+                        d="M46 24.0287C46 22.09 45.8533 20.68 45.5013 19.2112H23.4694V27.9356H36.4069C36.1429 30.1094 34.7347 33.37 31.5957 35.5731L31.5663 35.8669L38.5191 41.2719L38.9885 41.3306C43.4477 37.2181 46 31.1669 46 24.0287Z"
+                        fill="#4285F4"
+                      />
+                      <path
+                        d="M23.4694 47C29.8061 47 35.1161 44.9144 39.0179 41.3012L31.625 35.5437C29.6301 36.9244 26.9898 37.8937 23.4987 37.8937C17.2793 37.8937 12.0281 33.7812 10.1505 28.1412L9.88649 28.1706L2.61097 33.7812L2.52296 34.0456C6.36608 41.7125 14.287 47 23.4694 47Z"
+                        fill="#34A853"
+                      />
+                      <path
+                        d="M10.1212 28.1413C9.62245 26.6725 9.32908 25.1156 9.32908 23.5C9.32908 21.8844 9.62245 20.3275 10.0918 18.8588V18.5356L2.75765 12.8369L2.52296 12.9544C0.909439 16.1269 0 19.7106 0 23.5C0 27.2894 0.909439 30.8731 2.49362 34.0456L10.1212 28.1413Z"
+                        fill="#FBBC05"
+                      />
+                      <path
+                        d="M23.4694 9.07688C27.8699 9.07688 30.8622 10.9863 32.5344 12.5725L39.1645 6.11C35.0867 2.32063 29.8061 0 23.4694 0C14.287 0 6.36607 5.2875 2.49362 12.9544L10.0918 18.8588C11.9987 13.1894 17.25 9.07688 23.4694 9.07688Z"
+                        fill="#EB4335"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="py-2.5 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-1.78 13h2.807L4.339 2.05H1.68l9.14 11.7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div
+                  class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6"
+                >
+                  Or
+                </div>
+
+                <form>
+                  <div class="grid gap-y-4">
+                    <div>
+                      <label for="username" class="block text-sm mb-1"
+                        >Username</label
+                      >
+                      <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm"
+                        required
+                        value="ell_trekker"
+                      />
+                    </div>
+                    <div>
+                      <label for="password" class="block text-sm mb-1"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm"
+                        required
+                        value="••••••••"
+                      />
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="remember-me"
+                          name="remember-me"
+                          type="checkbox"
+                          class="h-4 w-4 rounded border-gray-300 text-black focus:ring-black"
+                          checked
+                        />
+                        <label
+                          for="remember-me"
+                          class="ml-2 block text-sm text-gray-900"
+                          >Remember me</label
+                        >
+                      </div>
+                      <a
+                        class="text-sm font-medium text-black hover:underline"
+                        href="#"
+                        >Forgot Password?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-gray-800"
+                    >
+                      Log In
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block md:w-1/2 h-full">
+          <div
+            data-hs-carousel='{"loadingClasses": "opacity-0", "isAutoPlay": true}'
+            class="relative h-full"
+          >
+            <div
+              class="hs-carousel-body w-full h-full absolute top-0 start-0 overflow-hidden"
+            >
+              <div class="hs-carousel-slide h-full">
+                <div class="relative h-full">
+                  <img
+                    src="../img/login.jpg"
+                    alt="A long wooden dock with rowboats on the serene Lago di Braies in the Dolomites"
+                    class="absolute inset-0 w-full h-full object-cover"
+                  />
+
+                  <div
+                    class="absolute top-10 right-10 z-10 text-white p-6 bg-white/20 backdrop-blur-sm rounded-lg max-w-xs"
+                  >
+                    <h3 class="text-xl font-semibold">
+                      Wander, Explore, Experience.
+                    </h3>
+                    <p class="mt-1 text-sm">
+                      Discover new places, embrace adventures, & create
+                      unforgettable travel memories worldwide.
+                    </p>
+                  </div>
+                  <div class="absolute bottom-10 left-10 z-10 text-white p-4">
+                    <h3 class="text-3xl font-bold">Escape the Ordinary,</h3>
+                    <h3 class="text-3xl font-bold">Embrace the Journey!</h3>
+                    <a
+                      class="mt-4 inline-block py-2 px-5 rounded-full border border-white text-white text-sm hover:bg-white hover:text-black transition-colors"
+                      href="#"
+                    >
+                      Experience the world your way!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-10 end-10 flex justify-between items-center gap-x-2"
+            >
+              <button
+                type="button"
+                class="hs-carousel-prev p-2 inline-flex items-center gap-x-2 rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50"
+              >
+                <svg
+                  class="w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="hs-carousel-next p-2 inline-flex items-center gap-x-2 rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50"
+              >
+                <svg
+                  class="w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Password -->
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Password</label>
-        <input type="password" placeholder="••••••••"
-          class="w-full mt-1 px-4 py-3 bg-gray-100 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500" />
-      </div>
-
-      <!-- Remember me & Forgot -->
-      <div class="flex items-center justify-between text-sm text-gray-600">
-        <label class="flex items-center">
-          <input type="checkbox" class="mr-2 rounded border-gray-300 text-yellow-500 focus:ring-yellow-400">
-          Remember me
-        </label>
-        <a href="#" class="text-yellow-500 hover:underline">Forgot password?</a>
-      </div>
-
-      <!-- Login Button -->
-      <div>
-        <button type="submit"
-          class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition duration-200">
-          Login
-        </button>
-      </div>
-    </form>
-
-    <!-- Signup Link -->
-    <p class="text-center text-sm text-gray-500">
-      Don't have an account?
-      <a href="#" class="text-yellow-500 hover:underline">Sign up</a>
-    </p>
-  </div>
-</div>
-
+    </div>
+    <script src="./node_modules/preline/dist/preline.js"></script>
   </body>
 </html>

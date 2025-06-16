@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../src/output.css">
+  </head>
+  <body class="bg-white">
+    <div class="w-full h-screen overflow-hidden">
+      <div class="md:flex md:h-full">
+        <div
+          class="w-full md:w-1/2 h-full bg-white flex items-center justify-center p-6 sm:p-12"
+        >
+          <div class="max-w-md w-full">
+            <div class="mb-12">
+              <h1 class="text-3xl font-bold tracking-wider"><a href="../index.html">We are Welcome</a></h1>
+              <p class="text-gray-500 mt-1">Explore More. Experience Life.</p>
+              <div class="mt-6 flex gap-x-3">
+                <a
+                  class="py-2 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-gray-800"
+                  href="./signup.html"
+                >
+                  Sign Up
+                </a>
+                <a
+                  class="py-2 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-800 text-gray-800 hover:border-gray-900 hover:text-gray-900"
+                  href="./login.html"
+                >
+                  Log In
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h1 class="block text-2xl font-bold text-gray-800">
+                Begin Your Adventure
+              </h1>
+              <p class="mt-2 text-sm text-gray-600">
+                Sign up with Open account
+              </p>
+
+              <div class="mt-5">
+                <form>
+                  <div class="grid gap-y-4">
+                    <div>
+                      <label for="username" class="block text-sm mb-1"
+                        >Username</label
+                      >
+                      <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm"
+                        required
+                        value="ell_trekker"
+                      />
+                    </div>
+                    <div>
+                      <label for="email" class="block text-sm mb-1"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm"
+                        required
+                        value="eltrekker@gmail.com"
+                      />
+                    </div>
+                    <div>
+                      <label for="password" class="block text-sm mb-1"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm"
+                        required
+                        value="••••••••"
+                      />
+                    </div>
+                    <div class="flex items-center">
+                      <input
+                        id="remember-me"
+                        name="remember-me"
+                        type="checkbox"
+                        class="h-4 w-4 rounded border-gray-300 text-black focus:ring-black"
+                      />
+                      <label
+                        for="remember-me"
+                        class="ml-2 block text-sm text-gray-900"
+                        >Remember me</label
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-gray-800"
+                    >
+                      Let's Start
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block md:w-1/2 h-full">
+          <div
+            data-hs-carousel='{"loadingClasses": "opacity-0", "isAutoPlay": true}'
+            class="relative h-full"
+          >
+            <div
+              class="hs-carousel-body w-full h-full absolute top-0 start-0 overflow-hidden"
+            >
+              <div class="hs-carousel-slide h-full">
+                <div class="relative h-full">
+                  <img
+                    src="../img/sign-in2.jpg"
+                    alt="Tropical beach with huts and a seaplane from an aerial view"
+                    class="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-10 right-10 z-10 text-white p-6 bg-white/20 backdrop-blur-sm rounded-lg max-w-xs"
+                  >
+                    <h3 class="text-xl font-semibold">
+                      Travel the World, Your Way!
+                    </h3>
+                    <p class="mt-1 text-sm">
+                      Explore destinations at your pace, with personalized
+                      journeys & unforgettable experiences.
+                    </p>
+                  </div>
+                  <div class="absolute bottom-10 left-10 z-10 text-white p-4">
+                    <h3 class="text-3xl font-bold">Explore the World,</h3>
+                    <h3 class="text-3xl font-bold">Beyond Boundaries!</h3>
+                    <a
+                      class="mt-4 inline-block py-2 px-5 rounded-full border border-white text-white text-sm hover:bg-white hover:text-black transition-colors"
+                      href="#"
+                    >
+                      Start your adventure today!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
