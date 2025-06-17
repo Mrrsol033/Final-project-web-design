@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer</title>
     <!-- Link to your local Tailwind CSS output file -->
     <link rel="stylesheet" href="../src/output.css" />
     <link
@@ -12,11 +13,11 @@
   </head> 
   <body>
     <!-- Header -->
-     <header
-      class="bg-white shadow-sm dark:bg-gray-800 sticky top-0 z-50"
+      <header
+      class="bg-white/30 backdrop-blur-md transition-all duration-300 shadow-sm dark:bg-gray-800 sticky top-0 z-50"
     >
       <div
-        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-3"
+        class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-2.5"
       >
         <!-- Logo -->
         <div
@@ -30,7 +31,7 @@
             aria-label="Camp Homepage"
           >
             <img src="../img/logo2.svg" alt="Camp Logo" class="w-12 h-12" />
-            <span class="text-[18px] font-bold dark:text-white">Camp Booking</span>
+            <span class="text-[18px] font-bold dark:text-white">Camp <span class="text-blue-600 dark:text-white">Booking</span></span>
           </a>
         </div>
 
@@ -220,7 +221,7 @@
     </header>
     
   <main>
-    <div class="bg-indigo-600">
+    <div class="bg-gradient-to-r from-indigo-500 to-blue-500">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
           Find the Perfect Hotel on Camp
