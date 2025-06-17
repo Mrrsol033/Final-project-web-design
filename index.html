@@ -6,6 +6,7 @@
     <title>Camp Booking</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./img/CAMPBOOKING_LOGO1-.png" type="image/x-icon">
   </head>
   <body
     class="bg-gray-100 text-gray-900 dark:bg-gray-900 overflow-x-hidden dark:text-white transition-colors duration-300"
@@ -231,112 +232,90 @@
 
     <!-- section-1 -->
     <div
-      class="relative bg-gradient-to-r from-indigo-500 to-blue-500 flex flex-col justify-center py-[1.5rem] shadow-lg mt-[rem] m-auto max-sm:w-[100%] sm:w-[85%] lg:w-[100%] dark:text-white dark:bg-gray-700 dark:shadow-lg dark:drop-shadow-gray-95000"
-      data-aos="fade-up" data-aos-duration="700"
+  class="relative bg-gradient-to-r from-indigo-500 to-blue-500 flex flex-col justify-center py-16 shadow-lg mt- mx-auto max-sm:w-full sm:w-4/5 lg:w-full dark:text-white dark:bg-gray-700 dark:shadow-lg"
+  data-aos="fade-up"
+  data-aos-duration="700"
+>
+  <h3 class="mx-auto text-3xl text-white font-bold max-sm:text-2xl" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+    Find Your Perfect Stay
+  </h3>
+  <p class="mx-auto mt-2 text-white text-lg max-sm:text-base mb-0" data-aos="fade-up" data-aos-duration="200" data-aos-delay="100">
+    Search through our curated collection.
+  </p>
+
+  <div
+    class="relative h-[30rem] mx-auto flex items-center justify-center mt-6 max-sm:h-96 max-sm:w-full sm:w-[98%] sm:h-[35rem] lg:w-full lg:h-[45vh]"
+    data-aos="fade-up"
+    data-aos-duration="300"
+    data-aos-delay="300"
+  >
+    <!-- Background Image -->
+<div
+  class="absolute m-auto inset-0 bg-cover bg-center max-sm:hidden sm:w-[95%] lg:w-[95%]"
+  style="background-image: url('./img/pexels-jaime-reimer-1376930-2662116.jpg');"
+  data-aos="zoom-in"
+  data-aos-duration="400"
+></div>
+
+    <!-- White Board -->
+    <div
+      class="absolute bg-white p-4 rounded-lg max-sm:w-4/5 max-sm:bottom-0 sm:w-4/5 sm:bottom-[-30%] lg:w-4/5 lg:h-80 lg:bottom-[-35%] dark:bg-gray-800"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="700"
     >
-      <h3 class="m-auto max-sm:text-3xl text-white text-4xl font-bold" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-        Find Your Perfect Stay
-      </h3>
-      <p class="m-auto mt-2 text-white max-sm:text-1xl text-lg mb-[-1.5rem]" data-aos="fade-up" data-aos-duration="200" data-aos-delay="100">
-        Search through our curated collection.
-      </p>
+      <div class="flex flex-wrap justify-between mb-4 gap-2">
+        <button class="py-2 px-3 bg-blue-600 text-white rounded-lg flex-1 hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800">
+          All Stays
+        </button>
+        <button class="py-2 px-3 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+          Flight
+        </button>
+        <button class="py-2 px-3 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+          Car
+        </button>
+        <button class="py-2 px-3 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+          Cruises
+        </button>
+        <button class="py-2 px-3 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+          Packages
+        </button>
+      </div>
 
-      <div
-        class="relative h-[30rem] m-auto flex items-center justify-center mt-[3rem] max-sm:h-[40rem] max-sm:w-[95%] sm:w-[98%] sm:h-[35rem] lg:w-[100%] lg:h-[45vh]"
-        data-aos="fade-up" data-aos-duration="300" data-aos-delay="300"
-      >
-        <!-- img-bg -->
-        <div
-          class="absolute m-auto inset-0 bg-cover bg-center max-sm:w-[95%] sm:w-[95%] lg:w-[95%]"
-          style="
-            background-image: url('./img/pexels-jaime-reimer-1376930-2662116.jpg');
-          "
-          data-aos="zoom-in" data-aos-duration="400"
-        ></div>
-        <!-- img-bg -->
+      <div class="mb-4">
+        <label for="location" class="block text-gray-700 dark:text-white">Location</label>
+        <input type="text" id="location" class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg" value="Phnom Penh, Cambodia" />
+      </div>
 
-        <!-- text in img -->
-
-        <!-- text in img -->
-
-        <!-- white board -->
-        <div
-          class="absolute bg-white p-6 rounded-lg max-sm:w-[85%] max-sm:bottom-[-5%] sm:w-[80%] sm:bottom-[-35%] lg:w-[80%] lg:h-[20rem] lg:bottom-[-40%] dark:bg-gray-800"
-          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
-        >
-          <div class="flex flex-wrap justify-between mb-4 space-x-2 gap-2">
-            <button
-              class="py-2 px-4 bg-blue-600 text-white rounded-lg flex-1 hover:bg-blue-700 transition dark:bg-blue-700 dark:hover:bg-blue-800"
-            >
-              All Stays
-            </button>
-            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-              Flight
-            </button>
-            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-              Car
-            </button>
-            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-              Cruises
-            </button>
-            <button class="py-2 px-4 bg-gray-200 rounded-lg flex-1 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-              Packages
-            </button>
-          </div>
-          <div class="mb-4" >
-            <label for="location" class="block text-gray-700 dark:text-white">Location</label>
-            <input
-              type="text"
-              id="location"
-              class="w-full p-2 border border-gray-300 outline-sky-200  rounded-lg"
-              value="Phnom Penh, Cambodia"
-            />
-          </div>
-          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
-            <div>
-              <label for="checkin" class="block text-gray-700 dark:text-white">Check in</label>
-              <input
-                type="date"
-                id="checkin"
-                class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg"
-                value="2025-09-05"
-              />
-            </div>
-            <div>
-              <label for="checkout" class="block text-gray-700 dark:text-white">Check out</label>
-              <input
-                type="date"
-                id="checkout"
-                class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg"
-                value="2025-09-07"
-              />
-            </div>
-          </div>
-          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4 items-center dark:text-white">
-            <div class="mb-4">
-              <label for="guests" class="block text-gray-700 dark:text-white">Guest</label>
-              <input
-                type="number"
-                id="guests"
-                class="w-full p-2  border border-gray-300 outline-blue-300 rounded-lg"
-                value="2"
-              />
-            </div>
-            <button onclick="document.getElementById('location').focus()"
-              class="h-fit py-[0.6rem] mt-2  bg-blue-700 text-white rounded-lg hover:bg-blue-800 dark:bg-blue-700"
-            >
-              Search now
-            </button>
-          </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label for="checkin" class="block text-gray-700 dark:text-white">Check in</label>
+          <input type="date" id="checkin" class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg" value="2025-09-05" />
         </div>
-        <!-- end board -->
+        <div>
+          <label for="checkout" class="block text-gray-700 dark:text-white">Check out</label>
+          <input type="date" id="checkout" class="w-full p-2 border border-gray-300 outline-sky-200 rounded-lg" value="2025-09-07" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 items-center dark:text-white">
+        <div class="mb-4">
+          <label for="guests" class="block text-gray-700 dark:text-white">Guest</label>
+          <input type="number" id="guests" class="w-full p-2 border border-gray-300 outline-blue-300 rounded-lg" value="2" />
+        </div>
+        <button onclick="document.getElementById('location').focus()" class="h-fit py-2 mt-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 dark:bg-blue-700">
+          Search now
+        </button>
       </div>
     </div>
+    <!-- End Board -->
+  </div>
+</div>
     <!-- end section-1 -->
 
     <!-- section-2 -->
     <div
-      class="flex flex-col items-center mt-40 text-gray-800 p-6 max-w-[95%] mx-auto sm:max-w-[90%]"
+      class="flex flex-col items-center mt-20 text-gray-800 p-6 max-w-[95%] mx-auto sm:max-w-[90%]"
       data-aos="fade-up"
       data-aos-duration="300"
     >
