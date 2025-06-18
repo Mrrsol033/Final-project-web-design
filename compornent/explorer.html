@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explorer</title>
-    <!-- Link to your local Tailwind CSS output file -->
+    <title>Camp - Find the Perfect Hotel</title>
     <link rel="stylesheet" href="../src/output.css" />
-    <link rel="shortcut icon" href="../img/CAMPBOOKING_LOGO1-.png" type="image/x-icon">
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
-  </head> 
-  <body>
-    <!-- Header -->
-      <header
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+       <header
       class="bg-white/30 backdrop-blur-md transition-all duration-300 shadow-sm dark:bg-gray-800 sticky top-0 z-50"
     >
       <div
@@ -26,14 +24,25 @@
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-       <a href="#" class="flex items-center space-x-3" aria-label="Camp Homepage">
-  <img src="../img/campbooking.png" alt="Camp Logo" class="w-12 h-12 dark:hidden" />
-  <img src="../img/CAMPBOOKING_LOGO1-.png" alt="Camp Logo" class="w-12 h-12 hidden dark:block" />
-  <span class="text-[18px] font-bold dark:text-white">
-    Camp <span class="text-blue-600 dark:text-white">Booking</span>
-  </span>
-</a>
-
+          <a
+            href="../index.html"
+            class="flex items-center space-x-3"
+            aria-label="Camp Homepage"
+          >
+            <img
+              src="../img/campbooking.png"
+              alt="Camp Logo"
+              class="w-12 h-12 dark:hidden"
+            />
+            <img
+              src="../img/CAMPBOOKING_LOGO1-.png"
+              alt="Camp Logo"
+              class="w-12 h-12 hidden dark:block"
+            />
+            <span class="text-[18px] font-bold dark:text-white">
+              Camp <span class="text-blue-600 dark:text-white">Booking</span>
+            </span>
+          </a>
         </div>
 
         <!-- Desktop Navigation -->
@@ -44,25 +53,25 @@
           data-aos-duration="1000"
         >
           <a
-            href="../index.html"
-            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200 transition"
-            >Home</a
-          >
-          <a
-            href="./explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
-            >Explorer</a
-          >
-          <a
-            href="./blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
-            >Blog</a
-          >
-          <a
-            href="./about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline transition"
-            >About</a
-          >
+                href="../index.html"
+                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="./explorer.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Explore</a
+              >
+              <a
+                href="./blog.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Blog</a
+              >
+              <a
+                href="./about.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >About</a
+              >
         </nav>
 
         <!-- Desktop Actions -->
@@ -185,26 +194,26 @@
         data-aos-duration="800"
       >
         <nav class="flex flex-col space-y-3" aria-label="Mobile Navigation">
-          <a
-            href="../index.html"
-            class="text-green-900 font-semibold dark:text-green-300 hover:underline hover:text-green-700 dark:hover:text-green-200"
-            >Home</a
-          >
-          <a
-            href="./explorer.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
-            >Explorer</a
-          >
-          <a
-            href="./blog.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
-            >Blog</a
-          >
-          <a
-            href="./about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-green-900 dark:hover:text-green-200 hover:underline"
-            >About</a
-          >
+           <a
+                href="../index.html"
+                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="./explorer.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Explore</a
+              >
+              <a
+                href="./blog.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >Blog</a
+              >
+              <a
+                href="./about.html"
+                class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 text-sm font-medium"
+                >About</a
+              >
         </nav>
         <div class="space-y-3">
           <a
@@ -220,2395 +229,1499 @@
         </div>
       </div>
     </header>
-    
-  <main>
-    <div class="bg-gradient-to-r from-indigo-500 to-blue-500">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
+    <!-- Hero Section -->
+    <div
+      class="relative bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-800 dark:to-purple-800"
+    >
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 text-center"
+      >
+        <h1 class="text-4xl md:text-3xl lg:text-4xl font-extrabold text-white">
           Find the Perfect Hotel on Camp
         </h1>
         <p class="mt-4 text-lg text-indigo-200">
           From cheap hotels to luxury rooms and everything in between
         </p>
       </div>
-  
-      <!-- Search Form Card -->
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24">
-        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-          <form>
-            <div
-              class="grid gap-4 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_auto] items-end"
-            >
-              <!-- Location Input -->
-              <div>
-                <label
-                  for="destination-input"
-                  class="flex items-center text-sm font-medium text-gray-700 mb-1"
-                >
-                  <svg
-                    class="inline-block w-4 h-4 mr-1.5 text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  Location
-                </label>
-                <input
-                  type="text"
-                  id="destination-input"
-                  class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
-                  placeholder="Zurich, Switzerland"
-                />
-              </div>
-  
-            <!-- Check-in Input -->
-            <div>
-              <label
-                for="checkin-date"
-                class="flex items-center text-sm font-medium text-gray-700 mb-1"
-              >
-                <svg
-                  class="inline-block w-4 h-4 mr-1.5 text-gray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-                  <line x1="16" x2="16" y1="2" y2="6" />
-                  <line x1="8" x2="8" y1="2" y2="6" />
-                  <line x1="3" x2="21" y1="10" y2="10" />
-                </svg>
-                Check in
-              </label>
-
-
-              <div class="relative max-w-sm">
-                <div class=" absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                   <svg class=" w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </div>
-                <input id="datepicker-autohide" datepicker datepicker-autohide type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
-              </div>
-              
-              
-            </div>
-
-            <!-- Check-out Input -->
-            <div>
-              <label
-                for="checkout-date"
-                class="flex items-center text-sm font-medium text-gray-700 mb-1"
-              >
-                <svg
-                  class="inline-block w-4 h-4 mr-1.5 text-gray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-                  <line x1="16" x2="16" y1="2" y2="6" />
-                  <line x1="8" x2="8" y1="2" y2="6" />
-                  <line x1="3" x2="21" y1="10" y2="10" />
-                </svg>
-                Check out
-              </label>
-              <div class="relative max-w-sm">
-                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-                </div>
-                <input datepicker id="default-datepicker" type="text" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
-              </div>
-              
-            </div>
-        
-              <!-- Guests Input -->
-              <div>
-                <label
-                  for="guests-select"
-                  class="flex items-center text-sm font-medium text-gray-700 mb-1"
-                >
-                  <svg
-                    class="inline-block w-4 h-4 mr-1.5 text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                  </svg>
-                  Guests
-                </label>
-                <select
-                  id="guests-select"
-                  class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500"
-                >
-                  <option value="1">1 Guest</option>
-                  <option value="2" selected>2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4+ Guests</option>
-                </select>
-              </div>
-  
-              <!-- Search Button -->
-              <div class="w-full">
-                <button
-                  id="search-btn"
-                  type="submit"
-                  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                >
-                  <svg
-                    class="flex-shrink-0 size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="11" cy="11" r="8" />
-                    <path d="m21 21-4.3-4.3" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
-    <!--remove-->
 
-    <!--end -->
-
-    <div>
+    <!-- Search Form -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-10">
       <div
-        class="max-w-screen-xl mx-auto px-4 py-3 sm:px-6 sm:py-4 lg:px-8 lg:py-5"
+        class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4 sm:p-6 border-gray-200 dark:border-gray-700"
       >
-        <div
-          class="flex flex-wrap justify-end items-center gap-2 mb-1 text-base"
-        >
-          <!-- Dropdown Button -->
-          <div class="relative">
-            <button
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              type="button"
+        <form class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5 items-end">
+          <!-- Location -->
+          <div>
+            <label
+              class="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
-              Dropdown
               <svg
-                class="w-2.5 h-2.5 ms-3 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 mr-1.5 text-gray-500 dark:text-gray-400"
                 fill="none"
-                viewBox="0 0 10 6"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="m1 1 4 4 4-4"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-            </button>
-
-            <!-- Dropdown Menu -->
-            <div
-              id="dropdown"
-              class="z-10 hidden absolute mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
-            >
-              <ul
-                class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Settings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Earnings</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </li>
-              </ul>
-            </div>
+              Location
+            </label>
+            <input
+            id="location"
+              type="text"
+              placeholder="Zurich, Switzerland"
+              class="w-full px-4 py-3 border outline-blue-500 border-gray-200 dark:border-gray-400 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white  focus:border-transparent"
+            />
           </div>
 
-          <!-- Grid View Button -->
-          <button
-            class="p-2 rounded-md text-gray-600 hover:bg-gray-100 border border-gray-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-6 h-6"
+          <!-- Check-in -->
+          <div>
+            <label
+              class="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
-              <rect width="7" height="7" x="3" y="3" rx="1" />
-              <rect width="7" height="7" x="14" y="3" rx="1" />
-              <rect width="7" height="7" x="14" y="14" rx="1" />
-              <rect width="7" height="7" x="3" y="14" rx="1" />
-            </svg>
-          </button>
-
-          <!-- List View Button -->
-          <button
-            class="p-2 rounded-md text-white bg-black border border-gray-800"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-6 h-6"
-            >
-              <line x1="8" x2="21" y1="6" y2="6" />
-              <line x1="8" x2="21" y1="12" y2="12" />
-              <line x1="8" x2="21" y1="18" y2="18" />
-              <line x1="3" x2="3.01" y1="6" y2="6" />
-              <line x1="3" x2="3.01" y1="12" y2="12" />
-              <line x1="3" x2="3.01" y1="18" y2="18" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Grid Section -->
-        <div class="lg:grid lg:grid-cols-12 lg:gap-6">
-          <div class="lg:col-span-9 mt-4 lg:mt-0">
-            <div
-              id="hotel-grid"
-              class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch"
-            >
-              <!-- Cards go here -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-  
-    <!--remove-->
-  
-    <!-- The inline style tag has been removed and replaced with Tailwind utility classes -->
-    <div class="font-sans bg-none">
-      <!-- Main container to center the layout and hold both sidebar and content -->
-      <div class="max-w-screen-xl mx-auto lg:flex lg:gap-8 p-4 sm:p-6 lg:p-8">
-        <!-- Sidebar -->
-        <div
-          id="hs-sidebar-empty-content"
-          class="rounded-[5px] hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:relative lg:h-auto lg:z-auto w-80 lg:shrink-0 hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform h-full hidden fixed top-0 start-0 bottom-0 z-[60] bg-white border-e border-gray-200 dark:bg-neutral-800 dark:border-neutral-700"
-          role="dialog"
-          tabindex="-1"
-          aria-label="Sidebar"
-        >
-          <div class="relative flex flex-col h-full max-h-full">
-            <!-- Header -->
-            <header
-              class="p-4 flex justify-between items-center gap-x-2 border-b"
-            >
-              <a
-                class="flex-none text-xl font-semibold dark:text-white"
-                href="#"
-                aria-label="Brand"
-                >Filters</a
+              <svg
+                class="w-4 h-4 mr-1.5 text-gray-500 dark:text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-              <div class="lg:hidden -me-2">
-                <!-- Close Button -->
-                <button
-                  type="button"
-                  class="flex justify-center items-center gap-x-3 size-6 bg-white border border-gray-200 text-sm text-gray-600 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:pointer-events-none"
-                  data-hs-overlay="#hs-sidebar-empty-content"
-                >
-                  <svg
-                    class="shrink-0 size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M18 6 6 18" />
-                    <path d="m6 6 12 12" />
-                  </svg>
-                  <span class="sr-only">Close</span>
-                </button>
-              </div>
-            </header>
-            <!-- End Header -->
-  
-            <!-- Body -->
-            <nav class="h-full overflow-y-auto p-4">
-              <!-- All filter sections wrapped in a container with vertical spacing -->
-              <div class="space-y-6">
-                <img
-                  class="rounded-[5px]"
-                  src="/img/c7d94c7f608693de3bcc21be78b70f21.jpg"
-                  alt=""
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
-                <!-- Popular Filters Section -->
-                <div class="rounded-[5px] bg-white shadow p-4 rounded">
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Popular filters
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                  </div>
-                  <div class="mt-3 space-y-3">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-private-bathroom-pop"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-private-bathroom-pop"
-                          class="ms-3 text-sm text-gray-600"
-                          >Private bathroom</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">195</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-hairdryer"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-hairdryer"
-                          class="ms-3 text-sm text-gray-600"
-                          >Hairdryer</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">101</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-3stars-pop"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-3stars-pop"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >3 stars</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >78</span
-                      >
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-lt5km"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-lt5km"
-                          class="ms-3 text-sm text-gray-600"
-                          >Less than 5 km</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">61</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-superb"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-superb"
-                          class="ms-3 text-sm text-gray-600"
-                          >Superb: 9+</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">16</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-parking-pop"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-parking-pop"
-                          class="ms-3 text-sm text-gray-600"
-                          >Parking</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">203</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-tv"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-tv"
-                          class="ms-3 text-sm text-gray-600"
-                          >TV</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">151</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-washing-machine"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-washing-machine"
-                          class="ms-3 text-sm text-gray-600"
-                          >Washing machine</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">34</span>
-                    </div>
-                  </div>
-                </div>
-  
-                <!-- Property Type Section -->
-                <div
-                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
-                >
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Property type
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                  </div>
-                  <div class="mt-3 space-y-3">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-hotels"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-hotels"
-                          class="ms-3 text-sm text-gray-600"
-                          >Hotels</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">153</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-apartments"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-apartments"
-                          class="ms-3 text-sm text-gray-600"
-                          >Apartments</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">67</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-guesthouses"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-guesthouses"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >Guest houses</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >98</span
-                      >
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-homestays"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-homestays"
-                          class="ms-3 text-sm text-gray-600"
-                          >Homestays</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">54</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-bed-breakfast"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-bed-breakfast"
-                          class="ms-3 text-sm text-gray-600"
-                          >Bed and breakfasts</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">54</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-hostels"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-hostels"
-                          class="ms-3 text-sm text-gray-600"
-                          >Hostels</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">23</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-villas"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-villas"
-                          class="ms-3 text-sm text-gray-600"
-                          >Villas</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">567</span>
-                    </div>
-                  </div>
-                </div>
-                <!--Facilites-->
-                <div
-                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
-                >
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Facilities
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                  </div>
-                  <div class="mt-3 space-y-3">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-parking-fac"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-parking-fac"
-                          class="ms-3 text-sm text-gray-600"
-                          >Parking</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">34</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-wifi"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-wifi"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >Free Wifi</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >345</span
-                      >
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-restaurant"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-restaurant"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >Restaurant</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >56</span
-                      >
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-pets"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-pets"
-                          class="ms-3 text-sm text-gray-600"
-                          >Pets allowed</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">343</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-room-service"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-room-service"
-                          class="ms-3 text-sm text-gray-600"
-                          >Room service</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">45</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-24-hour-desk"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-24-hour-desk"
-                          class="ms-3 text-sm text-gray-600"
-                          >24-hour front desk</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">23</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-fitness-centre"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-fitness-centre"
-                          class="ms-3 text-sm text-gray-600"
-                          >Fitness centre</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">331</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-swimming-pool"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-swimming-pool"
-                          class="ms-3 text-sm text-gray-600"
-                          >Swimming Pool</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">33</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-airport-shuttle"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-airport-shuttle"
-                          class="ms-3 text-sm text-gray-600"
-                          >Airport shuttle</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">14</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-disabled-guests"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-disabled-guests"
-                          class="ms-3 text-sm text-gray-600"
-                          >Facilities for disabled guests</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">24</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-family-rooms"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-family-rooms"
-                          class="ms-3 text-sm text-gray-600"
-                          >Family rooms</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">65</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-spa-wellness"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-spa-wellness"
-                          class="ms-3 text-sm text-gray-600"
-                          >Spa and wellness centre</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">78</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-ev-charging"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-ev-charging"
-                          class="ms-3 text-sm text-gray-600"
-                          >Electric vehicle charging station</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">45</span>
-                    </div>
-                  </div>
-                </div>
-  
-                <!-- Property Rating Section -->
-                <div
-                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
-                >
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Property rating
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                  </div>
-                  <div class="mt-3 space-y-3">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-1star"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-1star"
-                          class="ms-3 text-sm text-gray-600"
-                          >1 star</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">195</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-2star"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-2star"
-                          class="ms-3 text-sm text-gray-600"
-                          >2 star</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">101</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-3star-rate"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-3star-rate"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >3 star</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >78</span
-                      >
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-4star"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-4star"
-                          class="ms-3 text-sm text-gray-600"
-                          >4 star</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">61</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-5star"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-5star"
-                          class="ms-3 text-sm text-gray-600"
-                          >5 star</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">16</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-unrated"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-unrated"
-                          class="ms-3 text-sm text-gray-600"
-                          >Unrated</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">203</span>
-                    </div>
-                  </div>
-                </div>
-  
-                <!-- Room Facilities Section -->
-                <div
-                  class="border-t border-gray-200 pt-6 rounded-[5px] bg-white shadow p-4 rounded"
-                >
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Room facilities
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m18 15-6-6-6 6" />
-                    </svg>
-                  </div>
-                  <div class="mt-3 space-y-3">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-private-pool"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-private-pool"
-                          class="ms-3 text-sm text-gray-600"
-                          >Private pool</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">195</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-ac"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                        /><label
-                          for="filter-ac"
-                          class="ms-3 text-sm text-gray-600"
-                          >Air conditioning</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs text-gray-500">101</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input
-                          id="filter-private-bathroom"
-                          type="checkbox"
-                          class="shrink-0 mt-0.5 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
-                          checked
-                        /><label
-                          for="filter-private-bathroom"
-                          class="ms-3 text-sm text-gray-800 font-semibold"
-                          >Private bathroom</label
-                        >
-                      </div>
-                      <span class="ms-3 text-xs font-semibold text-gray-800"
-                        >78</span
-                      >
-                    </div>
-                  </div>
-                </div>
-  
-                <!--dropdown-->
-                <!-- Property Accessibility Section -->
-                <div class="border-t border-gray-200 pt-6">
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Property accessibility
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </div>
-                </div>
-  
-                <!-- Room Accessibility Section -->
-                <div class="border-t border-gray-200 pt-6">
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Room accessibility
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </div>
-                </div>
-  
-                <!-- Travel Sustainable Section -->
-                <div class="border-t border-gray-200 pt-6">
-                  <div class="flex justify-between items-center cursor-pointer">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">
-                      Travel Sustainable
-                    </h3>
-                    <svg
-                      class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m6 9 6 6 6-6" />
-                    </svg>
-                  </div>
-                </div>
-                <!--end dropdown-->
-              </div>
-            </nav>
+              </svg>
+              Check in
+            </label>
+            <input
+              type="date"
+              class="w-full px-4 py-3 border outline-blue-500 border-gray-200 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white  focus:border-transparent"
+            />
           </div>
-        </div>
-        <!-- End Sidebar -->
-  
-        <!-- Main Content -->
-        <div class="flex-1">
-          <!-- Navigation Toggle Button -->
-          <div class="lg:hidden text-start mb-6">
+
+          <!-- Check-out -->
+          <div>
+            <label
+              class="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            >
+              <svg
+                class="w-4 h-4 mr-1.5 text-gray-500 dark:text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Check out
+            </label>
+            <input
+              type="date"
+              class="w-full px-4 py-3 border border-gray-200 outline-blue-500 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-transparent"
+            />
+          </div>
+
+          <!-- Guests -->
+          <div>
+            <label
+              class="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            >
+              <svg
+                class="w-4 h-4 mr-1.5 text-gray-500 dark:text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+                />
+              </svg>
+              Guests
+            </label>
+            <select
+              class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            >
+              <option>1 Guest</option>
+              <option selected>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4+ Guests</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <div>
             <button
-              type="button"
-              class="py-2 px-3 inline-flex justify-center items-center gap-x-2 text-start bg-gray-800 border border-transparent text-white text-sm font-medium rounded-lg shadow-sm align-middle hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-white dark:focus:ring-offset-gray-800"
-              aria-haspopup="dialog"
-              aria-expanded="false"
-              aria-controls="hs-sidebar-empty-content"
-              aria-label="Toggle navigation"
-              data-hs-overlay="#hs-sidebar-empty-content"
+              onclick="document.getElementById('location').focus()"
+             type="button"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-4 rounded-lg flex items-center justify-center transition-colors"
             >
               <svg
                 class="w-4 h-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                viewBox="0 0 24 24"
               >
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="18" x2="21" y2="18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
-              Open Menu
             </button>
           </div>
-          <!-- End Navigation Toggle Button -->
-  
-          <!-- Grid container now uses a custom breakpoint approach -->
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:block lg:space-y-6 gap-6"
-          >
-            <!-- Card Component 1 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-quark-studio-1159039-2507007.jpg"
-                  alt="Fuvahmulah Hotel"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    5
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Fuvahmulah Hotel
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.9/10
-                    </p>
-                    <p class="text-xs text-gray-500">1250 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Fuvahmulah City, Maldives • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Luxury resort with crystal clear waters and tropical setting.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $39.99
-                    </p>
-                    <p class="text-sm text-gray-500">$34 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Card Component 2 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-asadphoto-1450360.jpg"
-                  alt="Beachside Resort"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.8
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Beachside Resort
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.8/10
-                    </p>
-                    <p class="text-xs text-gray-500">980 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Sunny Beach, California • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    A perfect getaway with stunning ocean views.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $45.99
-                    </p>
-                    <p class="text-sm text-gray-500">$38 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Card Component 3 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-kelly-1179532-2869215.jpg"
-                  alt="City Center Hotel"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.5
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    City Center Hotel
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.5/10
-                    </p>
-                    <p class="text-xs text-gray-500">2100 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Downtown, Metropolis • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Modern hotel in the heart of the city.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $55.00
-                    </p>
-                    <p class="text-sm text-gray-500">$42 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card Component 4 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-gabriela-lopez-2153097080-32553624-2.jpg"
-                  alt="Mountain Retreat"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.7
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Mountain Retreat
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.7/10
-                    </p>
-                    <p class="text-xs text-gray-500">750 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Rocky Mountains, Colorado • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Cozy cabins amidst stunning mountain scenery.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $65.50
-                    </p>
-                    <p class="text-sm text-gray-500">$50 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card Component 5 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-jaime-reimer-1376930-2662116.jpg"
-                  alt="Lakeview Inn"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.2
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Lakeview Inn
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.2/10
-                    </p>
-                    <p class="text-xs text-gray-500">300 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Lake Serenity, Canada • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Peaceful retreat with beautiful lake views.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $30.00
-                    </p>
-                    <p class="text-sm text-gray-500">$25 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card Component 6 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-amr-saleh-467591-3958516.jpg"
-                  alt="Desert Oasis"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.9
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Desert Oasis
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.9/10
-                    </p>
-                    <p class="text-xs text-gray-500">1800 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Sahara Desert, Egypt • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Luxurious tents under the desert stars.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $70.00
-                    </p>
-                    <p class="text-sm text-gray-500">$55 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card Component 7 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-eberhardgross-1417647.jpg"
-                  alt="Forest Lodge"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.6
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Forest Lodge
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.6/10
-                    </p>
-                    <p class="text-xs text-gray-500">900 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Black Forest, Germany • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Secluded lodge deep within the forest.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $60.00
-                    </p>
-                    <p class="text-sm text-gray-500">$48 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Card Component 8 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-musicfactory-lehmannsound-12746-64109.jpg"
-                  alt="Riverside Bungalow"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.3
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Riverside Bungalow
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.3/10
-                    </p>
-                    <p class="text-xs text-gray-500">550 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Peaceful River, Asia • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Charming bungalows by the tranquil river.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $35.00
-                    </p>
-                    <p class="text-sm text-gray-500">$28 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Card Component 9 -->
-            <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto sm:max-w-none sm:mx-0 lg:flex-row lg:max-w-4xl  max-w-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition duration-300 ease-in-out"
-            >
-              <!-- Image container -->
-              <div
-                class="relative w-full aspect-video lg:w-1/3 lg:shrink-0 lg:aspect-auto"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  src="/img/pexels-wendywei-20337840.jpg"
-                  alt="Urban Lofts"
-                  onerror="this.onerror=null;this.src='https://placehold.co/800x600/e2e8f0/4a5568?text=Image+Not+Found';"
-                />
-                <div class="absolute top-0 left-0 p-3">
-                  <div
-                    class="bg-white rounded-full px-3 py-1 flex items-center gap-x-1 text-sm font-semibold text-gray-800"
-                  >
-                    <svg
-                      class="size-4 text-yellow-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                      />
-                    </svg>
-                    4.0
-                  </div>
-                </div>
-                <div class="absolute top-0 right-0 p-3">
-                  <button
-                    class="bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition"
-                  >
-                    <svg
-                      class="size-6 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="p-6 flex flex-col flex-grow">
-                <div class="flex justify-between items-start">
-                  <h3 class="text-xl lg:text-2xl font-bold text-gray-800">
-                    Urban Lofts
-                  </h3>
-                  <div class="text-right flex-shrink-0 ml-4">
-                    <p class="text-lg lg:text-xl font-bold text-orange-500">
-                      4.0/10
-                    </p>
-                    <p class="text-xs text-gray-500">800 Reviews</p>
-                  </div>
-                </div>
-                <div class="mt-2 flex-grow">
-                  <p class="text-sm text-gray-600 flex items-center">
-                    <svg
-                      class="size-4 mr-1.5 text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Metropolitan City, USA • Show on map
-                  </p>
-                  <p class="mt-3 text-gray-700">
-                    Chic lofts in the vibrant city center.
-                  </p>
-                </div>
-                <div class="mt-4 flex justify-between items-end">
-                  <div>
-                    <p class="text-2xl lg:text-3xl font-bold text-gray-900">
-                      $50.00
-                    </p>
-                    <p class="text-sm text-gray-500">$40 taxes and fees</p>
-                  </div>
-                  <button
-                    class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-                  >
-                    See availability
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <nav
-            class="flex items-center justify-center mt-8"
-            aria-label="Pagination"
-          >
-            <a
-              class="p-2 inline-flex items-center gap-x-2 rounded-md text-gray-500 hover:bg-gray-100"
-              href="#"
-            >
-              <svg
-                class="flex-shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-            </a>
-            <div class="flex items-center gap-x-2">
-              <a
-                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg bg-blue-600 text-white"
-                href="#"
-                aria-current="page"
-                >1</a
-              >
-              <a
-                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
-                href="#"
-                >2</a
-              >
-              <a
-                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
-                href="#"
-                >3</a
-              >
-              <span class="text-sm text-gray-500">...</span>
-              <a
-                class="py-2 px-3 inline-flex items-center text-sm font-medium rounded-lg text-gray-500 hover:bg-gray-100"
-                href="#"
-                >25</a
-              >
-            </div>
-            <a
-              class="p-2 inline-flex items-center gap-x-2 rounded-md text-gray-500 hover:bg-gray-100"
-              href="#"
-            >
-              <svg
-                class="flex-shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </a>
-          </nav>
-        </div>
+        </form>
       </div>
-  </main>
-  <!-- ========== FOOTER ========== -->
-     <footer
-      class="bg-gray-700 text-white"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom"
-    >
-      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <!-- Brand -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar Filters -->
+        <div class="lg:w-1/4 static top-30  bg-white dark:bg-gray-900 z-10">
           <div
-            data-aos="fade-right"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-bottom"
+            class="bg-white dark:bg-gray-800 shadow-sm p-6 border-l-2 border-gray-400 dark:border-gray-300"
           >
-            <div class="flex items-center space-x-3">
-              <img src="../img/CAMPBOOKING_LOGO1-.png" alt="Camp Logo" class="h-12 w-12" />
-              <span class="text-xl font-bold">Camp </span>
-            </div>
-            <p class="mt-4 text-sm text-gray-300">
-              Camp Experiences, the world’s leading travel platform, helps
-              millions discover unforgettable destinations, hotels, and
-              adventures.
-            </p>
-            <div
-              class="flex mt-4 space-x-4"
-              data-aos="zoom-in"
-              data-aos-delay="200"
+            <h3
+              class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
             >
-              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="#" class="hover:text-gray-400" aria-label="Facebook"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="hover:text-gray-400" aria-label="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-          <!-- Links 1 -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <h3 class="text-lg font-semibold mb-4">About Us</h3>
-            <ul class="space-y-2 text-sm text-gray-300">
-              <li><a href="#" class="hover:text-white">Our Story</a></li>
-              <li><a href="#" class="hover:text-white">Careers</a></li>
-              <li><a href="#" class="hover:text-white">Press</a></li>
-              <li><a href="#" class="hover:text-white">Privacy</a></li>
-              <li><a href="#" class="hover:text-white">Terms</a></li>
-            </ul>
-          </div>
-          <!-- Links 2 -->
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
-            <ul class="space-y-2 text-sm text-gray-300">
-              <li>
-                <a href="#" class="hover:text-white">Explore Destinations</a>
-              </li>
-              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
-              <li>
-                <a href="#" class="hover:text-white">Unique Experiences</a>
-              </li>
-              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
-              <li><a href="#" class="hover:text-white">FAQ</a></li>
-            </ul>
-          </div>
-          <!-- Newsletter -->
-          <div
-            data-aos="fade-left"
-            data-aos-delay="500"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
-            <form
-              class="flex items-center border border-gray-500 rounded-full overflow-hidden"
-              aria-label="Newsletter Signup"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
-                required
-              />
-              <button
-                type="submit"
-                class="bg-gray-700 px-4 py-2"
-                aria-label="Submit newsletter signup"
-              >
-                <svg
-                  class="h-5 w-5 text-blue-400 hover:text-blue-700"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              Popular filters
+            </h3>
+
+            <!-- Filter Categories -->
+
+            <div class="space-y-4">
+              <!-- Property Type -->
+              <div>
+                <button
+                  onclick="toggleDropdown('propertyType', this)"
+                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </button>
-            </form>
-            <p class="mt-4 text-xs text-gray-400">
-              Operated by Camp Experiences Travel Pte. Ltd. (reg. no.
-              012345987).
-            </p>
+                  <span>Property type</span>
+                  <i
+                    class="fa-solid fa-caret-down transition-transform duration-300"
+                  ></i>
+                </button>
+                <div id="propertyType" class="space-y-2 hidden">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Hotels</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Apartments</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Guest houses</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Hostels</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Facilities -->
+              <div>
+                <button
+                  onclick="toggleDropdown('facilities', this)"
+                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+                >
+                  <span>Facilities</span>
+                  <i
+                    class="fa-solid fa-caret-down transition-transform duration-300"
+                  ></i>
+                </button>
+                <div id="facilities" class="space-y-2 hidden">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Free WiFi</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Parking</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Pool</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Spa</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- property rating -->
+                <div>
+                <button
+                  onclick="toggleDropdown('propertyRating', this)"
+                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+                >
+                  <span>Property Rating</span>
+                  <i
+                    class="fa-solid fa-caret-down transition-transform duration-300"
+                  ></i>
+                </button>
+                <div id="propertyRating" class="space-y-2 hidden">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >1 Star</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >2 Stars</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >3 Stars</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >4 Stars</span
+                    >
+                  </label>
+                   <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >5 Stars</span
+                    >
+                  </label>
+                   <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >6 Stars</span
+                    >
+                  </label>
+                   <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >7 Stars</span
+                    >
+                  </label>
+                   <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Unrated</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <!-- popular place -->
+                <div>
+                <button
+                  onclick="toggleDropdown('popularplaces', this)"
+                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+                >
+                  <span>Popular Places</span>
+                  <i
+                    class="fa-solid fa-caret-down transition-transform duration-300"
+                  ></i>
+                </button>
+                <div id="popularplaces" class="space-y-2 hidden">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Angkor Wat</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Bayon Temple</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Royal Palace</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Koh Rong</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Kampot</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Kep</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Battambang</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Preah Vihear</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                      >Phnom Penh Night Market</span
+                    >
+                  </label>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- end of aside -->
           </div>
         </div>
-        <div
-          class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
-          data-aos="fade-up"
-          data-aos-delay="700"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <span>© Camp Experiences 2025</span>
-          <div class="flex space-x-4 mt-2 sm:mt-0">
-            <a href="#" class="hover:text-white">Terms</a>
-            <a href="#" class="hover:text-white">Privacy</a>
-            <a href="#" class="hover:text-white">Cookies</a>
-            <a href="#" class="hover:text-white">Sitemap</a>
+
+        <!-- Hotel Listings -->
+        <div class="lg:w-3/4">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Properties in Zurich, Switzerland:
+              <span class="text-blue-600">1255 properties found</span>
+            </h2>
+            <div class="flex items-center space-x-2">
+              <span class="text-sm text-gray-600 dark:text-gray-400"
+                >Sort by:</span
+              >
+              <select
+                class="border border-gray-200 dark:border-gray-600 rounded-md px-3 py-1 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              >
+                <option>Recommended</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Hotel Cards -->
+          <div class="space-y-6">
+            <!-- card 1 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400"
+                    alt="Leonardo Boutique Hotel"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.3/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Leonardo Boutique Hotel Rigihof Zurich
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Oberstrass, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >2470 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Leonardo Rigihof enjoys a fine location in the Zurich
+                        University quarter. A wellness center with saunas and a
+                        short walk or a brief tram ride to the famous
+                        Bahnhofstrasse shopping street.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $5,045
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
+                    alt="Sheraton Zurich Hotel"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    8.5/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Sheraton Zurich Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Sihlfeld, Zurich • Show on map • 3.0 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >1450 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        The Sheraton Zurich Hotel is located in a lively area of
+                        the city. Featuring modern decor, each of the restaurant
+                        offers an atmosphere, a fitness center, a 24-hour front
+                        desk and a spa area are available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $1,545
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400"
+                    alt="Placid Hotel Design"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    8.5/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Placid Hotel Design & Lifestyle Zurich
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Enge/Wollishofen, Zurich • Show on map • 3.0 km from
+                        center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >995 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        With unique architecture, modern facilities and nature a
+                        flat-screen TV, a digital Concierge Service, a Spa Plus,
+                        a reading room and gally are all available and offer
+                        all-inclusive with complimentary coffee capsules.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,545
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 7 -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 8 -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 9  -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 10 -->
+                   <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
+                    alt="Crowne Plaza Zurich"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    9.1/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Crowne Plaza Zurich, an IHG Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Zurich, Zurich • Show on map • 1.5 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >570 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        Beautiful Boutique Apartment SMARTFLATS enjoys a
+                        location in Zurich, 1.6 miles from the Zurich and 1.2
+                        miles from Fraumünster. Free WiFi is available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $2,145
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 11 -->
+
+             <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
+                    alt="Sheraton Zurich Hotel"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    8.5/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Sheraton Zurich Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Sihlfeld, Zurich • Show on map • 3.0 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >1450 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        The Sheraton Zurich Hotel is located in a lively area of
+                        the city. Featuring modern decor, each of the restaurant
+                        offers an atmosphere, a fitness center, a 24-hour front
+                        desk and a spa area are available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $1,545
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 12  -->
+              <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div class="flex flex-col md:flex-row">
+                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
+                    alt="Sheraton Zurich Hotel"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    8.5/10
+                  </div>
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                      <h3
+                        class="text-lg font-semibold text-gray-900 dark:text-white"
+                      >
+                        Sheraton Zurich Hotel
+                      </h3>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        Sihlfeld, Zurich • Show on map • 3.0 km from center
+                      </p>
+                      <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            />
+                          </svg>
+                        </div>
+                        <span
+                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
+                          >1450 Reviews</span
+                        >
+                      </div>
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                        The Sheraton Zurich Hotel is located in a lively area of
+                        the city. Featuring modern decor, each of the restaurant
+                        offers an atmosphere, a fitness center, a 24-hour front
+                        desk and a spa area are available.
+                      </p>
+                    </div>
+                    <div class="text-right ml-4">
+                      <div
+                        class="text-2xl font-bold text-gray-900 dark:text-white"
+                      >
+                        $1,545
+                      </div>
+                      <div class="text-sm text-gray-600 dark:text-gray-400">
+                        $54 taxes and fees
+                      </div>
+                      <button
+                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        See availability
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end card 12 -->
+          </div>
+          <!-- end all card  -->
+
+          <!-- Pagination -->
+          <div class="flex justify-center items-center space-x-2 mt-8">
+            <button
+              class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Previous
+            </button>
+            <button class="px-3 py-2 text-sm bg-blue-600 text-white rounded">
+              1
+            </button>
+            <button
+              class="px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              2
+            </button>
+            <button
+              class="px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              3
+            </button>
+            <span class="px-2 text-gray-500 dark:text-gray-400">...</span>
+            <button
+              class="px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              10
+            </button>
+            <button
+              class="px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
-    </footer>
-<!-- ========== END FOOTER ========== -->
+    </div>
 
-        <!-- script -->
+    <!-- Footer -->
 
- <script src="../node_modules/preline/dist/scrollspy.js"></script>
     <script src="../javascript/script02.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
   </body>
 </html>

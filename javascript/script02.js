@@ -43,3 +43,10 @@
         menuClose.classList.toggle('hidden');
         mobileMenu.setAttribute('aria-hidden', isExpanded);
       });
+            function toggleDropdown(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle("hidden");
+      }
+      function toggleDropdown(id) {
+        document.getElementById(id).classList.toggle("hidden");
+      }
