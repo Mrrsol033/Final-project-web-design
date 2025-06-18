@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden overflow-visible transition-colors duration-300">
+  <body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden sticky top-0 z-50 transition-colors duration-300">
     <!-- Navigation -->
        <header
       class="bg-white/30 backdrop-blur-md transition-all duration-300 shadow-sm dark:bg-gray-800 "
@@ -400,7 +400,7 @@
       <div class="flex flex-col lg:flex-row gap-8">
         <!-- Sidebar Filters -->
         <div 
-          class="bg-white lg:w-1/4  sticky top-0 z-50  h-full dark:bg-gray-800 shadow-sm p-6 border-l-2 border-gray-400 dark:border-gray-300"
+          class="bg-white lg:w-1/4  h-full dark:bg-gray-800 shadow-sm p-6 border-l-2 border-gray-400 dark:border-gray-300"
         >
           <h3
             class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
@@ -723,966 +723,297 @@
           </div>
 
           <!-- Hotel Cards -->
-          <div class="space-y-6">
-            <!-- card 1 -->
-            <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
+       <div class="space-y-6">
+  <!-- card 1 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1563497355469-7b901e4e4b20?w=400" alt="Raffles Hotel Le Royal" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium">9.2/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Raffles Hotel Le Royal</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Phnom Penh, Cambodia • Show on map • 0.5 km from center</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
               </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">820 Reviews</span>
             </div>
-
-            <!-- card 2 -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 3 -->
-            <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400"
-                    alt="Leonardo Boutique Hotel"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.3/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Leonardo Boutique Hotel Rigihof Zurich
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Oberstrass, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >2470 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Leonardo Rigihof enjoys a fine location in the Zurich
-                        University quarter. A wellness center with saunas and a
-                        short walk or a brief tram ride to the famous
-                        Bahnhofstrasse shopping street.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $5,045
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 4 -->
-            <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
-                    alt="Sheraton Zurich Hotel"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    8.5/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Sheraton Zurich Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Sihlfeld, Zurich • Show on map • 3.0 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg
-                            class="w-4 h-4 text-gray-300"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >1450 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        The Sheraton Zurich Hotel is located in a lively area of
-                        the city. Featuring modern decor, each of the restaurant
-                        offers an atmosphere, a fitness center, a 24-hour front
-                        desk and a spa area are available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $1,545
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 5 -->
-            <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400"
-                    alt="Placid Hotel Design"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    8.5/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Placid Hotel Design & Lifestyle Zurich
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Enge/Wollishofen, Zurich • Show on map • 3.0 km from
-                        center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg
-                            class="w-4 h-4 text-gray-300"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >995 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        With unique architecture, modern facilities and nature a
-                        flat-screen TV, a digital Concierge Service, a Spa Plus,
-                        a reading room and gally are all available and offer
-                        all-inclusive with complimentary coffee capsules.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,545
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 6 -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 7 -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 8 -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 9  -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 10 -->
-                   <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400"
-                    alt="Crowne Plaza Zurich"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    9.1/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Crowne Plaza Zurich, an IHG Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Zurich, Zurich • Show on map • 1.5 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >570 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        Beautiful Boutique Apartment SMARTFLATS enjoys a
-                        location in Zurich, 1.6 miles from the Zurich and 1.2
-                        miles from Fraumünster. Free WiFi is available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $2,145
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 11 -->
-
-             <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
-                    alt="Sheraton Zurich Hotel"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    8.5/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Sheraton Zurich Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Sihlfeld, Zurich • Show on map • 3.0 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg
-                            class="w-4 h-4 text-gray-300"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >1450 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        The Sheraton Zurich Hotel is located in a lively area of
-                        the city. Featuring modern decor, each of the restaurant
-                        offers an atmosphere, a fitness center, a 24-hour front
-                        desk and a spa area are available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $1,545
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card 12  -->
-              <div
-              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow"
-            >
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400"
-                    alt="Sheraton Zurich Hotel"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    8.5/10
-                  </div>
-                </div>
-                <div class="flex-1 p-6">
-                  <div class="flex justify-between items-start">
-                    <div class="flex-1">
-                      <h3
-                        class="text-lg font-semibold text-gray-900 dark:text-white"
-                      >
-                        Sheraton Zurich Hotel
-                      </h3>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        Sihlfeld, Zurich • Show on map • 3.0 km from center
-                      </p>
-                      <div class="flex items-center mt-2">
-                        <div class="flex text-yellow-400">
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                          <svg
-                            class="w-4 h-4 text-gray-300"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            />
-                          </svg>
-                        </div>
-                        <span
-                          class="ml-2 text-sm text-gray-600 dark:text-gray-400"
-                          >1450 Reviews</span
-                        >
-                      </div>
-                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                        The Sheraton Zurich Hotel is located in a lively area of
-                        the city. Featuring modern decor, each of the restaurant
-                        offers an atmosphere, a fitness center, a 24-hour front
-                        desk and a spa area are available.
-                      </p>
-                    </div>
-                    <div class="text-right ml-4">
-                      <div
-                        class="text-2xl font-bold text-gray-900 dark:text-white"
-                      >
-                        $1,545
-                      </div>
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        $54 taxes and fees
-                      </div>
-                      <button
-                        class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                      >
-                        See availability
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end card 12 -->
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A historic luxury hotel in Phnom Penh, offering elegant rooms, a serene spa, and proximity to the Royal Palace and National Museum. Complimentary WiFi and airport shuttle available.
+            </p>
           </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-semibold text-gray-900 dark:text-white">$250</div>
+            <div class="text-xs text-gray-500 text-gray-600 dark:text-gray-400">$15 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 2 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa0?w=400" alt="Sokha Siem Reap Resort" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-semibold">9.0/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Sokha Siem Reap Hotel</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Siem Reap, Cambodia • Show on map • 2 km from Angkor Wat</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927 c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">650 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A luxurious retreat near the iconic Angkor Wat, featuring spacious rooms, a large pool, and a spa. Free shuttle to the temples and WiFi included.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-semibold text-gray-900 dark:text-white">$180</div>
+            <div class="text-xs text-gray-500 text-gray-600 dark:text-gray-400">$10 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 3 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" alt="Belmond La Résidence d'Angkor" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">9.5/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Belmond La Résidence d'Angkor</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Siem Reap, Cambodia • Show on map • 1.5 km from center</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">1200 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A boutique hotel in Siem Reap with Khmer-inspired suites, a tranquil spa, and a lush courtyard pool. Just minutes from Pub Street and Angkor Wat.
+            </p>
+            </div>
+            <div class="text-right ml-4">
+              <div class="text-2xl font-semibold text-gray-900 dark:text-white">$350</div>
+              <div class="text-xs text-gray-500 text-gray-600 dark:text-gray-400">$20 taxes</div>
+              <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-blue-100 px-4 py-2 rounded-lg text-sm font-semibold transition-colors">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 4 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Song Saa Private Island Resort" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium">8.9/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Song Saa Private Island Resort</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Koh Rong, Cambodia • Show on map • 30 km from Sihanoukville</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">850 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A private island paradise with overwater villas, pristine beaches, and a world-class spa. Perfect for a luxurious escape with complimentary boat transfers.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">$950</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">$40 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">See availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 5 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=400" alt="The Balé Phnom Penh" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-medium">8.7/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">The Balé Phnom Penh</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Phnom Penh, Cambodia • Show on map • 2.5 km from center</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">720 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A modern boutique hotel with riverfront views, stylish suites, and a rooftop infinity pool. Close to Wat Phnom and the vibrant Sisowath Quay.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">$150</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">$8 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">See availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 6 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400" alt="Anantara Angkor Resort" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium">9.1/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Anantara Angkor Resort</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Siem Reap, Cambodia • Show on map • 3.0 km from Angkor Wat</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">580 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A luxurious resort offering personalized temple tours, elegant suites, and a serene spa. Complimentary WiFi and breakfast included.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">$220</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">$12 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">See availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 7 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400" alt="Sofitel Angkor Phokeethra" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium">9.0/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Sofitel Angkor Phokeethra</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Siem Reap, Cambodia • Show on map • 2.0 km from center</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 text-gray-300" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">670 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A colonial-style resort with lush gardens, a championship golf course, and spacious rooms. Close to Angkor Wat and Pub Street.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">$190</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">$10 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">See availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 8 -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-gray-300 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-64 h-48 bg-gray-200 dark:bg-gray-700 relative">
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400" alt="Rosewood Phnom Penh" class="w-full h-full object-cover" />
+        <div class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium">9.3/10</div>
+      </div>
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Rosewood Phnom Penh</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Phnom Penh, Cambodia • Show on map • 0.8 km from center</p>
+            <div class="flex items-center mt-2">
+              <div class="flex text-yellow-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              </div>
+              <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">900 Reviews</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              A skyscraper hotel with panoramic city views, luxurious rooms, and a rooftop bar. Located near the Central Market and Royal Palace.
+            </p>
+          </div>
+          <div class="text-right ml-4">
+            <div class="text-2xl font-bold text-gray-900 dark:text-white">$280</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">$15 taxes and fees</div>
+            <button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">See availability</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card 9 -->
           <!-- end all card  -->
 
           <!-- Pagination -->
