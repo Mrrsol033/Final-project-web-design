@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp - Find the Perfect Hotel</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden overflow-visible transition-colors duration-300">
     <!-- Navigation -->
        <header
-      class="bg-white/30 backdrop-blur-md transition-all duration-300 shadow-sm dark:bg-gray-800 sticky top-0 z-50"
+      class="bg-white/30 backdrop-blur-md transition-all duration-300 shadow-sm dark:bg-gray-800 "
     >
       <div
         class="container max-w-screen-xl mx-auto flex items-center justify-between md:justify-around p-4 md:p-2.5"
@@ -231,13 +232,13 @@
     </header>
     <!-- Hero Section -->
     <div
-      class="relative bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-800 dark:to-purple-800"
+      class="relative bg-gradient-to-r  from-indigo-600 to-purple-600 dark:from-indigo-800 dark:to-purple-800"
     >
       <div class="absolute inset-0 bg-black opacity-20"></div>
       <div
-        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32 text-center"
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-30 text-center"
       >
-        <h1 class="text-4xl md:text-3xl lg:text-4xl font-extrabold text-white">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white">
           Find the Perfect Hotel on Camp
         </h1>
         <p class="mt-4 text-lg text-indigo-200">
@@ -245,9 +246,9 @@
         </p>
       </div>
     </div>
-
+      
     <!-- Search Form -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6  lg:px-8 -mt-24 relative z-10">
       <div
         class="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4 sm:p-6 border-gray-200 dark:border-gray-700"
       >
@@ -395,315 +396,315 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 py-12">
       <div class="flex flex-col lg:flex-row gap-8">
         <!-- Sidebar Filters -->
-        <div class="lg:w-1/4 static top-30  bg-white dark:bg-gray-900 z-10">
-          <div
-            class="bg-white dark:bg-gray-800 shadow-sm p-6 border-l-2 border-gray-400 dark:border-gray-300"
+        <div 
+          class="bg-white lg:w-1/4  sticky top-0 z-50  h-full dark:bg-gray-800 shadow-sm p-6 border-l-2 border-gray-400 dark:border-gray-300"
+        >
+          <h3
+            class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
           >
-            <h3
-              class="text-lg font-semibold text-gray-900 dark:text-white mb-4"
-            >
-              Popular filters
-            </h3>
+            Popular filters
+          </h3>
 
-            <!-- Filter Categories -->
+          <!-- Filter Categories -->
 
-            <div class="space-y-4">
-              <!-- Property Type -->
-              <div>
-                <button
-                  onclick="toggleDropdown('propertyType', this)"
-                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
-                >
-                  <span>Property type</span>
-                  <i
-                    class="fa-solid fa-caret-down transition-transform duration-300"
-                  ></i>
-                </button>
-                <div id="propertyType" class="space-y-2 hidden">
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Hotels</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Apartments</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Guest houses</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Hostels</span
-                    >
-                  </label>
-                </div>
-              </div>
-
-              <!-- Facilities -->
-              <div>
-                <button
-                  onclick="toggleDropdown('facilities', this)"
-                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
-                >
-                  <span>Facilities</span>
-                  <i
-                    class="fa-solid fa-caret-down transition-transform duration-300"
-                  ></i>
-                </button>
-                <div id="facilities" class="space-y-2 hidden">
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Free WiFi</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Parking</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Pool</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Spa</span
-                    >
-                  </label>
-                </div>
-              </div>
-              <!-- property rating -->
-                <div>
-                <button
-                  onclick="toggleDropdown('propertyRating', this)"
-                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
-                >
-                  <span>Property Rating</span>
-                  <i
-                    class="fa-solid fa-caret-down transition-transform duration-300"
-                  ></i>
-                </button>
-                <div id="propertyRating" class="space-y-2 hidden">
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >1 Star</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >2 Stars</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >3 Stars</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >4 Stars</span
-                    >
-                  </label>
-                   <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >5 Stars</span
-                    >
-                  </label>
-                   <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >6 Stars</span
-                    >
-                  </label>
-                   <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >7 Stars</span
-                    >
-                  </label>
-                   <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Unrated</span
-                    >
-                  </label>
-                </div>
-              </div>
-              <!-- popular place -->
-                <div>
-                <button
-                  onclick="toggleDropdown('popularplaces', this)"
-                  class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
-                >
-                  <span>Popular Places</span>
-                  <i
-                    class="fa-solid fa-caret-down transition-transform duration-300"
-                  ></i>
-                </button>
-                <div id="popularplaces" class="space-y-2 hidden">
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Angkor Wat</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Bayon Temple</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Royal Palace</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Koh Rong</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Kampot</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Kep</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Battambang</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Preah Vihear</span
-                    >
-                  </label>
-                  <label class="flex items-center">
-                    <input
-                      type="checkbox"
-                      class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
-                      >Phnom Penh Night Market</span
-                    >
-                  </label>
-                  
-                </div>
+          <div class="space-y-4">
+            <!-- Property Type -->
+            <div>
+              <button
+                onclick="toggleDropdown('propertyType', this)"
+                class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+              >
+                <span>Property type</span>
+                <i
+                  class="fa-solid fa-caret-down transition-transform duration-300"
+                ></i>
+              </button>
+              <div id="propertyType" class="space-y-2 hidden">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Hotels</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Apartments</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Guest houses</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Hostels</span
+                  >
+                </label>
               </div>
             </div>
-            <!-- end of aside -->
+
+            <!-- Facilities -->
+            <div>
+              <button
+                onclick="toggleDropdown('facilities', this)"
+                class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+              >
+                <span>Facilities</span>
+                <i
+                  class="fa-solid fa-caret-down transition-transform duration-300"
+                ></i>
+              </button>
+              <div id="facilities" class="space-y-2 hidden">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Free WiFi</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Parking</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Pool</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Spa</span
+                  >
+                </label>
+              </div>
+            </div>
+            <!-- property rating -->
+              <div>
+              <button
+                onclick="toggleDropdown('propertyRating', this)"
+                class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+              >
+                <span>Property Rating</span>
+                <i
+                  class="fa-solid fa-caret-down transition-transform duration-300"
+                ></i>
+              </button>
+              <div id="propertyRating" class="space-y-2 hidden">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >1 Star</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >2 Stars</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >3 Stars</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >4 Stars</span
+                  >
+                </label>
+                 <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >5 Stars</span
+                  >
+                </label>
+                 <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >6 Stars</span
+                  >
+                </label>
+                 <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >7 Stars</span
+                  >
+                </label>
+                 <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Unrated</span
+                  >
+                </label>
+              </div>
+            </div>
+            <!-- popular place -->
+              <div>
+              <button
+                onclick="toggleDropdown('popularplaces', this)"
+                class="font-medium text-gray-900 dark:text-white mb-2 w-full text-left flex justify-between items-center"
+              >
+                <span>Popular Places</span>
+                <i
+                  class="fa-solid fa-caret-down transition-transform duration-300"
+                ></i>
+              </button>
+              <div id="popularplaces" class="space-y-2 hidden">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Angkor Wat</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Bayon Temple</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Royal Palace</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Koh Rong</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Kampot</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Kep</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Battambang</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Preah Vihear</span
+                  >
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span class="ml-2 text-sm text-gray-700 dark:text-gray-300"
+                    >Phnom Penh Night Market</span
+                  >
+                </label>
+                
+              </div>
+            </div>
           </div>
+          <!-- end of aside -->
+        </div>
+        <div class="">
         </div>
 
         <!-- Hotel Listings -->
-        <div class="lg:w-3/4">
+        <div class="lg:w-3/4 scroll-auto">
           <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Properties in Zurich, Switzerland:
+              Properties in Cambodia :
               <span class="text-blue-600">1255 properties found</span>
             </h2>
             <div class="flex items-center space-x-2">
@@ -1721,7 +1722,152 @@
     </div>
 
     <!-- Footer -->
+    <footer
+      class="bg-gray-700 text-white"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div class="flex items-center space-x-3">
+              <img src="../img/CAMPBOOKING_LOGO1-.png" alt="Camp Logo" class="h-12 w-12" />
+              <span class="text-xl font-bold">Camp Booking</span>
+            </div>
+            <p class="mt-4 text-sm text-gray-300">
+              Camp Experiences, the world’s leading travel platform, helps
+              millions discover unforgettable destinations, hotels, and
+              adventures.
+            </p>
+            <div
+              class="flex mt-4 space-x-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <a href="#" class="hover:text-gray-400" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Links 1 -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li><a href="#" class="hover:text-white">Our Story</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Press</a></li>
+              <li><a href="#" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+            </ul>
+          </div>
+          <!-- Links 2 -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">Travel Services</h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#" class="hover:text-white">Explore Destinations</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Book Hotels</a></li>
+              <li>
+                <a href="#" class="hover:text-white">Unique Experiences</a>
+              </li>
+              <li><a href="#" class="hover:text-white">Travel Guides</a></li>
+              <li><a href="#" class="hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <form
+              class="flex items-center border border-gray-500 rounded-full overflow-hidden"
+              aria-label="Newsletter Signup"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 bg-gray-800 text-white focus:outline-none"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-gray-700 px-4 py-2"
+                aria-label="Submit newsletter signup"
+              >
+                <svg
+                  class="h-5 w-5 text-blue-400 hover:text-blue-700"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </button>
+            </form>
+            <p class="mt-4 text-xs text-gray-400">
+              Operated by Camp Experiences Travel Pte. Ltd. (reg. no.
+              012345987).
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-10 border-t border-gray-600 pt-6 text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <span>© Camp Experiences 2025</span>
+          <div class="flex space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Cookies</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
 
+    <!-- script  -->
+    <script src="../node_modules/preline/dist/scrollspy.js"></script>
     <script src="../javascript/script02.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
